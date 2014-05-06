@@ -2,43 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://lingdong.gitcafe.com/2014/05/lingdong_opensuse/</loc>
-    <lastmod>2014-05-03T00:00:00.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://lingdong.gitcafe.com/1998/09/hello_world/</loc>
-    <lastmod>1998-08-31T16:00:00.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://lingdong.gitcafe.com/2013/11/weekly_tip_2/</loc>
-    <lastmod>2013-11-18T00:00:00.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://lingdong.gitcafe.com/2013/12/weekly_tip_4/</loc>
-    <lastmod>2013-12-09T00:00:00.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://lingdong.gitcafe.com/2014/01/weekly_tip_5/</loc>
-    <lastmod>2014-01-06T00:00:00.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://lingdong.gitcafe.com/2013/11/weekly_tip_1/</loc>
-    <lastmod>2013-11-04T00:00:00.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://lingdong.gitcafe.com/2014/03/assemble_computers/</loc>
-    <lastmod>2014-03-01T00:00:00.000Z</lastmod>
+    <loc>http://lingdong.gitcafe.com/about/index.html</loc>
+    <lastmod>2014-05-01T00:00:00.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://lingdong.gitcafe.com/2013/12/weekly_tip_3/</loc>
     <lastmod>2013-12-02T00:00:00.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lingdong.gitcafe.com/2014/05/lingdong_opensuse/</loc>
+    <lastmod>2014-05-03T00:00:00.000Z</lastmod>
   </url>
   
   <url>
@@ -52,6 +27,31 @@
   </url>
   
   <url>
+    <loc>http://lingdong.gitcafe.com/2013/11/weekly_tip_1/</loc>
+    <lastmod>2013-11-04T00:00:00.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lingdong.gitcafe.com/2013/11/weekly_tip_2/</loc>
+    <lastmod>2013-11-18T00:00:00.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lingdong.gitcafe.com/1998/09/hello_world/</loc>
+    <lastmod>1998-08-31T16:00:00.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lingdong.gitcafe.com/2013/12/weekly_tip_4/</loc>
+    <lastmod>2013-12-09T00:00:00.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lingdong.gitcafe.com/2014/01/weekly_tip_5/</loc>
+    <lastmod>2014-01-06T00:00:00.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://lingdong.gitcafe.com/2014/01/weekly_tip_6/</loc>
     <lastmod>2014-01-13T00:00:00.000Z</lastmod>
   </url>
@@ -62,18 +62,18 @@
   </url>
   
   <url>
-    <loc>http://lingdong.gitcafe.com/workers/index.html</loc>
-    <lastmod>2014-05-02T04:15:51.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://lingdong.gitcafe.com/about/index.html</loc>
-    <lastmod>2014-05-01T00:00:00.000Z</lastmod>
+    <loc>http://lingdong.gitcafe.com/2014/03/assemble_computers/</loc>
+    <lastmod>2014-03-01T00:00:00.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://lingdong.gitcafe.com/articles/index.html</loc>
     <lastmod>2014-05-01T00:00:00.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lingdong.gitcafe.com/workers/index.html</loc>
+    <lastmod>2014-05-02T04:15:51.000Z</lastmod>
   </url>
   
 </urlset>
