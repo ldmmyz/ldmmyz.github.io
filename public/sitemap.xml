@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ld.mmyz.net/2014/05/computer_room_rules/</loc>
+    <lastmod>2014-05-16T06:17:07.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://ld.mmyz.net/2013/12/weekly_tip_3/</loc>
     <lastmod>2013-12-02T00:00:00.000Z</lastmod>
   </url>
@@ -19,11 +24,6 @@
   <url>
     <loc>http://ld.mmyz.net/2013/12/network_fundamentals_lecture/</loc>
     <lastmod>2013-12-21T00:00:00.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ld.mmyz.net/2014/05/photoshop_lessons/</loc>
-    <lastmod>2014-05-11T00:00:00.000Z</lastmod>
   </url>
   
   <url>
@@ -64,6 +64,11 @@
   <url>
     <loc>http://ld.mmyz.net/2014/03/wireless_network_security_lecture/</loc>
     <lastmod>2014-03-13T00:00:00.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ld.mmyz.net/2014/05/photoshop_lessons/</loc>
+    <lastmod>2014-05-11T00:00:00.000Z</lastmod>
   </url>
   
   <url>
