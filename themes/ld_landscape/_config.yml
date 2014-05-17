@@ -3,6 +3,7 @@ menu:
   首页: /
   关于: /about
   存档: /archives
+  学校网站: http://www.mmyz.net/
 rss: /atom.xml
 
 # Content
@@ -27,5 +28,3 @@ twitter:
 google_plus:
 fb_admins:
 fb_app_id:
-
-baidu_tongji: 9fd77bbfdc55eb614a76ca1c016b0217

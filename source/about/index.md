@@ -27,13 +27,13 @@ description: 关于灵动计算机社、这个博客，以及我们的联系方�
 ### 联系我们
 
 Email: <mmyzcptsct@126.com>
-QQ群: [240696962](http://shang.qq.com/wpa/qunwpa?idkey=c02d2a5684983d7eabbe905306ee0ec126e1961c01b99babb87233c71a41a3f8)
+QQ群: [240696962](http://shang.qq.com/wpa/qunwpa?idkey=e365083a81eab47f1c53bfb6841ba8f926bad68e84b154c3252e42df5be72486)
 
 -----
 
 ### 工作人员
 
-* 社　长：
+* 社长：
 李超颖　高二(22)班
 
 * 副社长：

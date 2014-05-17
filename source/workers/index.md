@@ -14,7 +14,7 @@ date: 2014-05-02 12:15:51
 微博：[@李_超颖Rain](http://weibo.com/u/2010295323)
 
 * 副社长：王子勤
-Email: <wangziqin1998@gmail.com>
+Email: <Wang.Ziqin.1998@gmail.com>
 微博：[@子勤](http://t.qq.com/wangziqin8323)
 博客：[子勤的小天地](http://ziqin.gitcafe.com/)
 

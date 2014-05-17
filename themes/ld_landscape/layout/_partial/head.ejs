@@ -33,5 +33,7 @@
   <%- css('css/style') %>
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <%- partial('google-analytics') %>
-  <%- partial('baidu_tongji') %>
+  <% if (config.baidu_tongji){ %>
+    <%- partial('baidu_tongji') %>
+  <% } %>
 </head>

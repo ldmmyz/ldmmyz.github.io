@@ -11,7 +11,7 @@ description: 计算机社2013年招新概况。
 我们的位置：高一教学楼中楼的东边
 报名时间为：2013年9月15日(星期日)14:45-17:30
 
-![手绘招新海报](http://cptsct.qiniudn.com/2013_recruit_new/01.jpg)
+![手绘招新海报](http://cptsct.qiniudn.com/2013_recruit_new/01.jpg?imageView/2/w/480)
 
 <!-- more -->
 
