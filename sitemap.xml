@@ -2,47 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-<<<<<<< HEAD
-    <loc>http://ld.mmyz.net/404.html</loc>
-    <lastmod>2014-05-17T06:42:42.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ld.mmyz.net/about/index.html</loc>
-    <lastmod>2014-05-01T00:00:00.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ld.mmyz.net/articles/index.html</loc>
-    <lastmod>2014-05-01T00:00:00.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ld.mmyz.net/2013/09/recruit_new/</loc>
-    <lastmod>2013-09-15T00:00:00.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ld.mmyz.net/workers/index.html</loc>
-    <lastmod>2014-05-02T04:15:51.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ld.mmyz.net/2014/05/photoshop_lessons/</loc>
-    <lastmod>2014-05-11T00:00:00.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ld.mmyz.net/2014/05/computer_room_rules/</loc>
-    <lastmod>2014-05-16T06:17:07.000Z</lastmod>
-=======
-    <loc>http://ld.mmyz.net/2014/05/computer_room_rules/</loc>
-    <lastmod>2014-05-16T06:17:07.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://ld.mmyz.net/2013/12/weekly_tip_3/</loc>
     <lastmod>2013-12-02T00:00:00.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ld.mmyz.net/2014/03/assemble_computers/</loc>
+    <lastmod>2014-03-01T00:00:00.000Z</lastmod>
   </url>
   
   <url>
@@ -61,9 +27,13 @@
   </url>
   
   <url>
+    <loc>http://ld.mmyz.net/2014/05/photoshop_lessons/</loc>
+    <lastmod>2014-05-11T00:00:00.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://ld.mmyz.net/2013/09/recruit_new/</loc>
     <lastmod>2013-09-15T00:00:00.000Z</lastmod>
->>>>>>> 7c6ef2fd9964b9232d5714222038048364ad6f3d
   </url>
   
   <url>
@@ -77,13 +47,8 @@
   </url>
   
   <url>
-<<<<<<< HEAD
-    <loc>http://ld.mmyz.net/2014/05/lingdong_opensuse/</loc>
-    <lastmod>2014-05-03T00:00:00.000Z</lastmod>
-=======
-    <loc>http://ld.mmyz.net/2014/03/assemble_computers/</loc>
-    <lastmod>2014-03-01T00:00:00.000Z</lastmod>
->>>>>>> 7c6ef2fd9964b9232d5714222038048364ad6f3d
+    <loc>http://ld.mmyz.net/2014/05/computer_room_rules/</loc>
+    <lastmod>2014-05-16T06:17:07.000Z</lastmod>
   </url>
   
   <url>
@@ -107,27 +72,8 @@
   </url>
   
   <url>
-<<<<<<< HEAD
-    <loc>http://ld.mmyz.net/2013/12/network_fundamentals_lecture/</loc>
-    <lastmod>2013-12-21T00:00:00.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ld.mmyz.net/2014/03/assemble_computers/</loc>
-    <lastmod>2014-03-01T00:00:00.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ld.mmyz.net/1998/09/hello_world/</loc>
-    <lastmod>1998-08-31T16:00:00.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ld.mmyz.net/2013/12/weekly_tip_3/</loc>
-    <lastmod>2013-12-02T00:00:00.000Z</lastmod>
-=======
-    <loc>http://ld.mmyz.net/2014/05/photoshop_lessons/</loc>
-    <lastmod>2014-05-11T00:00:00.000Z</lastmod>
+    <loc>http://ld.mmyz.net/404.html</loc>
+    <lastmod>2014-05-17T08:44:23.000Z</lastmod>
   </url>
   
   <url>
@@ -143,7 +89,6 @@
   <url>
     <loc>http://ld.mmyz.net/workers/index.html</loc>
     <lastmod>2014-05-02T04:15:51.000Z</lastmod>
->>>>>>> 7c6ef2fd9964b9232d5714222038048364ad6f3d
   </url>
   
 </urlset>
