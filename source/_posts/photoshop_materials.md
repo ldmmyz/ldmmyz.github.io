@@ -1,7 +1,10 @@
 title: Photoshop课程学习资料（第1节）
 date: 2014-05-17
 categories: 活动
-tags: Ps
+tags:
+- Ps
+- 多媒体
+- 课程
 description: 灵动计算机社 Photoshop 课程学习资料。
 ---
 
@@ -13,14 +16,14 @@ description: 灵动计算机社 Photoshop 课程学习资料。
 
 <!-- more -->
 
- 1. 认识 Adobe Photoshop
+1. 认识 Adobe Photoshop
   * Photoshop 的应用领域
   * 工作界面
- 2. 学习图像的原理
+2. 学习图像的原理
   * 像素与分辨率
   * 位图与矢量图
   * 图像文件格式
- 3. 学习 Photoshop 的基本操作
+3. 学习 Photoshop 的基本操作
   下面是我们这节课的学习任务：
   * 新建文件、打开文件、保存文件
   * 修改像素尺寸和画布大小(实战练习3.11.1~3.11.2)
