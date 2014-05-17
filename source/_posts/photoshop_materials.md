@@ -35,8 +35,8 @@ description: 灵动计算机社 Photoshop 课程学习资料。
 
 ---
 
-教程视频下载：<http://pan.baidu.com/s/1mgv7neg>
-提取密码为：qv4g
+教程视频下载: <http://pan.baidu.com/s/1kTLrJ75>
+提取密码: 5m4v
 
 ---
 
