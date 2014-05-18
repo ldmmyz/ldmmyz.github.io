@@ -5,6 +5,7 @@ tags:
 - 电脑小知识
 - Windows Tips
 description: 计算机社举办“每周电脑小知识”征稿&展示活动。这里是第3期《每周小知识》。
+keywords: 电脑小知识,Windows
 ---
 
 第3期《每周小知识》发布！

@@ -9,6 +9,7 @@ description: 灵动计算机社是茂名一中计算机爱好者的交流平台�
 author: 茂名市第一中学灵动计算机社
 email: mmyzcptsct@126.com
 language: zh-CN
+keywords: 灵动计算机社,茂名市第一中学灵动计算机社,灵动,计算机技术,茂名市第一中学社团联合会
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -107,4 +108,7 @@ stylus:
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  massage: update
+  repo:
+    gitcafe

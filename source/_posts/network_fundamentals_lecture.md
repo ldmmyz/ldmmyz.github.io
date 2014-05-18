@@ -6,6 +6,7 @@ tags:
 - 讲座
 - IP
 description: 灵动计算机社举办网络基础知识讲座，由指导老师曾美霞为我们讲解计算机网络较为底层的知识，主要讲了计算机网络IP的性质、发展历程以及相关运算的含义和方法。
+keywords: 网络,IP,讲座
 ---
 
 ![计算机社 网络基础知识讲座 活动海报](http://cptsct.qiniudn.com/network_fundamentals_lecture/poster.jpg)

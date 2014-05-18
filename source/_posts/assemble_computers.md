@@ -6,6 +6,7 @@ tags:
 - 社团嘉年华
 - 社团文化节
 description: 灵动计算机社举办台式计算机组装教学实践活动的台前幕后。
+keywords: 组装电脑,硬件,社团嘉年华,社团文化节
 ---
 
 ![茂名市第一中学第三届社团文化节嘉年华活动 > 灵动计算机社 > 台式计算机组装教学实践活动](http://cptsct.qiniudn.com/assemble_computers/05.jpg)

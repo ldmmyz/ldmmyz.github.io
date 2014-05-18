@@ -3,6 +3,7 @@ date: 2013-09-15
 categories: 工作
 tags: 招新
 description: 计算机社2013年招新概况。
+keywords: 招新
 ---
 
 新学期，新同学，新社员。开学以来的第三个周末，便是我们招新的时候了。

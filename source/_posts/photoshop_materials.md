@@ -6,6 +6,7 @@ tags:
 - 多媒体
 - 课程
 description: 灵动计算机社 Photoshop 课程学习资料。
+keywords: Ps,Photoshop,资源分享,教程,教程视频,多媒体,课程
 ---
 
 星期五下午，在信息楼三楼的语音室里，我们开办了第 1 节 Photoshop 课程。

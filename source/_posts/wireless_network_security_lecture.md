@@ -9,6 +9,7 @@ tags:
 - 讲座
 - 社团文化节
 description: 灵动计算计社举办“你的 WiFi 安全了吗”无线网络安全防范知识讲座。本次讲座由社干廖健主讲，首先和同学们学习了无线网络的基本概念，然后讲解了 WiFi 加密的相关原理，分析黑客破解 WiFi 的过程，并教会大家对应的防范方法。
+keywords: 无线网络,WiFi,网络,安全,讲座,社团文化节
 ---
 
 ![灵动计算机社 无线网络安全防范知识讲座 活动海报](http://cptsct.qiniudn.com/wireless_network_security_lecture/poster.jpg)

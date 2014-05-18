@@ -6,6 +6,7 @@ tags:
 - Windows Tips
 - 新鲜玩意儿
 description: 计算机社举办“每周电脑小知识”征稿&展示活动。这里是第2期《每周小知识》。
+keywords: 电脑小知识,Windows
 ---
 
 第2期《每周小知识》出炉啦！

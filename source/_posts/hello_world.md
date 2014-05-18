@@ -1,6 +1,7 @@
 title: Hello World
 date: 1998-9
 tags: C
+keywords: C,C语言
 ---
 
 你好，世界！

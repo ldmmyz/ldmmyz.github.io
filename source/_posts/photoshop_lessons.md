@@ -6,6 +6,7 @@ tags:
  - 多媒体
  - 课程
 description: 灵动计算机社将开展 Photoshop 图像处理基础教学课程。
+keywords: Ps,Photoshop,多媒体,课程
 ---
 
 ![灵动计算机社 Photoshop图像处理基础教学课程 活动海报](http://cptsct.qiniudn.com/photoshop_lessons/poster.jpg)

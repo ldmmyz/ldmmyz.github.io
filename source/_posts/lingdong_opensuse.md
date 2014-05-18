@@ -6,6 +6,7 @@ tags:
 - Linux
 - 新鲜玩意儿
 description: LingDong openSUSE，为灵动计算机社定制的 Linux 桌面系统。
+keywords: LingDong openSUSE,SUSE Studio,Linux,操作系统
 ---
 
 喜欢尝新的同学们，来体验一下 LingDong openSUSE 吧。
