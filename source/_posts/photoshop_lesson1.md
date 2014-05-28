@@ -5,7 +5,7 @@ tags:
 - Ps
 - 多媒体
 - 课程
-description: 灵动计算机社 Photoshop 课程学习资料。
+description: 灵动计算机社 Photoshop 课程学习资料（第1节）。
 keywords: Ps,Photoshop,资源分享,教程,教程视频,多媒体,课程
 ---
 
