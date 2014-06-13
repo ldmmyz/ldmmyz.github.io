@@ -82,50 +82,69 @@ var _hmt = _hmt || [];
       <div class="outer">
         <section id="main">
   
-    <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+    <article id="post-photoshop_contest" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-    <%- partial('post/category') %>
+    <a href="/2014/06/photoshop_contest/" class="article-date">
+  <time datetime="2014-06-13T12:52:16.000Z" itemprop="datePublished">6月 13 2014</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/活动/">活动</a>
+  </div>
+
   </div>
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/06/photoshop_contest/">“我爱一中”·Photoshop 平面设计大赛素材预览版放送</a>
+    </h1>
+  
+
       </header>
-    <% } %>
+    
     <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index){ %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link){ %>
+      
+        <p>想向大家展示你的创意吗？想赢取丰厚的奖品吗？不要错过，不要错过，机会来了！<br>在接下来的星期天下午，也就是 6 月 15 日 14:30 ~ 17:00，我们将在信息楼语音室举办主题为“我爱一中”的 Photoshop 平面设计大赛。</p>
+<p>本次比赛奖品丰厚：</p>
+<ul>
+<li>一等奖（1名）：无线鼠标</li>
+<li>二等奖（2名）：移动电源</li>
+<li>三等奖（3名）：灵动计算机社纪念杯子（会变色哦）</li>
+</ul>
+<p>不仅如此，我们还会向提交作品的每位选手送出一份小礼品。</p>
+<p>比赛报名方式请留意教学楼公告栏。当然，也可以现场即时报名。希望同学们多多支持、踊跃参加呀！</p>
+<p>下面为大家放出我们提供的主要素材的预览版本，供同学们构思。（我们会在比赛现场提供更加清晰的版本）</p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest/04.jpg" alt="茂名一中"></p>
+
+        
           <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
+            <a href="/2014/06/photoshop_contest/#more">阅读全文</a>
           </p>
-        <% } %>
-      <% } else { %>
-        <%- post.content %>
-      <% } %>
+        
+      
     </div>
     <footer class="article-footer">
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
-      <% if (post.comments && config.disqus_shortname){ %>
-        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
-      <% } %>
-      <%- partial('post/tag') %>
+      <a data-url="http://ld.mmyz.net/2014/06/photoshop_contest/" data-id="mhkgb1fiixurx6dk" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ps/">Ps</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/比赛/">比赛</a></li></ul>
+
+      
+      
+      
+
     </footer>
   </div>
-  <% if (!index){ %>
-    <%- partial('post/nav') %>
-  <% } %>
+
+  
+
 </article>
 
-<% if (!index && post.comments && config.disqus_shortname){ %>
-<section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-</section>
-<% } %>
+
 
   
   

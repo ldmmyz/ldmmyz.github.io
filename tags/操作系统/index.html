@@ -82,50 +82,60 @@ var _hmt = _hmt || [];
       <div class="outer">
         <section id="main">
   
-    <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+    <article id="post-lingdong_opensuse" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-    <%- partial('post/category') %>
+    <a href="/2014/05/lingdong_opensuse/" class="article-date">
+  <time datetime="2014-05-03T00:00:00.000Z" itemprop="datePublished">5月 3 2014</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/分享/">分享</a>
+  </div>
+
   </div>
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/05/lingdong_opensuse/">LingDong openSUSE - 为灵动而定制</a>
+    </h1>
+  
+
       </header>
-    <% } %>
+    
     <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index){ %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link){ %>
+      
+        <p>喜欢尝新的同学们，来体验一下 LingDong openSUSE 吧。</p>
+<p>这是子勤为灵动计算机社定制的一款 Linux 桌面系统，基于 <a href="http://software.opensuse.org/131/zh_CN" target="_blank">openSUSE 13.1</a> i686，使用 <a href="https://susestudio.com/" target="_blank">SUSE Studio</a> 构建，简体中文界面。</p>
+
+        
           <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
+            <a href="/2014/05/lingdong_opensuse/#more">阅读全文</a>
           </p>
-        <% } %>
-      <% } else { %>
-        <%- post.content %>
-      <% } %>
+        
+      
     </div>
     <footer class="article-footer">
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
-      <% if (post.comments && config.disqus_shortname){ %>
-        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
-      <% } %>
-      <%- partial('post/tag') %>
+      <a data-url="http://ld.mmyz.net/2014/05/lingdong_opensuse/" data-id="u8e55eedavrvi08i" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/操作系统/">操作系统</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/新鲜玩意儿/">新鲜玩意儿</a></li></ul>
+
+      
+      
+      
+
     </footer>
   </div>
-  <% if (!index){ %>
-    <%- partial('post/nav') %>
-  <% } %>
+
+  
+
 </article>
 
-<% if (!index && post.comments && config.disqus_shortname){ %>
-<section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-</section>
-<% } %>
+
 
   
   

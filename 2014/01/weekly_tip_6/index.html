@@ -80,50 +80,101 @@ var _hmt = _hmt || [];
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-weekly_tip_6" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-    <%- partial('post/category') %>
+    <a href="/2014/01/weekly_tip_6/" class="article-date">
+  <time datetime="2014-01-13T00:00:00.000Z" itemprop="datePublished">1月 13 2014</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/活动/">活动</a>
+  </div>
+
   </div>
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'article-title'}) %>
+        
+  
+    <h1 class="article-title" itemprop="name">
+      每周电脑小知识 第6期
+    </h1>
+  
+
       </header>
-    <% } %>
+    
     <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index){ %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link){ %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <%- post.content %>
-      <% } %>
+      
+        <p>这里是第6期《每周小知识》。</p>
+<p>感谢王子勤、倪伟智同学的投稿。</p>
+<p>这也是本学期最后一期《每周小知识》了。<br>非常感谢积极参与本次活动的同学们。</p>
+<p>我们打包了本学期的6期《每周小知识》，方便大家下载。<br>传送门：<a href="http://pan.baidu.com/s/1c08B0MO" target="_blank">http://pan.baidu.com/s/1c08B0MO</a></p>
+<a id="more"></a>
+
+<p><img src="http://cptsct.qiniudn.com/weekly_tips/06.png" alt="灵动计算机社 每周电脑小知识 第6期"></p>
+
+      
     </div>
     <footer class="article-footer">
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
-      <% if (post.comments && config.disqus_shortname){ %>
-        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
-      <% } %>
-      <%- partial('post/tag') %>
+      <a data-url="http://ld.mmyz.net/2014/01/weekly_tip_6/" data-id="0jt4p1v26h0ml1ue" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ps/">Ps</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Windows Tips/">Windows Tips</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/电脑小知识/">电脑小知识</a></li></ul>
+
+      
+      
+      
+<section id="comments">
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="每周电脑小知识 第6期" data-title="每周电脑小知识 第6期" data-url="http://ld.mmyz.net/2014/01/weekly_tip_6/"></div>
+<!--	<div class="ds-thread"></div> -->
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"cptsct"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+</section>
+
+
     </footer>
   </div>
-  <% if (!index){ %>
-    <%- partial('post/nav') %>
-  <% } %>
+
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2014/03/assemble_computers/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          装电脑！装电脑！
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/01/weekly_tip_5/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">每周电脑小知识 第5期</div>
+    </a>
+  
+</nav>
+
+  
+
 </article>
 
-<% if (!index && post.comments && config.disqus_shortname){ %>
-<section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-</section>
-<% } %>
+
 </section>
         
           <aside id="sidebar">

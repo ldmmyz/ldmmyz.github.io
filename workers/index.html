@@ -19,7 +19,7 @@
 
 社长：李超颖微博：@李_超颖Rain
 
-副社长：王子勤Email: &#87;&#x61;&#x6e;&#103;&#x2e;&#x5a;&#x69;&#x71;&#x69;&#x6e;&#46;&#x31;&#57;&#x39;&#56;&#x40;&#x67;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#x63;&#" property="og:description">
+副社长：王子勤Email: &#x57;&#97;&#x6e;&#103;&#46;&#x5a;&#105;&#113;&#x69;&#x6e;&#46;&#49;&#57;&#57;&#56;&#64;&#x67;&#x6d;&#x61;&#105;&#108;&#46;&#99;&#111;&#" property="og:description">
 <meta content="summary" name="twitter:card">
   
     <link rel="alternative" href="/atom.xml" title="灵动" type="application/atom+xml">
@@ -87,50 +87,85 @@ var _hmt = _hmt || [];
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+        <section id="main"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-    <%- partial('post/category') %>
+    <a href="/workers/index.html" class="article-date">
+  <time datetime="2014-05-02T04:15:51.000Z" itemprop="datePublished">5月 2 2014</time>
+</a>
+    
   </div>
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'article-title'}) %>
+        
+  
+    <h1 class="article-title" itemprop="name">
+      历任社团负责人联系方式
+    </h1>
+  
+
       </header>
-    <% } %>
+    
     <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index){ %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link){ %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <%- post.content %>
-      <% } %>
+      
+        <h3 id="2014-2015届">2014-2015届</h3>
+<p>敬请期待…</p>
+<hr>
+<h3 id="2013-2014届">2013-2014届</h3>
+<ul>
+<li><p>社长：李超颖<br>微博：<a href="http://weibo.com/u/2010295323" target="_blank">@李_超颖Rain</a></p>
+</li>
+<li><p>副社长：王子勤<br>Email: <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#x6f;&#58;&#x57;&#97;&#x6e;&#103;&#46;&#x5a;&#105;&#113;&#x69;&#x6e;&#46;&#49;&#57;&#57;&#56;&#64;&#x67;&#x6d;&#x61;&#105;&#108;&#46;&#99;&#111;&#x6d;">&#x57;&#97;&#x6e;&#103;&#46;&#x5a;&#105;&#113;&#x69;&#x6e;&#46;&#49;&#57;&#57;&#56;&#64;&#x67;&#x6d;&#x61;&#105;&#108;&#46;&#99;&#111;&#x6d;</a><br>微博：<a href="http://t.qq.com/wangziqin8323" target="_blank">@子勤</a><br>博客：<a href="http://ziqin.gitcafe.com/" target="_blank">子勤的小天地</a></p>
+</li>
+</ul>
+<hr>
+<h3 id="2012-2013届">2012-2013届</h3>
+<p>资料待补充</p>
+<hr>
+<h3 id="2011-2012届">2011-2012届</h3>
+<p>资料待补充</p>
+
+      
     </div>
     <footer class="article-footer">
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
-      <% if (post.comments && config.disqus_shortname){ %>
-        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
-      <% } %>
-      <%- partial('post/tag') %>
+      <a data-url="http://ld.mmyz.net/workers/index.html" data-id="bsr2e9e2x3mwneue" class="article-share-link">分享</a>
+      
+      
+      
+      
+      
+<section id="comments">
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="历任社团负责人联系方式" data-title="历任社团负责人联系方式" data-url="http://ld.mmyz.net/workers/index.html"></div>
+<!--	<div class="ds-thread"></div> -->
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"cptsct"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+</section>
+
+
     </footer>
   </div>
-  <% if (!index){ %>
-    <%- partial('post/nav') %>
-  <% } %>
+
+  
+    
+  
+
 </article>
 
-<% if (!index && post.comments && config.disqus_shortname){ %>
-<section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-</section>
-<% } %>
+
 </section>
         
           <aside id="sidebar">
