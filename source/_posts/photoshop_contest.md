@@ -23,44 +23,45 @@ keywords: Ps,平面设计大赛,茂名一中图片
 
 下面为大家放出我们提供的主要素材的预览版本，供同学们构思。（我们会在比赛现场提供更加清晰的版本）
 
+![茂名一中](http://cptsct.qiniudn.com/photoshop_contest/04.jpg)
+
 <!-- more -->
 
-![](http://cptsct.qiniudn.com/photoshop_contest/01.jpg)
+![茂名一中 正门](http://cptsct.qiniudn.com/photoshop_contest/16.jpg)
 
-![](http://cptsct.qiniudn.com/photoshop_contest/02.jpg)
+![茂名一中 图书馆](http://cptsct.qiniudn.com/photoshop_contest/12.jpg)
 
-![](http://cptsct.qiniudn.com/photoshop_contest/03.jpg)
+![茂名一中 图书馆](http://cptsct.qiniudn.com/photoshop_contest/13.jpg)
 
-![](http://cptsct.qiniudn.com/photoshop_contest/04.jpg)
+![茂名一中 博学广场](http://cptsct.qiniudn.com/photoshop_contest/15.jpg)
 
-![](http://cptsct.qiniudn.com/photoshop_contest/05.jpg)
+![茂名一中 学海 教学楼](http://cptsct.qiniudn.com/photoshop_contest/05.jpg)
 
-![](http://cptsct.qiniudn.com/photoshop_contest/06.jpg)
+![茂名一中 学海](http://cptsct.qiniudn.com/photoshop_contest/06.jpg)
 
-![](http://cptsct.qiniudn.com/photoshop_contest/07.jpg)
+![茂名一中 学海](http://cptsct.qiniudn.com/photoshop_contest/20.jpg)
 
-![](http://cptsct.qiniudn.com/photoshop_contest/08.jpg)
+![茂名一中 学海畔的艺术楼](http://cptsct.qiniudn.com/photoshop_contest/10.jpg)
 
-![](http://cptsct.qiniudn.com/photoshop_contest/09.jpg)
+![茂名一中 学海鸟瞰](http://cptsct.qiniudn.com/photoshop_contest/19.jpg)
 
-![](http://cptsct.qiniudn.com/photoshop_contest/10.jpg)
+![茂名一中 礼堂](http://cptsct.qiniudn.com/photoshop_contest/14.jpg)
 
-![](http://cptsct.qiniudn.com/photoshop_contest/11.jpg)
+![茂名一中 礼堂](http://cptsct.qiniudn.com/photoshop_contest/11.jpg)
 
-![](http://cptsct.qiniudn.com/photoshop_contest/12.jpg)
+![茂名一中 行政楼](http://cptsct.qiniudn.com/photoshop_contest/17.jpg)
 
-![](http://cptsct.qiniudn.com/photoshop_contest/13.jpg)
+![茂名一中 体育馆](http://cptsct.qiniudn.com/photoshop_contest/18.jpg)
 
-![](http://cptsct.qiniudn.com/photoshop_contest/14.jpg)
+![茂名一中 田径场](http://cptsct.qiniudn.com/photoshop_contest/09.jpg)
 
-![](http://cptsct.qiniudn.com/photoshop_contest/15.jpg)
+![茂名一中 小山坡](http://cptsct.qiniudn.com/photoshop_contest/07.jpg)
 
-![](http://cptsct.qiniudn.com/photoshop_contest/16.jpg)
+![茂名一中 名人走廊](http://cptsct.qiniudn.com/photoshop_contest/08.jpg)
 
-![](http://cptsct.qiniudn.com/photoshop_contest/17.jpg)
+![茂名一中 名人长廊](http://cptsct.qiniudn.com/photoshop_contest/03.jpg)
 
-![](http://cptsct.qiniudn.com/photoshop_contest/18.jpg)
+![茂名一中 钟楼](http://cptsct.qiniudn.com/photoshop_contest/01.jpg)
 
-![](http://cptsct.qiniudn.com/photoshop_contest/19.jpg)
+![芬芳](http://cptsct.qiniudn.com/photoshop_contest/02.jpg)
 
-![](http://cptsct.qiniudn.com/photoshop_contest/20.jpg)
