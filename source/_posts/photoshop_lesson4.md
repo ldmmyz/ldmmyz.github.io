@@ -11,6 +11,8 @@ keywords: Ps,Photoshop,资源分享,教程,教程视频,多媒体,课程
 
 这一节课我们本次 Photoshop 课程的最后一节课了。我们一同学习了 Photoshop 中的图层和文字功能。
 
+![灵动计算机社 Photoshop图像处理基础教学课程第4节 课堂现场](http://cptsct.qiniudn.com/photoshop_lessons/lesson4.jpg?imageView2/2/w/680)
+
 “我要下载资料！我要下载资料！”
 别急，下面就是啦：
 
