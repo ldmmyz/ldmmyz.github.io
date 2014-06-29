@@ -4,7 +4,7 @@
   <subtitle><![CDATA[茂名市第一中学灵动计算机社]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://ld.mmyz.net/"/>
-  <updated>2014-06-21T16:27:07.208Z</updated>
+  <updated>2014-06-29T10:53:31.153Z</updated>
   <id>http://ld.mmyz.net/</id>
   
   <author>
@@ -15,11 +15,58 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[《学会了 C 语言真的可以开发出很多东西吗？》· 转自知乎]]></title>
+    <link href="http://ld.mmyz.net/2014/06/coule_c_do_a_lot/"/>
+    <id>http://ld.mmyz.net/2014/06/coule_c_do_a_lot/</id>
+    <published>2014-06-29T09:58:12.000Z</published>
+    <updated>2014-06-29T10:52:54.000Z</updated>
+    <content type="html"><![CDATA[<p>发表于知乎，作者：<a href="http://www.zhihu.com/people/Metaphox" target="_blank">涛吴</a><br>原文地址：<a href="http://www.zhihu.com/question/23844552/answer/25880226" target="_blank">http://www.zhihu.com/question/23844552/answer/25880226</a></p>
+<hr>
+<h3 id="提问：">提问：</h3>
+<p><strong>学会了 C 语言真的可以开发出很多东西吗？</strong><br>我现在c语言入门，基本靠自学，就看网上的那种教程，但是我怎么觉得它就是只能做下数学题，我觉得它并不能编辑出一个啥子游戏或者软件出来噢……初学者，见谅。</p>
+<h3 id="涛吴的回答：">涛吴的回答：</h3>
+<p><img src="http://cptsct.qiniudn.com/could_c_do_a_lot/mario.jpg" alt="马里奥遇到花朵就变身"></p>
+<p>什么是马里奥？一个装着 16 × 32 个小色块的长方形，其中一些色块填着颜色，另一些没有。什么是花？一个 16 × 16 的正方形。什么是「变身」？把马里奥这个方块里面代表衣服的褐色变成红色，代表背带裤的红色变成白色。什么是褐色？暂且说它是 0x887000 这个数字。什么是「碰到」？马里奥的长方形与花朵的正方形有所重叠。什么是「重叠」？假设马里奥的这个方块占据屏幕（什么是屏幕？一个能装下 256 × 240 个小色块的矩形）中 X 方向 101 到 116、Y 方向 21 到 52 之间的区域，那么只要这个区域内有一点或更多点也被花朵所占据（比如花朵处在 X 116 到 131、Y 21 到 36 之间的区域内），我们就认为两者有所重叠。</p>
+<a id="more"></a>
+
+<p>若给定以八个数值代表的两个矩形区域，请写出判断两个区域是否有重叠的 C 语言程序。如果你能写出来，那么祝贺你，如果有朝一日你想自己做一遍 NES 版本的《超级马里奥》，你至少知道让他变身需要做什么了。</p>
+<p>是的，C 语言也许「只能」做数学题。可是，绝大多数游戏的运行过程就是不停地做数学题，而所谓编写游戏，也就是把游戏的规则和游戏的效果转化为数学题而已。其中不少题目电脑都已经知道怎么解——是别的程序员事先告诉它的——比如「求一堆散落在三维直角座标系之中的多面体体在 8(x−3)−10(y+1)−11(z−1)=0 这个平面上一个给定范围内的投影」或者「给定一些彼此相连的顶点，求任意两点之间的最短路径」之类的数学题，它只需要千万分之一秒就能给你解好。这种能力有什么用？电脑上 FPS 游戏的本质活动就是不停地求三维座标系下的多面体经过变换之后在二维平面上的投影，不停地判断两个多面体是否彼此重叠，以及不停地寻找两个顶点之间的最短路径，最终达到让怪物冲到你面前咬你一口的目的。不止游戏如此，其他软件也都差不多，每一个细节都是某种数学题——比如知乎页面顶端的蓝色导航条背景，就是 CSS 描述的一个浅蓝到深蓝的渐变——渐变是怎么回事呢？给出两个数字分别代表两种颜色，以及第三个数字代表一段距离，求一系列颜色的数值以及次序，使得这段距离中两种相邻颜色之间的变化最小。数学题。别说 C 语言，一切编程语言最终都只能做数学题，根据给定的数据，算出另一些数据，算出更多的数据，然后存贮、发送或者呈现算出的数据。</p>
+<p>不过我能理解你的困惑。投入大量时间看完教程，结果只能在黑框里输出一串数字。这是在学编程还是在向七十年代致敬？编程是这样无法给人成就感的活动吗？是，也不是。看你的表述，应该不是小孩子了，因为小孩子不会因为初学编程能做的事情很少而没有成就感，或者说，觉得这样做没有成就感的小孩子根本不会继续学下去。最初学编程的成就感单纯来自于「我居然可以指挥机器做一些事」，至少我小时候用中华学习机编一个程序帮我算暑假作业上的四则运算题时是这样感觉的。写出这些程序并用它解题虽然远比自己动笔去把题目算出来费时，却让人乐此不疲。那时候我还不知道马里奥碰到花会变身这种事情其实也是靠编程编出来，所以我也不会去想学编程「并不能做什么」。</p>
+<p>无奈大多数人过了一定年纪就很难再靠「我能指挥机器」这种简单原始的快乐来驱动自己学编程。见过世面，听过传言，欲望和野心变得复杂而庞大，你想要图形界面，音乐音效，人工智能，云端同步，可是你闷头学了几堂课，还是只学会在黑框里显示一串数字。你怀疑这是学 C 语言的错，于是你到知乎上来问了这个问题。</p>
+<p>你的疑惑是有道理的。</p>
+<p>如果能把编程学下去，日后你就会明白，任何程序都是一座冰山，最终用户能看到的界面和使用的功能，只是程序浮在水面上的十分之一。知乎这个网站其实也是个运行在某台电脑上的程序，你能看到的十分之一是用什么编写的呢？HTML，CSS，JavaScript，或者 Objective-C。而你看不到的那十分之九是用什么编写的呢？Python。这些你无法直接观测到的 Python 程序运行在世界某个角落的某些计算机上，隔着光缆、双绞线和无线基站，为你面前或掌上的用户界面注入生命。</p>
+<p><img src="http://cptsct.qiniudn.com/could_c_do_a_lot/python.png" alt=""></p>
+<p>（<a href="http://xkcd.com/353/" target="_blank">xkcd.com/353/</a>）</p>
+<p>……可是 Python 是用什么编写的呢？C 语言（当然，这么说并不严谨，Python 理论上可以用任何其他语言实现，实际上也已经被用很多其他语言实现了，不过这并不是重点）。任何编程语言都是实现某个功能的工具，Python 实现了知乎这个网站的大部分功能，而 C 实现了「用 Python 写程序」这个功能。为什么是 C？</p>
+<blockquote>
+<p>C 很别扭又缺陷重重，却异常成功。固然有历史的巧合推波助澜，可也的确是因为它能满足对于这样一种系统实现语言的需要：既有相当的效率来取代汇编语言，且又足够地抽象而流畅，能够用于描述各种各样的环境之下的算法与交互。<br>C is quirky, flawed, and an enormous success. Although accidents of history surely helped, it evidently satisfied a need for a system implementation language efficient enough to displace assembly language, yet sufficiently abstract and fluent to describe algorithms and interactions in a wide variety of environments.<br>——C 语言之父，Dennis M. Ritchie</p>
+</blockquote>
+<p>C 是初代程序员所使用的语言，那时候硬件很贵，软件必须高效；而计算机的用户都是职业程序员，对于硬件有足够的理解。C 贴近硬件，就意味着它容易译成机器能懂的语言，而它的设计者也并不需要操心普通人学起来可能会比较困难——而且，说真的，其实也不很难。但是，这么多年过去之后，软件规模变得越来越大，C 就像锤子和手锯，修小木屋得心应手，造摩天楼就比较力不从心；但 C 语言可以用来造出其他更适合建造摩天楼的工具，乃至组成摩天楼的预制件，就好比用锤子和手锯造出挖掘机和吊车、混凝土板和一体门窗一样（当然，这个类比并不十分贴切。可是没有什么类比能贴切地描述软件工程，因为软件工程像许多东西，却又什么东西都不像）。</p>
+<p>所以，回到你的问题上来，是的，学会 C 计算机语言真的可以开发出很多东西，但除非内力深厚，场合适当，并且闲得蛋疼，大多数人不会拿 C 或者只拿 C 来开发太大的东西。如果你只是想要一门能够让你「编辑出一个啥子游戏或者软件出来」的语言，而且你用 Windows，那建议你转去学学 C#。它长得和 C 挺像，但却能迅速地写出至少是带有图形界面的程序，用起来也很方便，鼠标点一点就能让你对自己的程序看起来什么样有个比较直观的印象。还有，在国内，C# 的教材也相当容易找到。当然 Python 也是一个很好的选择。</p>
+<p><img src="http://cptsct.qiniudn.com/could_c_do_a_lot/csharp.jpg" alt=""></p>
+<p>另外，还有一件事你必须弄明白：现代的所谓编程这一活动，其实大部分时候是在「合理地堆砌别人已经实现的功能来实现新的功能」，C 语言莫不如是，比如 printf 这个东西，是别人做出来的「把一些数据按照指定格式输出到屏幕上」这一功能。而别人还做出来许多其他功能，比如「在发现用户短时间内连续两次按下鼠标又松开的时候调用你写好的一个函数」。学会怎样在 C 或者其他任何程序语言中使用这些既有功能，也是学习编程的一门重头戏。等你弄明白这一点，你也就找到了你问题的答案。</p>
+]]></content>
+    <summary type="html"><![CDATA[<p>发表于知乎，作者：<a href="http://www.zhihu.com/people/Metaphox" target="_blank">涛吴</a><br>原文地址：<a href="http://www.zhihu.com/question/23844552/answer/25880226" target="_blank">http://www.zhihu.com/question/23844552/answer/25880226</a></p>
+<hr>
+<h3 id="提问：">提问：</h3>
+<p><strong>学会了 C 语言真的可以开发出很多东西吗？</strong><br>我现在c语言入门，基本靠自学，就看网上的那种教程，但是我怎么觉得它就是只能做下数学题，我觉得它并不能编辑出一个啥子游戏或者软件出来噢……初学者，见谅。</p>
+<h3 id="涛吴的回答：">涛吴的回答：</h3>
+<p><img src="http://cptsct.qiniudn.com/could_c_do_a_lot/mario.jpg" alt="马里奥遇到花朵就变身"></p>
+<p>什么是马里奥？一个装着 16 × 32 个小色块的长方形，其中一些色块填着颜色，另一些没有。什么是花？一个 16 × 16 的正方形。什么是「变身」？把马里奥这个方块里面代表衣服的褐色变成红色，代表背带裤的红色变成白色。什么是褐色？暂且说它是 0x887000 这个数字。什么是「碰到」？马里奥的长方形与花朵的正方形有所重叠。什么是「重叠」？假设马里奥的这个方块占据屏幕（什么是屏幕？一个能装下 256 × 240 个小色块的矩形）中 X 方向 101 到 116、Y 方向 21 到 52 之间的区域，那么只要这个区域内有一点或更多点也被花朵所占据（比如花朵处在 X 116 到 131、Y 21 到 36 之间的区域内），我们就认为两者有所重叠。</p>
+]]></summary>
+    
+      <category term="C" scheme="http://ld.mmyz.net/tags/C/"/>
+    
+      <category term="分享" scheme="http://ld.mmyz.net/categories/%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Photoshop 平面设计大赛结果出来啦！]]></title>
     <link href="http://ld.mmyz.net/2014/06/photoshop_contest_result/"/>
     <id>http://ld.mmyz.net/2014/06/photoshop_contest_result/</id>
     <published>2014-06-19T00:00:00.000Z</published>
-    <updated>2014-06-21T15:37:12.000Z</updated>
+    <updated>2014-06-29T09:38:51.000Z</updated>
     <content type="html"><![CDATA[<p>上个星期天下午，我们举办了<a href="/2014/06/photoshop_contest/">“我爱一中”·Photoshop 平面设计大赛</a>，得到了不少同学的支持，共有 23 名同学参加了这次比赛。</p>
 <p>本周的星期二，我社指导老师和社干共同对参赛同学现场制作并提交的作品进行了评分工作，评选出了本次比赛的获奖作品。（小编吐槽：话说评分工作，那叫一个 #.@!$%^&amp;*&gt;_?&lt; 5GB多的作品源文件啊下午放学后才能去评分啊还要吃饭啊还要上晚修啊.. 所以难免有点“草菅图命”，望同学们多多体谅）</p>
 <h3 id="获奖名单">获奖名单</h3>
@@ -79,7 +126,7 @@
     <link href="http://ld.mmyz.net/2014/06/photoshop_contest/"/>
     <id>http://ld.mmyz.net/2014/06/photoshop_contest/</id>
     <published>2014-06-13T12:52:16.000Z</published>
-    <updated>2014-06-21T15:37:12.000Z</updated>
+    <updated>2014-06-29T09:38:51.000Z</updated>
     <content type="html"><![CDATA[<p>想向大家展示你的创意吗？想赢取丰厚的奖品吗？不要错过，不要错过，机会来了！<br>在接下来的星期天下午，也就是 6 月 15 日 14:30 ~ 17:00，我们将在信息楼语音室举办主题为“我爱一中”的 Photoshop 平面设计大赛。</p>
 <h3 id="比赛规则：">比赛规则：</h3>
 <ol>
@@ -181,7 +228,7 @@
     <link href="http://ld.mmyz.net/2014/06/photoshop_lesson4/"/>
     <id>http://ld.mmyz.net/2014/06/photoshop_lesson4/</id>
     <published>2014-06-11T00:00:00.000Z</published>
-    <updated>2014-06-21T15:37:12.000Z</updated>
+    <updated>2014-06-29T09:38:51.000Z</updated>
     <content type="html"><![CDATA[<p>这一节课我们本次 Photoshop 课程的最后一节课了。我们一同学习了 Photoshop 中的图层和文字功能。</p>
 <p><img src="http://cptsct.qiniudn.com/photoshop_lessons/lesson4.jpg?imageView2/2/w/680" alt="灵动计算机社 Photoshop图像处理基础教学课程第4节 课堂现场"></p>
 <p>“我要下载资料！我要下载资料！”<br>别急，下面就是啦：</p>
@@ -212,7 +259,7 @@
     <link href="http://ld.mmyz.net/2014/06/progit/"/>
     <id>http://ld.mmyz.net/2014/06/progit/</id>
     <published>2014-06-08T00:00:00.000Z</published>
-    <updated>2014-06-21T15:37:12.000Z</updated>
+    <updated>2014-06-29T09:38:51.000Z</updated>
     <content type="html"><![CDATA[<p>Git 是一款流行的版本控制软件，我们的这个博客就是用 Git 进行管理的。现在，Git 入门书籍《Pro Git》的第 1 至 3 章可以在灵动博客上线了。感兴趣的同学们可以在此阅读。</p>
 <p><img src="http://git-scm.com/images/books/pro-git@2x.jpg" alt="Pro Git Cover"></p>
 <p>请猛击 <a href="/progit">阅读链接</a>。</p>
@@ -230,7 +277,7 @@
     <link href="http://ld.mmyz.net/2014/05/photoshop_lesson3/"/>
     <id>http://ld.mmyz.net/2014/05/photoshop_lesson3/</id>
     <published>2014-05-29T00:00:00.000Z</published>
-    <updated>2014-06-21T15:37:12.000Z</updated>
+    <updated>2014-06-29T09:38:51.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://cptsct.qiniudn.com/photoshop_lessons/lesson3_1.png?imageView2/2/w/680/format/jpg" alt="灵动计算机社 Photoshop图像处理基础教学课程第3节 课堂现场"></p>
 <p><img src="http://cptsct.qiniudn.com/photoshop_lessons/lesson3_2.png?imageView2/2/w/680/format/jpg" alt="灵动计算机社 Photoshop图像处理基础教学课程第3节 课堂现场"></p>
 <p>在我们 Ps 课程的第三节课上，同学们学习了照片的修饰与调整。<br>认真听课的同学们，趁着放假，赶紧行动起来吧，用神奇的 Ps 把平日里刻苦努力挑灯夜战积累下来的痘痘、斑纹、黑眼圈，还有飘过的路人甲轻轻抹掉，让本节的知识帮助你实现华丽大转身。</p>
@@ -262,7 +309,7 @@
     <link href="http://ld.mmyz.net/2014/05/photoshop_lesson2/"/>
     <id>http://ld.mmyz.net/2014/05/photoshop_lesson2/</id>
     <published>2014-05-22T00:00:00.000Z</published>
-    <updated>2014-06-21T15:37:12.000Z</updated>
+    <updated>2014-06-29T09:38:51.000Z</updated>
     <content type="html"><![CDATA[<p>星期四的下午，我们的第二节 Phtoshop 课程在语音室中如约举行了。</p>
 <p><img src="http://cptsct.qiniudn.com/photoshop_lesson/lesson2.jpg?imageView2/2/w/680" alt="灵动计算机社 Photoshop图像处理基础教学课程第2节 课堂现场"></p>
 <a id="more"></a>
@@ -294,7 +341,7 @@
     <link href="http://ld.mmyz.net/2014/05/photoshop_lesson1/"/>
     <id>http://ld.mmyz.net/2014/05/photoshop_lesson1/</id>
     <published>2014-05-17T00:00:00.000Z</published>
-    <updated>2014-06-21T15:37:12.000Z</updated>
+    <updated>2014-06-29T09:38:51.000Z</updated>
     <content type="html"><![CDATA[<p>星期五下午，在信息楼三楼的语音室里，我们开办了第 1 节 Photoshop 课程。<br>同学们非常热情，一下课便迅速赶往语音室。来参加活动的同学比较多，差不多把84个座位的语音室给坐满了。</p>
 <p>上课之前，副社长王子勤首先和同学们寒暄了几句，然后向同学们宣读了《语音室活动守则》。接下来，就是同学们所期待的课堂了。<br>在这节课里，曾老师带领前来参加活动的同学们一起：</p>
 <a id="more"></a>
@@ -346,7 +393,7 @@
     <link href="http://ld.mmyz.net/2014/05/computer_room_rules/"/>
     <id>http://ld.mmyz.net/2014/05/computer_room_rules/</id>
     <published>2014-05-16T06:17:07.000Z</published>
-    <updated>2014-06-21T15:37:12.000Z</updated>
+    <updated>2014-06-29T09:38:51.000Z</updated>
     <content type="html"><![CDATA[<p>我们本次 Photoshop 图像处理基础教学课程在语音室中进行。为了让同学们合理使用语音室设备，保证活动的顺利进行，我们制订了这个活动守则。希望同学们自觉遵守，营造一个良好的学习环境。</p>
 <ol>
 <li>在上课前进行签到登记，进入语音室。</li>
@@ -370,7 +417,7 @@
     <link href="http://ld.mmyz.net/2014/05/photoshop_lessons/"/>
     <id>http://ld.mmyz.net/2014/05/photoshop_lessons/</id>
     <published>2014-05-11T00:00:00.000Z</published>
-    <updated>2014-06-21T15:37:12.000Z</updated>
+    <updated>2014-06-29T09:38:51.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://cptsct.qiniudn.com/photoshop_lessons/poster.jpg" alt="灵动计算机社 Photoshop图像处理基础教学课程 活动海报"></p>
 <p>你是否还记得，上个学期的那张调查问卷？<br>也许，在你的脑海中，已经消了它的颜色，散了它的芬芳。但是，我们从未忘记。<br>告诉你一个消息：<strong>我们的 Ps 课程就要开课了！！！</strong></p>
 <a id="more"></a>
@@ -403,7 +450,7 @@
     <link href="http://ld.mmyz.net/2014/05/lingdong_opensuse/"/>
     <id>http://ld.mmyz.net/2014/05/lingdong_opensuse/</id>
     <published>2014-05-03T00:00:00.000Z</published>
-    <updated>2014-06-21T15:37:12.000Z</updated>
+    <updated>2014-06-29T09:38:51.000Z</updated>
     <content type="html"><![CDATA[<p>喜欢尝新的同学们，来体验一下 LingDong openSUSE 吧。</p>
 <p>这是子勤为灵动计算机社定制的一款 Linux 桌面系统，基于 <a href="http://software.opensuse.org/131/zh_CN" target="_blank">openSUSE 13.1</a> i686，使用 <a href="https://susestudio.com/" target="_blank">SUSE Studio</a> 构建，简体中文界面。</p>
 <a id="more"></a>
@@ -492,7 +539,7 @@
     <link href="http://ld.mmyz.net/2014/03/wireless_network_security_lecture/"/>
     <id>http://ld.mmyz.net/2014/03/wireless_network_security_lecture/</id>
     <published>2014-03-13T00:00:00.000Z</published>
-    <updated>2014-06-21T15:37:12.000Z</updated>
+    <updated>2014-06-29T09:38:51.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://cptsct.qiniudn.com/wireless_network_security_lecture/poster.jpg" alt="灵动计算机社 无线网络安全防范知识讲座 活动海报"></p>
 <a id="more"></a>
 
@@ -526,15 +573,14 @@
     <link href="http://ld.mmyz.net/2014/03/assemble_computers/"/>
     <id>http://ld.mmyz.net/2014/03/assemble_computers/</id>
     <published>2014-03-01T00:00:00.000Z</published>
-    <updated>2014-06-21T15:37:12.000Z</updated>
+    <updated>2014-06-29T09:46:33.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://cptsct.qiniudn.com/assemble_computers/05.jpg" alt="茂名市第一中学第三届社团文化节嘉年华活动 &gt; 灵动计算机社 &gt; 台式计算机组装教学实践活动"></p>
 <a id="more"></a>
 
 <hr>
 <h3 id="“蓄谋已久”">“蓄谋已久”</h3>
 <p>这，是一次“蓄谋已久”的活动。</p>
-<p><a href="http://www.mmyz.net/Item/641.aspx" target="_blank">社团嘉年华</a>，是茂名一中社团联合会的盛典。在嘉年华这一天里，一中各大社团齐聚一堂，共同举办活动。为了办好本学年里社联的这件头等大事，在上个学期，计社的工作人员们便开始策划本活动。为了让更多的同学能够了解计算机硬件，我们决定办一次电脑组装教学。</p>
-<p>本活动的《策划案》，也是在本学年里，灵动计算机社向社联提交的所有活动策划中最长的一份。</p>
+<p><a href="http://www.mmyz.net/Item/858.aspx" target="_blank">社团嘉年华</a>，是茂名一中社团联合会的盛典。在嘉年华这一天里，一中各大社团齐聚一堂，共同举办活动。为了办好本学年里社联的这件头等大事，在上个学期，计社的工作人员们便开始策划本活动。为了让更多的同学能够了解计算机硬件，我们决定办一次电脑组装教学。</p>
 <hr>
 <h3 id="器材准备">器材准备</h3>
 <p>既然是举办组装电脑的活动，那自然得有电脑主机嘛。我们借用了5台主机，2套显示器键盘鼠标来举办这次活动，非常感谢曾美霞老师对我们的帮助。</p>
@@ -586,7 +632,7 @@
     <link href="http://ld.mmyz.net/2014/01/weekly_tip_6/"/>
     <id>http://ld.mmyz.net/2014/01/weekly_tip_6/</id>
     <published>2014-01-13T00:00:00.000Z</published>
-    <updated>2014-06-21T15:37:12.000Z</updated>
+    <updated>2014-06-29T09:38:51.000Z</updated>
     <content type="html"><![CDATA[<p>这里是第6期《每周小知识》。</p>
 <p>感谢王子勤、倪伟智同学的投稿。</p>
 <p>这也是本学期最后一期《每周小知识》了。<br>非常感谢积极参与本次活动的同学们。</p>
@@ -616,7 +662,7 @@
     <link href="http://ld.mmyz.net/2014/01/weekly_tip_5/"/>
     <id>http://ld.mmyz.net/2014/01/weekly_tip_5/</id>
     <published>2014-01-06T00:00:00.000Z</published>
-    <updated>2014-06-21T15:37:12.000Z</updated>
+    <updated>2014-06-29T09:38:51.000Z</updated>
     <content type="html"><![CDATA[<p>速速围观第5期《每周小知识》！</p>
 <p>感谢梁行健、吕飞、陈翼先同学的投稿。</p>
 <p><img src="http://cptsct.qiniudn.com/weekly_tips/05.png" alt="灵动计算机社 每周电脑小知识 第5期"></p>
@@ -636,7 +682,7 @@
     <link href="http://ld.mmyz.net/2013/12/network_fundamentals_lecture/"/>
     <id>http://ld.mmyz.net/2013/12/network_fundamentals_lecture/</id>
     <published>2013-12-21T00:00:00.000Z</published>
-    <updated>2014-06-21T15:37:12.000Z</updated>
+    <updated>2014-06-29T09:38:51.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://cptsct.qiniudn.com/network_fundamentals_lecture/poster.jpg" alt="计算机社 网络基础知识讲座 活动海报"></p>
 <p>星期六下午，我们举办了“网络基础知识讲座”，由指导老师曾美霞为我们主讲。她为我们讲解了计算机网络较为底层的知识，主要讲了计算机网络IP的性质、发展历程以及相关运算的含义和方法等。</p>
 <p>曾老师为了给我们准备这次讲座，付出了许多时间和精力；而且她在中途不休息的情况下，坚持为我们连续地讲了两堂，持续了共两个多小时。在此，我们向曾老师诚挚地道一声：“老师，您辛苦了！”</p>
@@ -666,7 +712,7 @@
     <link href="http://ld.mmyz.net/2013/12/weekly_tip_4/"/>
     <id>http://ld.mmyz.net/2013/12/weekly_tip_4/</id>
     <published>2013-12-09T00:00:00.000Z</published>
-    <updated>2014-06-21T15:37:12.000Z</updated>
+    <updated>2014-06-29T09:38:51.000Z</updated>
     <content type="html"><![CDATA[<p>本期我们<code>换个颜色</code>吧！</p>
 <p>感谢李锡泽、陈子维、黄泓锦同学的投稿。</p>
 <a id="more"></a>
@@ -692,7 +738,7 @@
     <link href="http://ld.mmyz.net/2013/12/weekly_tip_3/"/>
     <id>http://ld.mmyz.net/2013/12/weekly_tip_3/</id>
     <published>2013-12-02T00:00:00.000Z</published>
-    <updated>2014-06-21T15:37:12.000Z</updated>
+    <updated>2014-06-29T09:38:51.000Z</updated>
     <content type="html"><![CDATA[<p>第3期《每周小知识》发布！</p>
 <p>感谢倪伟智、黎晓君、李锡泽同学的投稿。</p>
 <p><img src="http://cptsct.qiniudn.com/weekly_tips/03.png" alt="灵动计算机社 每周电脑小知识 第3期"></p>
@@ -712,7 +758,7 @@
     <link href="http://ld.mmyz.net/2013/11/weekly_tip_2/"/>
     <id>http://ld.mmyz.net/2013/11/weekly_tip_2/</id>
     <published>2013-11-18T00:00:00.000Z</published>
-    <updated>2014-06-21T15:37:12.000Z</updated>
+    <updated>2014-06-29T09:38:51.000Z</updated>
     <content type="html"><![CDATA[<p>第2期《每周小知识》出炉啦！</p>
 <p>感谢廖健、王子勤、刘永洲同学的投稿。</p>
 <a id="more"></a>
@@ -738,7 +784,7 @@
     <link href="http://ld.mmyz.net/2013/11/weekly_tip_1/"/>
     <id>http://ld.mmyz.net/2013/11/weekly_tip_1/</id>
     <published>2013-11-04T00:00:00.000Z</published>
-    <updated>2014-06-21T15:37:12.000Z</updated>
+    <updated>2014-06-29T09:38:51.000Z</updated>
     <content type="html"><![CDATA[<p>想和大家一起分享你所了解的计算机知识吗？为丰富同学们的计算机知识，计算机社会长期开展“每周电脑小知识”活动，欢迎同学们积极投稿。</p>
 <p>下面是第1期《每周小知识》：<br><img src="http://cptsct.qiniudn.com/weekly_tips/01.png" alt="灵动计算机社 每周电脑小知识 第1期"></p>
 ]]></content>
@@ -751,32 +797,6 @@
       <category term="Windows Tips" scheme="http://ld.mmyz.net/tags/Windows%20Tips/"/>
     
       <category term="活动" scheme="http://ld.mmyz.net/categories/%E6%B4%BB%E5%8A%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[计算机社2013年招新]]></title>
-    <link href="http://ld.mmyz.net/2013/09/recruit_new/"/>
-    <id>http://ld.mmyz.net/2013/09/recruit_new/</id>
-    <published>2013-09-15T00:00:00.000Z</published>
-    <updated>2014-06-21T15:37:12.000Z</updated>
-    <content type="html"><![CDATA[<p>新学期，新同学，新社员。开学以来的第三个周末，便是我们招新的时候了。</p>
-<p>根据社联的安排<br>我们的位置：高一教学楼中楼的东边<br>报名时间为：2013年9月15日(星期日)14:45-17:30</p>
-<p><img src="http://cptsct.qiniudn.com/2013_recruit_new/01.jpg?imageView/2/w/480" alt="手绘招新海报"></p>
-<a id="more"></a>
-
-<p>为了能够广泛吸收新力量，在招新的前一天，也就是星期六的晚上，两位代理社长把高一级44个班都跑了一遍（有一个班没让进去），做社团宣传。真的挺辛苦的。</p>
-<p>由于种种原因，计算机社未能出现在社联宣传视频里，在招新之前，有许多同学甚至不知道我们一中有计算机社。所以两位代理社长跑得特别勤快，还诚挚握手邀请了超过30个班的电教员加入。星期天下午，前来报名加入计算机社的高一同学共计177人，汗水终于换来了收获。</p>
-<p><img src="http://cptsct.qiniudn.com/2013_recruit_new/02.jpg" alt="招新留念"></p>
-]]></content>
-    <summary type="html"><![CDATA[<p>新学期，新同学，新社员。开学以来的第三个周末，便是我们招新的时候了。</p>
-<p>根据社联的安排<br>我们的位置：高一教学楼中楼的东边<br>报名时间为：2013年9月15日(星期日)14:45-17:30</p>
-<p><img src="http://cptsct.qiniudn.com/2013_recruit_new/01.jpg?imageView/2/w/480" alt="手绘招新海报"></p>
-]]></summary>
-    
-      <category term="招新" scheme="http://ld.mmyz.net/tags/%E6%8B%9B%E6%96%B0/"/>
-    
-      <category term="工作" scheme="http://ld.mmyz.net/categories/%E5%B7%A5%E4%BD%9C/"/>
     
   </entry>
   
