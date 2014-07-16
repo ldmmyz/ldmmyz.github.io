@@ -1,86 +1,60 @@
-title: “我爱一中”·Photoshop 平面设计大赛素材预览版放送
-date: 2014-06-13 20:52:16
-categories: 活动
+title: Ps 大赛进行时 + 用 Python 在局域网内共享文件的方法
+date: 2014-06-15
+categories: 
+- 活动
+- 比赛
 tags:
 - Ps
-- 比赛
-description: 灵动计算机社 Photoshop 平面设计大赛素材预览。
-keywords: Ps,平面设计大赛,茂名一中图片
+- 网络
+- Python
+description: 灵动计算机社举办的 Photoshop 平面设计大赛的比赛现场。
+keywords: Ps,Photoshop,平面设计大赛,平面设计
 ---
 
-想向大家展示你的创意吗？想赢取丰厚的奖品吗？不要错过，不要错过，机会来了！
-在接下来的星期天下午，也就是 6 月 15 日 14:30 ~ 17:00，我们将在信息楼语音室举办主题为“我爱一中”的 Photoshop 平面设计大赛。
+### Photoshop 平面设计大赛进行时
 
-### 比赛规则：
+今天下午，“我爱一中”·Photoshop 平面设计大赛在信息楼语音室中开赛了，得到了不少同学的支持，共有 23 名选手参加了比赛。下面上图：
 
-1. 各参赛者运用 Photoshop 自由创作切合主题的平面设计作品，例如宣传海报、明信片、图片封面、创意宣传单等。作品要求主题明确、内容丰富、构思新颖、健康向上，内容和定位有独到创新之处。
-2. 参赛者可自由选择“钟楼”、“学海”、“小山坡”、“博学广场”以及“学校外景”中的一种或多种作为创作素材。灵动计算机社会提供上述图片素材，参赛者也可自带素材，但主要素材应为我们社团提供的图片。参赛作品长宽不限。
-3. 比赛在信息楼语音室进行，为每位参赛选手提供一台安装有Adobe Photoshop CS6的电脑。比赛时长为两小时，可提前上交作品。上交参赛作品时，需上交PSD源文件。
-4. 参赛作品不退稿，请自行备份。参加本次比赛，即代表同意将作品的使用权免费授予灵动计算机社。
-5. 本次活动面向高一高二级全体同学。参赛者可个人参赛，也可组队参赛（每组不超过两人）。组队参赛者，每组只有机会获得一份奖品。比赛奖品将在赛后择期颁发。
-6. 作品由指导老师和灵动计算机社社干共同评分。灵动计算机社保留对本次活动的解释权。
-
-### 本次比赛奖品丰厚：
-
-* 一等奖（1名）：无线鼠标
-* 二等奖（2名）：移动电源
-* 三等奖（3名）：灵动计算机社纪念杯子（会变色哦）
-
-不仅如此，我们还会向提交作品的每位选手送出一份小礼品。
-
-### 评分标准：
-
-1. 图像处理 40分（差：0-10分；一般：11-20分；良好：21-30分；优秀：31-40分）
-2. 视觉效果 30分（差：0-7分；一般：8-15分；良好：16-22分；优秀：23-30分）
-3. 创意思维 30分（差：0-7分；一般：8-15分；良好：16-22分；优秀：23-30分）
-
-加分标准：
-1. 作品内容与主题相符，并在体现主题的基础上创意新颖，有鲜明特色。
-2. 作品画面、色彩搭配好，衔接紧凑自然。
-3. 作品富有美感，内容丰富，感染力强。
-
-比赛报名方式请留意教学楼公告栏。当然，也可以现场即时报名。希望同学们多多支持、踊跃参加呀！
-
-下面为大家放出我们提供的主要素材的预览版本，供同学们构思。（我们会在比赛现场提供更加清晰的版本）
-
-![茂名一中](http://cptsct.qiniudn.com/photoshop_contest/04.jpg)
+![灵动计算机社 Photoshop平面设计大赛 比赛现场](http://cptsct.qiniudn.com/photoshop_contest/3.jpg?imageView/2/w/680)
 
 <!-- more -->
 
-![茂名一中 正门](http://cptsct.qiniudn.com/photoshop_contest/16.jpg)
+![灵动计算机社 Photoshop平面设计大赛 比赛现场](http://cptsct.qiniudn.com/photoshop_contest/2.jpg?imageView/2/w/680)
 
-![茂名一中 图书馆](http://cptsct.qiniudn.com/photoshop_contest/12.jpg)
+![灵动计算机社 Photoshop平面设计大赛 比赛现场](http://cptsct.qiniudn.com/photoshop_contest/1.jpg?imageView/2/w/680)
 
-![茂名一中 图书馆](http://cptsct.qiniudn.com/photoshop_contest/13.jpg)
+小编当时没能参加到这场比赛，没机会玩 Ps（快来安慰我 T_T）。所以，小编只好事后 P 了一下上面几张图片补偿一下，要是不小心 P 丑了，请不要打我。
 
-![茂名一中 博学广场](http://cptsct.qiniudn.com/photoshop_contest/15.jpg)
+---
 
-![茂名一中 学海 教学楼](http://cptsct.qiniudn.com/photoshop_contest/05.jpg)
+### 用 Python 在局域网内共享文件
 
-![茂名一中 学海](http://cptsct.qiniudn.com/photoshop_contest/06.jpg)
+那小编当时到底干嘛去了呢？其实只有一件重要的事：“传文件!”
 
-![茂名一中 学海](http://cptsct.qiniudn.com/photoshop_contest/20.jpg)
+要知道，我们提供的素材包将近半G啊，又没有提前拷贝好。怎样在短时间内将这个大文件传到二十多台电脑上对我们来说是个不小的考验。用 U 盘复制？U 盘不够多呀，而且速度不快。看在语音室电脑的网卡还不错的份上，我们决定架设一个 HTTP 服务器，用内网来传输，让同学们用浏览器下载。
 
-![茂名一中 学海畔的艺术楼](http://cptsct.qiniudn.com/photoshop_contest/10.jpg)
+不过，架设 HTTP 服务器不是一件轻松的事情，需要一定的时间来配置。可我们得尽快呀，因为参赛的同学们已经陆陆续续地来到了！幸好我们早有准备，那就是—— Python 的 `SimpleHTTPServer`。
 
-![茂名一中 学海鸟瞰](http://cptsct.qiniudn.com/photoshop_contest/19.jpg)
+小编在此分享一下这个用 Python 在局域网内共享文件的方法吧（事实上，这个方法对于外网也是可以的，不过貌似没有什么优势）：
 
-![茂名一中 礼堂](http://cptsct.qiniudn.com/photoshop_contest/14.jpg)
+- __先装个 Python 2.x 的最新版__
+Tips: Linux 系统中都通常预装 Python，一般可以跳过这步
+ 1. 下载选择与系统相应的版本：[python.org/downloads](https://www.python.org/downloads/)
+ 2. 安装的时候记得把可执行文件的目录添加到环境变量 `path` 里（Windows 系统下的设置方法如图），这样可以方便后面的操作。
 
-![茂名一中 礼堂](http://cptsct.qiniudn.com/photoshop_contest/11.jpg)
+![Add python.exe to Path](http://cptsct.qiniudn.com/photoshop_contest/python_installation_set_path.png?imageView2/2/format/jpg)
 
-![茂名一中 行政楼](http://cptsct.qiniudn.com/photoshop_contest/17.jpg)
+- __在命令行中定位到要共享的目录__
+例如，在 Windows 中，要定位到 D:\Path\To\Your\Dir\，需要：
+ 1. 打开命令提示符，输入 `D:` 并回车，就定位到 D 盘的根目录了；
+ 2. 输入 `cd Path\To\Your\Dir` 并回车，就定位好了。
 
-![茂名一中 体育馆](http://cptsct.qiniudn.com/photoshop_contest/18.jpg)
+- __用 Python 共享这个文件夹__
+在刚才那个完成定位的命令提示符窗口中，运行
+		python -m SimpleHTTPServer 80
+然后，在本机访问 <http://127.0.0.1/> 就可以看到效果了，而局域网中的其他设备要访问时，只需要把上面的 `127.0.0.1` 改成这台机子的内网 IP 即可。如果该目录中有 `index.html` 文件，则默认会展示这一文件；如果没有，则会显示一份文件列表，如图所示：
 
-![茂名一中 田径场](http://cptsct.qiniudn.com/photoshop_contest/09.jpg)
+![Python SimpleHTTPServer 生成的文件列表](http://cptsct.qiniudn.com/photoshop_contest/filelist.png?imageView2/2/format/jpg)
+上面的命令中，`80` 表示的是端口。当然，也可以用其他的端口，不过，访问的时候就要记得加上端口号，例如 <http://127.0.0.1:8000/>。
 
-![茂名一中 小山坡](http://cptsct.qiniudn.com/photoshop_contest/07.jpg)
-
-![茂名一中 名人走廊](http://cptsct.qiniudn.com/photoshop_contest/08.jpg)
-
-![茂名一中 名人长廊](http://cptsct.qiniudn.com/photoshop_contest/03.jpg)
-
-![茂名一中 钟楼](http://cptsct.qiniudn.com/photoshop_contest/01.jpg)
-
-![芬芳](http://cptsct.qiniudn.com/photoshop_contest/02.jpg)
+小编觉得，这个在内网共享文件的方法不算复杂吧。希望对你有所帮助。

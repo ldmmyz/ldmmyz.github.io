@@ -1,10 +1,11 @@
 title: Photoshop课程学习资料（第4节）
 date: 2014-06-11
-categories: 活动
+categories:
+- 活动
+- 教学
 tags:
 - Ps
 - 多媒体
-- 课程
 description: 灵动计算机社 Photoshop 课程学习资料（第4节）。
 keywords: Ps,Photoshop,资源分享,教程,教程视频,多媒体,课程
 ---

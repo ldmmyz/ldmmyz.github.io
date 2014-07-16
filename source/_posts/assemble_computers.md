@@ -1,6 +1,8 @@
 title: 装电脑！装电脑！
 date: 2014-03-01
-categories: 活动
+categories: 
+- 活动
+- 教学
 tags:
 - 硬件
 - 社团嘉年华

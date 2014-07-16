@@ -1,10 +1,11 @@
 title: Photoshop图像处理基础教学就要开课啦！
 date: 2014-05-11
-categories: 活动
+categories:
+- 活动
+- 教学
 tags:
  - Ps
  - 多媒体
- - 课程
 description: 灵动计算机社将开展 Photoshop 图像处理基础教学课程。
 keywords: Ps,Photoshop,多媒体,课程
 ---

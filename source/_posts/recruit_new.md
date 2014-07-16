@@ -1,6 +1,6 @@
 title: 计算机社2013年招新
 date: 2013-09-15
-categories: 工作
+categories: 活动
 tags: 招新
 description: 计算机社2013年招新概况。
 keywords: 招新
