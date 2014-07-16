@@ -83,280 +83,383 @@ var _hmt = _hmt || [];
       <div class="outer">
         <section id="main">
   
-    <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+    <article id="post-photoshop_contest_result" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-    <%- partial('post/category') %>
+    <a href="/2014/06/photoshop_contest_result/" class="article-date">
+  <time datetime="2014-06-19T00:00:00.000Z" itemprop="datePublished">6月 19 2014</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/活动/">活动</a>►<a class="article-category-link" href="/categories/活动/比赛/">比赛</a>
+  </div>
+
   </div>
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/06/photoshop_contest_result/">Photoshop 平面设计大赛结果出来啦！</a>
+    </h1>
+  
+
       </header>
-    <% } %>
+    
     <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index){ %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link){ %>
+      
+        <p>上个星期天下午，我们举办了<a href="/2014/06/photoshop_contest/">“我爱一中”·Photoshop 平面设计大赛</a>，得到了不少同学的支持。</p>
+<p>本周的星期二，我社指导老师和社干共同对参赛同学现场制作并提交的作品进行了评分工作，评选出了本次比赛的获奖作品。（小编吐槽：话说评分工作，那叫一个 #.@!$%^&amp;*&gt;_?&lt; 5GB多的作品源文件啊下午放学后才能去评分啊还要吃饭啊还要上晚修啊.. 所以难免有点“草菅图命”，望同学们多多体谅）</p>
+<h3 id="获奖名单">获奖名单</h3>
+<ul>
+<li>一等奖：廖健-高一(31)班</li>
+<li>二等奖：罗昭恒-高一(4)班　李奕雅-高二(12)班</li>
+<li>三等奖：车晓雨-高一(2)班　钟沛泉-高一(31)班　朱芷谊、车晓雨（组合）-高一(2)班</li>
+</ul>
+<p>奖状和奖品也已经发到获奖同学的手上啦。（小编表示好喜欢三等奖的杯子）<br>Congratulations!</p>
+<p>由于评分规则的限制，评选结果可能与您的感受略有出入。希望未获奖的同学不要灰心，相信自己，继续加油！</p>
+<h3 id="作品展示">作品展示</h3>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest_result/1.jpg?imageView2/2/w/680" alt="灵动计算机社 Photoshop平面设计大赛 一等奖 作者:廖健(一31) 作品名称:《别让时间再溜走》"></p>
+
+        
           <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
+            <a href="/2014/06/photoshop_contest_result/#more">阅读全文</a>
           </p>
-        <% } %>
-      <% } else { %>
-        <%- post.content %>
-      <% } %>
+        
+      
     </div>
     <footer class="article-footer">
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
-      <% if (post.comments && config.disqus_shortname){ %>
-        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
-      <% } %>
-      <%- partial('post/tag') %>
+      <a data-url="http://ld.mmyz.net/2014/06/photoshop_contest_result/" data-id="ze1297odfcza6k1v" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ps/">Ps</a></li></ul>
+
+      
+      
+      
+
     </footer>
   </div>
-  <% if (!index){ %>
-    <%- partial('post/nav') %>
-  <% } %>
-</article>
-
-<% if (!index && post.comments && config.disqus_shortname){ %>
-<section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-</section>
-<% } %>
 
   
-    <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-    <%- partial('post/category') %>
-  </div>
-  <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
-      <header class="article-header">
-        <%- partial('post/title', {class_name: 'article-title'}) %>
-      </header>
-    <% } %>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index){ %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link){ %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <%- post.content %>
-      <% } %>
-    </div>
-    <footer class="article-footer">
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
-      <% if (post.comments && config.disqus_shortname){ %>
-        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
-      <% } %>
-      <%- partial('post/tag') %>
-    </footer>
-  </div>
-  <% if (!index){ %>
-    <%- partial('post/nav') %>
-  <% } %>
+
 </article>
 
-<% if (!index && post.comments && config.disqus_shortname){ %>
-<section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-</section>
-<% } %>
+
 
   
-    <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+    <article id="post-photoshop_contest" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-    <%- partial('post/category') %>
+    <a href="/2014/06/photoshop_contest/" class="article-date">
+  <time datetime="2014-06-15T00:00:00.000Z" itemprop="datePublished">6月 15 2014</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/活动/">活动</a>►<a class="article-category-link" href="/categories/活动/比赛/">比赛</a>
+  </div>
+
   </div>
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/06/photoshop_contest/">Ps 大赛进行时 + 用 Python 在局域网内共享文件的方法</a>
+    </h1>
+  
+
       </header>
-    <% } %>
+    
     <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index){ %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link){ %>
+      
+        <h3 id="Photoshop_平面设计大赛进行时">Photoshop 平面设计大赛进行时</h3>
+<p>今天下午，“我爱一中”·Photoshop 平面设计大赛在信息楼语音室中开赛了，得到了不少同学的支持，共有 23 名选手参加了比赛。下面上图：</p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest/3.jpg?imageView/2/w/680" alt="灵动计算机社 Photoshop平面设计大赛 比赛现场"></p>
+
+        
           <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
+            <a href="/2014/06/photoshop_contest/#more">阅读全文</a>
           </p>
-        <% } %>
-      <% } else { %>
-        <%- post.content %>
-      <% } %>
+        
+      
     </div>
     <footer class="article-footer">
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
-      <% if (post.comments && config.disqus_shortname){ %>
-        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
-      <% } %>
-      <%- partial('post/tag') %>
+      <a data-url="http://ld.mmyz.net/2014/06/photoshop_contest/" data-id="g615kxdt1w9dd9j8" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ps/">Ps</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网络/">网络</a></li></ul>
+
+      
+      
+      
+
     </footer>
   </div>
-  <% if (!index){ %>
-    <%- partial('post/nav') %>
-  <% } %>
-</article>
-
-<% if (!index && post.comments && config.disqus_shortname){ %>
-<section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-</section>
-<% } %>
 
   
-    <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-    <%- partial('post/category') %>
-  </div>
-  <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
-      <header class="article-header">
-        <%- partial('post/title', {class_name: 'article-title'}) %>
-      </header>
-    <% } %>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index){ %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link){ %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <%- post.content %>
-      <% } %>
-    </div>
-    <footer class="article-footer">
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
-      <% if (post.comments && config.disqus_shortname){ %>
-        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
-      <% } %>
-      <%- partial('post/tag') %>
-    </footer>
-  </div>
-  <% if (!index){ %>
-    <%- partial('post/nav') %>
-  <% } %>
+
 </article>
 
-<% if (!index && post.comments && config.disqus_shortname){ %>
-<section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-</section>
-<% } %>
+
 
   
-    <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+    <article id="post-photoshop_contest_material" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-    <%- partial('post/category') %>
+    <a href="/2014/06/photoshop_contest_material/" class="article-date">
+  <time datetime="2014-06-13T12:52:16.000Z" itemprop="datePublished">6月 13 2014</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/活动/">活动</a>►<a class="article-category-link" href="/categories/活动/比赛/">比赛</a>
+  </div>
+
   </div>
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/06/photoshop_contest_material/">“我爱一中”·Photoshop 平面设计大赛素材预览版放送</a>
+    </h1>
+  
+
       </header>
-    <% } %>
+    
     <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index){ %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link){ %>
+      
+        <p>想向大家展示你的创意吗？想赢取丰厚的奖品吗？不要错过，不要错过，机会来了！<br>在接下来的星期天下午，也就是 6 月 15 日 14:30 ~ 17:00，我们将在信息楼语音室举办主题为“我爱一中”的 Photoshop 平面设计大赛。</p>
+<h3 id="比赛规则：">比赛规则：</h3>
+<ol>
+<li>各参赛者运用 Photoshop 自由创作切合主题的平面设计作品，例如宣传海报、明信片、图片封面、创意宣传单等。作品要求主题明确、内容丰富、构思新颖、健康向上，内容和定位有独到创新之处。</li>
+<li>参赛者可自由选择“钟楼”、“学海”、“小山坡”、“博学广场”以及“学校外景”中的一种或多种作为创作素材。灵动计算机社会提供上述图片素材，参赛者也可自带素材，但主要素材应为我们社团提供的图片。参赛作品长宽不限。</li>
+<li>比赛在信息楼语音室进行，为每位参赛选手提供一台安装有Adobe Photoshop CS6的电脑。比赛时长为两小时，可提前上交作品。上交参赛作品时，需上交PSD源文件。</li>
+<li>参赛作品不退稿，请自行备份。参加本次比赛，即代表同意将作品的使用权免费授予灵动计算机社。</li>
+<li>本次活动面向高一高二级全体同学。参赛者可个人参赛，也可组队参赛（每组不超过两人）。组队参赛者，每组只有机会获得一份奖品。比赛奖品将在赛后择期颁发。</li>
+<li>作品由指导老师和灵动计算机社社干共同评分。灵动计算机社保留对本次活动的解释权。</li>
+</ol>
+<h3 id="本次比赛奖品丰厚：">本次比赛奖品丰厚：</h3>
+<ul>
+<li>一等奖（1名）：无线鼠标</li>
+<li>二等奖（2名）：移动电源</li>
+<li>三等奖（3名）：灵动计算机社纪念杯子（会变色哦）</li>
+</ul>
+<p>不仅如此，我们还会向提交作品的每位选手送出一份小礼品。</p>
+<h3 id="评分标准：">评分标准：</h3>
+<ol>
+<li>图像处理 40分（差：0-10分；一般：11-20分；良好：21-30分；优秀：31-40分）</li>
+<li>视觉效果 30分（差：0-7分；一般：8-15分；良好：16-22分；优秀：23-30分）</li>
+<li>创意思维 30分（差：0-7分；一般：8-15分；良好：16-22分；优秀：23-30分）</li>
+</ol>
+<p>加分标准：</p>
+<ol>
+<li>作品内容与主题相符，并在体现主题的基础上创意新颖，有鲜明特色。</li>
+<li>作品画面、色彩搭配好，衔接紧凑自然。</li>
+<li>作品富有美感，内容丰富，感染力强。</li>
+</ol>
+<p>比赛报名方式请留意教学楼公告栏。当然，也可以现场即时报名。希望同学们多多支持、踊跃参加呀！</p>
+<p>下面为大家放出我们提供的主要素材的预览版本，供同学们构思。（我们会在比赛现场提供更加清晰的版本）</p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest_material/04.jpg" alt="茂名一中"></p>
+
+        
           <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
+            <a href="/2014/06/photoshop_contest_material/#more">阅读全文</a>
           </p>
-        <% } %>
-      <% } else { %>
-        <%- post.content %>
-      <% } %>
+        
+      
     </div>
     <footer class="article-footer">
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
-      <% if (post.comments && config.disqus_shortname){ %>
-        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
-      <% } %>
-      <%- partial('post/tag') %>
+      <a data-url="http://ld.mmyz.net/2014/06/photoshop_contest_material/" data-id="sof8khtz935mi0s4" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ps/">Ps</a></li></ul>
+
+      
+      
+      
+
     </footer>
   </div>
-  <% if (!index){ %>
-    <%- partial('post/nav') %>
-  <% } %>
-</article>
-
-<% if (!index && post.comments && config.disqus_shortname){ %>
-<section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-</section>
-<% } %>
 
   
-    <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-    <%- partial('post/category') %>
-  </div>
-  <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
-      <header class="article-header">
-        <%- partial('post/title', {class_name: 'article-title'}) %>
-      </header>
-    <% } %>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index){ %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link){ %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <%- post.content %>
-      <% } %>
-    </div>
-    <footer class="article-footer">
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
-      <% if (post.comments && config.disqus_shortname){ %>
-        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
-      <% } %>
-      <%- partial('post/tag') %>
-    </footer>
-  </div>
-  <% if (!index){ %>
-    <%- partial('post/nav') %>
-  <% } %>
+
 </article>
 
-<% if (!index && post.comments && config.disqus_shortname){ %>
-<section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+    <article id="post-photoshop_lesson4" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/06/photoshop_lesson4/" class="article-date">
+  <time datetime="2014-06-11T00:00:00.000Z" itemprop="datePublished">6月 11 2014</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/活动/">活动</a>►<a class="article-category-link" href="/categories/活动/教学/">教学</a>
   </div>
-</section>
-<% } %>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/06/photoshop_lesson4/">Photoshop课程学习资料（第4节）</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这一节课我们本次 Photoshop 课程的最后一节课了。我们一同学习了 Photoshop 中的图层和文字功能。</p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_lessons/lesson4.jpg?imageView2/2/w/680" alt="灵动计算机社 Photoshop图像处理基础教学课程第4节 课堂现场"></p>
+<p>“我要下载资料！我要下载资料！”<br>别急，下面就是啦：</p>
+
+        
+          <p class="article-more-link">
+            <a href="/2014/06/photoshop_lesson4/#more">阅读全文</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ld.mmyz.net/2014/06/photoshop_lesson4/" data-id="t4rxl1veme0wde6u" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ps/">Ps</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/多媒体/">多媒体</a></li></ul>
+
+      
+      
+      
+
+    </footer>
+  </div>
+
+  
+
+</article>
+
+
+
+  
+    <article id="post-photoshop_lesson3" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/05/photoshop_lesson3/" class="article-date">
+  <time datetime="2014-05-29T00:00:00.000Z" itemprop="datePublished">5月 29 2014</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/活动/">活动</a>►<a class="article-category-link" href="/categories/活动/教学/">教学</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/05/photoshop_lesson3/">Photoshop课程学习资料（第3节）</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="http://cptsct.qiniudn.com/photoshop_lessons/lesson3_1.png?imageView2/2/w/680/format/jpg" alt="灵动计算机社 Photoshop图像处理基础教学课程第3节 课堂现场"></p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_lessons/lesson3_2.png?imageView2/2/w/680/format/jpg" alt="灵动计算机社 Photoshop图像处理基础教学课程第3节 课堂现场"></p>
+<p>在我们 Ps 课程的第三节课上，同学们学习了照片的修饰与调整。<br>认真听课的同学们，趁着放假，赶紧行动起来吧，用神奇的 Ps 把平日里刻苦努力挑灯夜战积累下来的痘痘、斑纹、黑眼圈，还有飘过的路人甲轻轻抹掉，让本节的知识帮助你实现华丽大转身。</p>
+
+        
+          <p class="article-more-link">
+            <a href="/2014/05/photoshop_lesson3/#more">阅读全文</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ld.mmyz.net/2014/05/photoshop_lesson3/" data-id="7br2sk8gheibo0lp" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ps/">Ps</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/多媒体/">多媒体</a></li></ul>
+
+      
+      
+      
+
+    </footer>
+  </div>
+
+  
+
+</article>
+
+
+
+  
+    <article id="post-photoshop_lesson2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/05/photoshop_lesson2/" class="article-date">
+  <time datetime="2014-05-22T00:00:00.000Z" itemprop="datePublished">5月 22 2014</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/活动/">活动</a>►<a class="article-category-link" href="/categories/活动/教学/">教学</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/05/photoshop_lesson2/">Photoshop课程学习资料（第2节）</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>星期四的下午，我们的第二节 Phtoshop 课程在语音室中如约举行了。</p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_lesson/lesson2.jpg?imageView2/2/w/680" alt="灵动计算机社 Photoshop图像处理基础教学课程第2节 课堂现场"></p>
+
+        
+          <p class="article-more-link">
+            <a href="/2014/05/photoshop_lesson2/#more">阅读全文</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ld.mmyz.net/2014/05/photoshop_lesson2/" data-id="sw2dwyecfejbmmyb" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ps/">Ps</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/多媒体/">多媒体</a></li></ul>
+
+      
+      
+      
+
+    </footer>
+  </div>
+
+  
+
+</article>
+
+
 
   
   

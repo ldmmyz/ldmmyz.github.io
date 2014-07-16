@@ -81,50 +81,84 @@ var _hmt = _hmt || [];
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+        <section id="main"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-    <%- partial('post/category') %>
+    <a href="/about/index.html" class="article-date">
+  <time datetime="2014-05-01T00:00:00.000Z" itemprop="datePublished">5月 1 2014</time>
+</a>
+    
   </div>
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'article-title'}) %>
+        
+  
+    <h1 class="article-title" itemprop="name">
+      关于
+    </h1>
+  
+
       </header>
-    <% } %>
+    
     <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index){ %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link){ %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <%- post.content %>
-      <% } %>
+      
+        <h3 id="灵动计算机社">灵动计算机社</h3>
+<p>茂名市第一中学灵动计算机社由热爱计算机技术的茂名一中学生组成的学生社团。在这里，我们学习、分享与交流计算机技术，共同探讨计算机软硬件知识。我们开展计算机作品创作相关活动和竞赛，丰富同学们的计算机知识，提高大家的计算机技能，享受计算机带给我们的快乐。</p>
+<ul>
+<li>1998年，<a href="http://mmyzjixie.blog.163.com/" target="_blank">茂名市第一中学计算机协会</a>成立了。她是灵动计算机社的前身。</li>
+<li>后来，茂名一中成立了学生社团联合会，计协改称计社。</li>
+<li>2013年12月25日，我们给计社取了个新名字，叫做“灵动”。“灵”取自“灵感”，“动”强调“动手实践”。希望这个名字的含义能指引计社更好地发展。</li>
+</ul>
+<p>页面右侧的 Logo 是灵动计算机社的社徽。</p>
+<hr>
+<h3 id="博客">博客</h3>
+<p>计社的成长，伴随着许许多多的故事。在此，我们用博客的方式把这些记录下来，给青春留下一份美好的回忆。</p>
+<p>我们还会在此发表技术性文章，和大家共同分享，展示我们茂名一中学子的风采。</p>
+<hr>
+<h3 id="联系我们">联系我们</h3>
+<p>Email: <a href="&#109;&#x61;&#x69;&#x6c;&#116;&#111;&#x3a;&#x6d;&#x6d;&#121;&#122;&#x63;&#112;&#x74;&#x73;&#99;&#116;&#64;&#49;&#50;&#54;&#46;&#x63;&#x6f;&#109;">&#x6d;&#x6d;&#121;&#122;&#x63;&#112;&#x74;&#x73;&#99;&#116;&#64;&#49;&#50;&#54;&#46;&#x63;&#x6f;&#109;</a><br>QQ群: <a href="http://shang.qq.com/wpa/qunwpa?idkey=e365083a81eab47f1c53bfb6841ba8f926bad68e84b154c3252e42df5be72486" target="_blank">240696962</a></p>
+
+      
     </div>
     <footer class="article-footer">
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
-      <% if (post.comments && config.disqus_shortname){ %>
-        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
-      <% } %>
-      <%- partial('post/tag') %>
+      <a data-url="http://ld.mmyz.net/about/index.html" data-id="lvtgv7ay1dsed5vk" class="article-share-link">分享</a>
+      
+      
+      
+      
+      
+<section id="comments">
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="关于" data-title="关于" data-url="http://ld.mmyz.net/about/index.html"></div>
+<!--	<div class="ds-thread"></div> -->
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"cptsct"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+</section>
+
+
     </footer>
   </div>
-  <% if (!index){ %>
-    <%- partial('post/nav') %>
-  <% } %>
+
+  
+    
+  
+
 </article>
 
-<% if (!index && post.comments && config.disqus_shortname){ %>
-<section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-</section>
-<% } %>
+
 </section>
         
           <aside id="sidebar">

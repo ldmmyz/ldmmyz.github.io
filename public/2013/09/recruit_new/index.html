@@ -81,50 +81,102 @@ var _hmt = _hmt || [];
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-recruit_new" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-    <%- partial('post/category') %>
+    <a href="/2013/09/recruit_new/" class="article-date">
+  <time datetime="2013-09-15T00:00:00.000Z" itemprop="datePublished">9月 15 2013</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/活动/">活动</a>
+  </div>
+
   </div>
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'article-title'}) %>
+        
+  
+    <h1 class="article-title" itemprop="name">
+      计算机社2013年招新
+    </h1>
+  
+
       </header>
-    <% } %>
+    
     <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index){ %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link){ %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <%- post.content %>
-      <% } %>
+      
+        <p>新学期，新同学，新社员。开学以来的第三个周末，便是我们招新的时候了。</p>
+<p>根据社联的安排<br>我们的位置：高一教学楼中楼的东边<br>报名时间为：2013年9月15日(星期日)14:45-17:30</p>
+<p><img src="http://cptsct.qiniudn.com/2013_recruit_new/01.jpg?imageView/2/w/480" alt="手绘招新海报"></p>
+<a id="more"></a>
+
+<p>为了能够广泛吸收新力量，在招新的前一天，也就是星期六的晚上，两位代理社长把高一级44个班都跑了一遍（有一个班没让进去），做社团宣传。真的挺辛苦的。</p>
+<p>由于种种原因，计算机社未能出现在社联宣传视频里，在招新之前，有许多同学甚至不知道我们一中有计算机社。所以两位代理社长跑得特别勤快，还诚挚握手邀请了超过30个班的电教员加入。星期天下午，前来报名加入计算机社的高一同学共计177人，汗水终于换来了收获。</p>
+<p><img src="http://cptsct.qiniudn.com/2013_recruit_new/02.jpg" alt="招新留念"></p>
+
+      
     </div>
     <footer class="article-footer">
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
-      <% if (post.comments && config.disqus_shortname){ %>
-        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
-      <% } %>
-      <%- partial('post/tag') %>
+      <a data-url="http://ld.mmyz.net/2013/09/recruit_new/" data-id="rsrcg1hd12phrqld" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/招新/">招新</a></li></ul>
+
+      
+      
+      
+<section id="comments">
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="计算机社2013年招新" data-title="计算机社2013年招新" data-url="http://ld.mmyz.net/2013/09/recruit_new/"></div>
+<!--	<div class="ds-thread"></div> -->
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"cptsct"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+</section>
+
+
     </footer>
   </div>
-  <% if (!index){ %>
-    <%- partial('post/nav') %>
-  <% } %>
+
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2013/11/weekly_tip_1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          每周电脑小知识 第1期
+        
+      </div>
+    </a>
+  
+  
+    <a href="/1998/09/hello_world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+
 </article>
 
-<% if (!index && post.comments && config.disqus_shortname){ %>
-<section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-</section>
-<% } %>
+
 </section>
         
           <aside id="sidebar">
