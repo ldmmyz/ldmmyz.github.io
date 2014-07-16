@@ -4,7 +4,7 @@
   <subtitle><![CDATA[茂名市第一中学灵动计算机社]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://ld.mmyz.net/"/>
-  <updated>2014-07-12T15:41:35.862Z</updated>
+  <updated>2014-07-16T14:46:38.681Z</updated>
   <id>http://ld.mmyz.net/</id>
   
   <author>
@@ -15,15 +15,17 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[《学会了 C 语言真的可以开发出很多东西吗？》· 转自知乎]]></title>
+    <title><![CDATA[学会了 C 语言真的可以开发出很多东西吗？- 转自知乎]]></title>
     <link href="http://ld.mmyz.net/2014/06/coule_c_do_a_lot/"/>
     <id>http://ld.mmyz.net/2014/06/coule_c_do_a_lot/</id>
     <published>2014-06-29T09:58:12.000Z</published>
-    <updated>2014-07-12T05:35:46.000Z</updated>
+    <updated>2014-07-16T12:34:28.000Z</updated>
     <content type="html"><![CDATA[<p>发表于知乎，作者：<a href="http://www.zhihu.com/people/Metaphox" target="_blank">涛吴</a><br>原文地址：<a href="http://www.zhihu.com/question/23844552/answer/25880226" target="_blank">http://www.zhihu.com/question/23844552/answer/25880226</a></p>
 <hr>
 <h3 id="提问：">提问：</h3>
+<blockquote>
 <p><strong>学会了 C 语言真的可以开发出很多东西吗？</strong><br>我现在c语言入门，基本靠自学，就看网上的那种教程，但是我怎么觉得它就是只能做下数学题，我觉得它并不能编辑出一个啥子游戏或者软件出来噢……初学者，见谅。</p>
+</blockquote>
 <h3 id="涛吴的回答：">涛吴的回答：</h3>
 <p><img src="http://cptsct.qiniudn.com/could_c_do_a_lot/mario.jpg" alt="马里奥遇到花朵就变身"></p>
 <p>什么是马里奥？一个装着 16 × 32 个小色块的长方形，其中一些色块填着颜色，另一些没有。什么是花？一个 16 × 16 的正方形。什么是「变身」？把马里奥这个方块里面代表衣服的褐色变成红色，代表背带裤的红色变成白色。什么是褐色？暂且说它是 0x887000 这个数字。什么是「碰到」？马里奥的长方形与花朵的正方形有所重叠。什么是「重叠」？假设马里奥的这个方块占据屏幕（什么是屏幕？一个能装下 256 × 240 个小色块的矩形）中 X 方向 101 到 116、Y 方向 21 到 52 之间的区域，那么只要这个区域内有一点或更多点也被花朵所占据（比如花朵处在 X 116 到 131、Y 21 到 36 之间的区域内），我们就认为两者有所重叠。</p>
@@ -49,7 +51,9 @@
     <summary type="html"><![CDATA[<p>发表于知乎，作者：<a href="http://www.zhihu.com/people/Metaphox" target="_blank">涛吴</a><br>原文地址：<a href="http://www.zhihu.com/question/23844552/answer/25880226" target="_blank">http://www.zhihu.com/question/23844552/answer/25880226</a></p>
 <hr>
 <h3 id="提问：">提问：</h3>
+<blockquote>
 <p><strong>学会了 C 语言真的可以开发出很多东西吗？</strong><br>我现在c语言入门，基本靠自学，就看网上的那种教程，但是我怎么觉得它就是只能做下数学题，我觉得它并不能编辑出一个啥子游戏或者软件出来噢……初学者，见谅。</p>
+</blockquote>
 <h3 id="涛吴的回答：">涛吴的回答：</h3>
 <p><img src="http://cptsct.qiniudn.com/could_c_do_a_lot/mario.jpg" alt="马里奥遇到花朵就变身"></p>
 <p>什么是马里奥？一个装着 16 × 32 个小色块的长方形，其中一些色块填着颜色，另一些没有。什么是花？一个 16 × 16 的正方形。什么是「变身」？把马里奥这个方块里面代表衣服的褐色变成红色，代表背带裤的红色变成白色。什么是褐色？暂且说它是 0x887000 这个数字。什么是「碰到」？马里奥的长方形与花朵的正方形有所重叠。什么是「重叠」？假设马里奥的这个方块占据屏幕（什么是屏幕？一个能装下 256 × 240 个小色块的矩形）中 X 方向 101 到 116、Y 方向 21 到 52 之间的区域，那么只要这个区域内有一点或更多点也被花朵所占据（比如花朵处在 X 116 到 131、Y 21 到 36 之间的区域内），我们就认为两者有所重叠。</p>
@@ -68,8 +72,8 @@
     <link href="http://ld.mmyz.net/2014/06/photoshop_contest_result/"/>
     <id>http://ld.mmyz.net/2014/06/photoshop_contest_result/</id>
     <published>2014-06-19T00:00:00.000Z</published>
-    <updated>2014-07-12T05:35:46.000Z</updated>
-    <content type="html"><![CDATA[<p>上个星期天下午，我们举办了<a href="/2014/06/photoshop_contest/">“我爱一中”·Photoshop 平面设计大赛</a>，得到了不少同学的支持，共有 23 名同学参加了这次比赛。</p>
+    <updated>2014-07-16T12:44:46.000Z</updated>
+    <content type="html"><![CDATA[<p>上个星期天下午，我们举办了<a href="/2014/06/photoshop_contest/">“我爱一中”·Photoshop 平面设计大赛</a>，得到了不少同学的支持。</p>
 <p>本周的星期二，我社指导老师和社干共同对参赛同学现场制作并提交的作品进行了评分工作，评选出了本次比赛的获奖作品。（小编吐槽：话说评分工作，那叫一个 #.@!$%^&amp;*&gt;_?&lt; 5GB多的作品源文件啊下午放学后才能去评分啊还要吃饭啊还要上晚修啊.. 所以难免有点“草菅图命”，望同学们多多体谅）</p>
 <h3 id="获奖名单">获奖名单</h3>
 <ul>
@@ -101,7 +105,7 @@
 <p><img src="http://cptsct.qiniudn.com/photoshop_contest_result/15.jpg" alt="灵动计算机社 Photoshop平面设计大赛 作者:李惠子(二28) 宣传手册封面"></p>
 <p>欢迎同学们到评论框里赞叹/吐槽。</p>
 ]]></content>
-    <summary type="html"><![CDATA[<p>上个星期天下午，我们举办了<a href="/2014/06/photoshop_contest/">“我爱一中”·Photoshop 平面设计大赛</a>，得到了不少同学的支持，共有 23 名同学参加了这次比赛。</p>
+    <summary type="html"><![CDATA[<p>上个星期天下午，我们举办了<a href="/2014/06/photoshop_contest/">“我爱一中”·Photoshop 平面设计大赛</a>，得到了不少同学的支持。</p>
 <p>本周的星期二，我社指导老师和社干共同对参赛同学现场制作并提交的作品进行了评分工作，评选出了本次比赛的获奖作品。（小编吐槽：话说评分工作，那叫一个 #.@!$%^&amp;*&gt;_?&lt; 5GB多的作品源文件啊下午放学后才能去评分啊还要吃饭啊还要上晚修啊.. 所以难免有点“草菅图命”，望同学们多多体谅）</p>
 <h3 id="获奖名单">获奖名单</h3>
 <ul>
@@ -117,18 +121,78 @@
     
       <category term="Ps" scheme="http://ld.mmyz.net/tags/Ps/"/>
     
-      <category term="比赛" scheme="http://ld.mmyz.net/tags/%E6%AF%94%E8%B5%9B/"/>
+      <category term="活动" scheme="http://ld.mmyz.net/categories/%E6%B4%BB%E5%8A%A8/"/>
+    
+      <category term="比赛" scheme="http://ld.mmyz.net/categories/%E6%B4%BB%E5%8A%A8/%E6%AF%94%E8%B5%9B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Ps 大赛进行时 + 用 Python 在局域网内共享文件的方法]]></title>
+    <link href="http://ld.mmyz.net/2014/06/photoshop_contest/"/>
+    <id>http://ld.mmyz.net/2014/06/photoshop_contest/</id>
+    <published>2014-06-15T00:00:00.000Z</published>
+    <updated>2014-07-16T13:48:16.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="Photoshop_平面设计大赛进行时">Photoshop 平面设计大赛进行时</h3>
+<p>今天下午，“我爱一中”·Photoshop 平面设计大赛在信息楼语音室中开赛了，得到了不少同学的支持，共有 23 名选手参加了比赛。下面上图：</p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest/3.jpg?imageView/2/w/680" alt="灵动计算机社 Photoshop平面设计大赛 比赛现场"></p>
+<a id="more"></a>
+
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest/2.jpg?imageView/2/w/680" alt="灵动计算机社 Photoshop平面设计大赛 比赛现场"></p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest/1.jpg?imageView/2/w/680" alt="灵动计算机社 Photoshop平面设计大赛 比赛现场"></p>
+<p>小编当时没能参加到这场比赛，没机会玩 Ps（快来安慰我 T_T）。所以，小编只好事后 P 了一下上面几张图片补偿一下，要是不小心 P 丑了，请不要打我。</p>
+<hr>
+<h3 id="用_Python_在局域网内共享文件">用 Python 在局域网内共享文件</h3>
+<p>那小编当时到底干嘛去了呢？其实只有一件重要的事：“传文件!”</p>
+<p>要知道，我们提供的素材包将近半G啊，又没有提前拷贝好。怎样在短时间内将这个大文件传到二十多台电脑上对我们来说是个不小的考验。用 U 盘复制？U 盘不够多呀，而且速度不快。看在语音室电脑的网卡还不错的份上，我们决定架设一个 HTTP 服务器，用内网来传输，让同学们用浏览器下载。</p>
+<p>不过，架设 HTTP 服务器不是一件轻松的事情，需要一定的时间来配置。可我们得尽快呀，因为参赛的同学们已经陆陆续续地来到了！幸好我们早有准备，那就是—— Python 的 <code>SimpleHTTPServer</code>。</p>
+<p>小编在此分享一下这个用 Python 在局域网内共享文件的方法吧（事实上，这个方法对于外网也是可以的，不过貌似没有什么优势）：</p>
+<ul>
+<li><strong>先装个 Python 2.x 的最新版</strong><br>Tips: Linux 系统中都通常预装 Python，一般可以跳过这步<ol>
+<li>下载选择与系统相应的版本：<a href="https://www.python.org/downloads/" target="_blank">python.org/downloads</a></li>
+<li>安装的时候记得把可执行文件的目录添加到环境变量 <code>path</code> 里（Windows 系统下的设置方法如图），这样可以方便后面的操作。</li>
+</ol>
+</li>
+</ul>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest/python_installation_set_path.png?imageView2/2/format/jpg" alt="Add python.exe to Path"></p>
+<ul>
+<li><p><strong>在命令行中定位到要共享的目录</strong><br>例如，在 Windows 中，要定位到 D:\Path\To\Your\Dir\，需要：</p>
+<ol>
+<li>打开命令提示符，输入 <code>D:</code> 并回车，就定位到 D 盘的根目录了；</li>
+<li>输入 <code>cd Path\To\Your\Dir</code> 并回车，就定位好了。</li>
+</ol>
+</li>
+<li><p><strong>用 Python 共享这个文件夹</strong><br>在刚才那个完成定位的命令提示符窗口中，运行</p>
+<pre><code>  <span class="keyword">python</span> -m SimpleHTTPServer <span class="number">80</span>
+</code></pre><p>然后，在本机访问 <a href="http://127.0.0.1/" target="_blank">http://127.0.0.1/</a> 就可以看到效果了，而局域网中的其他设备要访问时，只需要把上面的 <code>127.0.0.1</code> 改成这台机子的内网 IP 即可。如果该目录中有 <code>index.html</code> 文件，则默认会展示这一文件；如果没有，则会显示一份文件列表，如图所示：</p>
+</li>
+</ul>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest/filelist.png?imageView2/2/format/jpg" alt="Python SimpleHTTPServer 生成的文件列表"><br>上面的命令中，<code>80</code> 表示的是端口。当然，也可以用其他的端口，不过，访问的时候就要记得加上端口号，例如 <a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a>。</p>
+<p>小编觉得，这个在内网共享文件的方法不算复杂吧。希望对你有所帮助。</p>
+]]></content>
+    <summary type="html"><![CDATA[<h3 id="Photoshop_平面设计大赛进行时">Photoshop 平面设计大赛进行时</h3>
+<p>今天下午，“我爱一中”·Photoshop 平面设计大赛在信息楼语音室中开赛了，得到了不少同学的支持，共有 23 名选手参加了比赛。下面上图：</p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest/3.jpg?imageView/2/w/680" alt="灵动计算机社 Photoshop平面设计大赛 比赛现场"></p>
+]]></summary>
+    
+      <category term="Ps" scheme="http://ld.mmyz.net/tags/Ps/"/>
+    
+      <category term="网络" scheme="http://ld.mmyz.net/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+      <category term="Python" scheme="http://ld.mmyz.net/tags/Python/"/>
     
       <category term="活动" scheme="http://ld.mmyz.net/categories/%E6%B4%BB%E5%8A%A8/"/>
+    
+      <category term="比赛" scheme="http://ld.mmyz.net/categories/%E6%B4%BB%E5%8A%A8/%E6%AF%94%E8%B5%9B/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[“我爱一中”·Photoshop 平面设计大赛素材预览版放送]]></title>
-    <link href="http://ld.mmyz.net/2014/06/photoshop_contest/"/>
-    <id>http://ld.mmyz.net/2014/06/photoshop_contest/</id>
+    <link href="http://ld.mmyz.net/2014/06/photoshop_contest_material/"/>
+    <id>http://ld.mmyz.net/2014/06/photoshop_contest_material/</id>
     <published>2014-06-13T12:52:16.000Z</published>
-    <updated>2014-07-12T05:35:46.000Z</updated>
+    <updated>2014-07-16T12:43:03.000Z</updated>
     <content type="html"><![CDATA[<p>想向大家展示你的创意吗？想赢取丰厚的奖品吗？不要错过，不要错过，机会来了！<br>在接下来的星期天下午，也就是 6 月 15 日 14:30 ~ 17:00，我们将在信息楼语音室举办主题为“我爱一中”的 Photoshop 平面设计大赛。</p>
 <h3 id="比赛规则：">比赛规则：</h3>
 <ol>
@@ -160,28 +224,28 @@
 </ol>
 <p>比赛报名方式请留意教学楼公告栏。当然，也可以现场即时报名。希望同学们多多支持、踊跃参加呀！</p>
 <p>下面为大家放出我们提供的主要素材的预览版本，供同学们构思。（我们会在比赛现场提供更加清晰的版本）</p>
-<p><img src="http://cptsct.qiniudn.com/photoshop_contest/04.jpg" alt="茂名一中"></p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest_material/04.jpg" alt="茂名一中"></p>
 <a id="more"></a>
 
-<p><img src="http://cptsct.qiniudn.com/photoshop_contest/16.jpg" alt="茂名一中 正门"></p>
-<p><img src="http://cptsct.qiniudn.com/photoshop_contest/12.jpg" alt="茂名一中 图书馆"></p>
-<p><img src="http://cptsct.qiniudn.com/photoshop_contest/13.jpg" alt="茂名一中 图书馆"></p>
-<p><img src="http://cptsct.qiniudn.com/photoshop_contest/15.jpg" alt="茂名一中 博学广场"></p>
-<p><img src="http://cptsct.qiniudn.com/photoshop_contest/05.jpg" alt="茂名一中 学海 教学楼"></p>
-<p><img src="http://cptsct.qiniudn.com/photoshop_contest/06.jpg" alt="茂名一中 学海"></p>
-<p><img src="http://cptsct.qiniudn.com/photoshop_contest/20.jpg" alt="茂名一中 学海"></p>
-<p><img src="http://cptsct.qiniudn.com/photoshop_contest/10.jpg" alt="茂名一中 学海畔的艺术楼"></p>
-<p><img src="http://cptsct.qiniudn.com/photoshop_contest/19.jpg" alt="茂名一中 学海鸟瞰"></p>
-<p><img src="http://cptsct.qiniudn.com/photoshop_contest/14.jpg" alt="茂名一中 礼堂"></p>
-<p><img src="http://cptsct.qiniudn.com/photoshop_contest/11.jpg" alt="茂名一中 礼堂"></p>
-<p><img src="http://cptsct.qiniudn.com/photoshop_contest/17.jpg" alt="茂名一中 行政楼"></p>
-<p><img src="http://cptsct.qiniudn.com/photoshop_contest/18.jpg" alt="茂名一中 体育馆"></p>
-<p><img src="http://cptsct.qiniudn.com/photoshop_contest/09.jpg" alt="茂名一中 田径场"></p>
-<p><img src="http://cptsct.qiniudn.com/photoshop_contest/07.jpg" alt="茂名一中 小山坡"></p>
-<p><img src="http://cptsct.qiniudn.com/photoshop_contest/08.jpg" alt="茂名一中 名人走廊"></p>
-<p><img src="http://cptsct.qiniudn.com/photoshop_contest/03.jpg" alt="茂名一中 名人长廊"></p>
-<p><img src="http://cptsct.qiniudn.com/photoshop_contest/01.jpg" alt="茂名一中 钟楼"></p>
-<p><img src="http://cptsct.qiniudn.com/photoshop_contest/02.jpg" alt="芬芳"></p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest_material/16.jpg" alt="茂名一中 正门"></p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest_material/12.jpg" alt="茂名一中 图书馆"></p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest_material/13.jpg" alt="茂名一中 图书馆"></p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest_material/15.jpg" alt="茂名一中 博学广场"></p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest_material/05.jpg" alt="茂名一中 学海 教学楼"></p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest_material/06.jpg" alt="茂名一中 学海"></p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest_material/20.jpg" alt="茂名一中 学海"></p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest_material/10.jpg" alt="茂名一中 学海畔的艺术楼"></p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest_material/19.jpg" alt="茂名一中 学海鸟瞰"></p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest_material/14.jpg" alt="茂名一中 礼堂"></p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest_material/11.jpg" alt="茂名一中 礼堂"></p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest_material/17.jpg" alt="茂名一中 行政楼"></p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest_material/18.jpg" alt="茂名一中 体育馆"></p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest_material/09.jpg" alt="茂名一中 田径场"></p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest_material/07.jpg" alt="茂名一中 小山坡"></p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest_material/08.jpg" alt="茂名一中 名人走廊"></p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest_material/03.jpg" alt="茂名一中 名人长廊"></p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest_material/01.jpg" alt="茂名一中 钟楼"></p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest_material/02.jpg" alt="芬芳"></p>
 ]]></content>
     <summary type="html"><![CDATA[<p>想向大家展示你的创意吗？想赢取丰厚的奖品吗？不要错过，不要错过，机会来了！<br>在接下来的星期天下午，也就是 6 月 15 日 14:30 ~ 17:00，我们将在信息楼语音室举办主题为“我爱一中”的 Photoshop 平面设计大赛。</p>
 <h3 id="比赛规则：">比赛规则：</h3>
@@ -214,14 +278,14 @@
 </ol>
 <p>比赛报名方式请留意教学楼公告栏。当然，也可以现场即时报名。希望同学们多多支持、踊跃参加呀！</p>
 <p>下面为大家放出我们提供的主要素材的预览版本，供同学们构思。（我们会在比赛现场提供更加清晰的版本）</p>
-<p><img src="http://cptsct.qiniudn.com/photoshop_contest/04.jpg" alt="茂名一中"></p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest_material/04.jpg" alt="茂名一中"></p>
 ]]></summary>
     
       <category term="Ps" scheme="http://ld.mmyz.net/tags/Ps/"/>
     
-      <category term="比赛" scheme="http://ld.mmyz.net/tags/%E6%AF%94%E8%B5%9B/"/>
-    
       <category term="活动" scheme="http://ld.mmyz.net/categories/%E6%B4%BB%E5%8A%A8/"/>
+    
+      <category term="比赛" scheme="http://ld.mmyz.net/categories/%E6%B4%BB%E5%8A%A8/%E6%AF%94%E8%B5%9B/"/>
     
   </entry>
   
@@ -230,7 +294,7 @@
     <link href="http://ld.mmyz.net/2014/06/photoshop_lesson4/"/>
     <id>http://ld.mmyz.net/2014/06/photoshop_lesson4/</id>
     <published>2014-06-11T00:00:00.000Z</published>
-    <updated>2014-07-12T05:35:46.000Z</updated>
+    <updated>2014-07-16T12:47:00.000Z</updated>
     <content type="html"><![CDATA[<p>这一节课我们本次 Photoshop 课程的最后一节课了。我们一同学习了 Photoshop 中的图层和文字功能。</p>
 <p><img src="http://cptsct.qiniudn.com/photoshop_lessons/lesson4.jpg?imageView2/2/w/680" alt="灵动计算机社 Photoshop图像处理基础教学课程第4节 课堂现场"></p>
 <p>“我要下载资料！我要下载资料！”<br>别急，下面就是啦：</p>
@@ -250,9 +314,9 @@
     
       <category term="多媒体" scheme="http://ld.mmyz.net/tags/%E5%A4%9A%E5%AA%92%E4%BD%93/"/>
     
-      <category term="课程" scheme="http://ld.mmyz.net/tags/%E8%AF%BE%E7%A8%8B/"/>
-    
       <category term="活动" scheme="http://ld.mmyz.net/categories/%E6%B4%BB%E5%8A%A8/"/>
+    
+      <category term="教学" scheme="http://ld.mmyz.net/categories/%E6%B4%BB%E5%8A%A8/%E6%95%99%E5%AD%A6/"/>
     
   </entry>
   
@@ -261,7 +325,7 @@
     <link href="http://ld.mmyz.net/2014/06/progit/"/>
     <id>http://ld.mmyz.net/2014/06/progit/</id>
     <published>2014-06-08T00:00:00.000Z</published>
-    <updated>2014-07-12T05:35:46.000Z</updated>
+    <updated>2014-07-12T15:44:42.000Z</updated>
     <content type="html"><![CDATA[<p>Git 是一款流行的版本控制软件，我们的这个博客就是用 Git 进行管理的。现在，Git 入门书籍《Pro Git》的第 1 至 3 章可以在灵动博客上线了。感兴趣的同学们可以在此阅读。</p>
 <p><img src="http://git-scm.com/images/books/pro-git@2x.jpg" alt="Pro Git Cover"></p>
 <p>请猛击 <a href="/progit">阅读链接</a>。</p>
@@ -279,7 +343,7 @@
     <link href="http://ld.mmyz.net/2014/05/photoshop_lesson3/"/>
     <id>http://ld.mmyz.net/2014/05/photoshop_lesson3/</id>
     <published>2014-05-29T00:00:00.000Z</published>
-    <updated>2014-07-12T05:35:46.000Z</updated>
+    <updated>2014-07-16T12:46:39.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://cptsct.qiniudn.com/photoshop_lessons/lesson3_1.png?imageView2/2/w/680/format/jpg" alt="灵动计算机社 Photoshop图像处理基础教学课程第3节 课堂现场"></p>
 <p><img src="http://cptsct.qiniudn.com/photoshop_lessons/lesson3_2.png?imageView2/2/w/680/format/jpg" alt="灵动计算机社 Photoshop图像处理基础教学课程第3节 课堂现场"></p>
 <p>在我们 Ps 课程的第三节课上，同学们学习了照片的修饰与调整。<br>认真听课的同学们，趁着放假，赶紧行动起来吧，用神奇的 Ps 把平日里刻苦努力挑灯夜战积累下来的痘痘、斑纹、黑眼圈，还有飘过的路人甲轻轻抹掉，让本节的知识帮助你实现华丽大转身。</p>
@@ -300,9 +364,9 @@
     
       <category term="多媒体" scheme="http://ld.mmyz.net/tags/%E5%A4%9A%E5%AA%92%E4%BD%93/"/>
     
-      <category term="课程" scheme="http://ld.mmyz.net/tags/%E8%AF%BE%E7%A8%8B/"/>
-    
       <category term="活动" scheme="http://ld.mmyz.net/categories/%E6%B4%BB%E5%8A%A8/"/>
+    
+      <category term="教学" scheme="http://ld.mmyz.net/categories/%E6%B4%BB%E5%8A%A8/%E6%95%99%E5%AD%A6/"/>
     
   </entry>
   
@@ -311,7 +375,7 @@
     <link href="http://ld.mmyz.net/2014/05/photoshop_lesson2/"/>
     <id>http://ld.mmyz.net/2014/05/photoshop_lesson2/</id>
     <published>2014-05-22T00:00:00.000Z</published>
-    <updated>2014-07-12T05:35:46.000Z</updated>
+    <updated>2014-07-16T12:46:22.000Z</updated>
     <content type="html"><![CDATA[<p>星期四的下午，我们的第二节 Phtoshop 课程在语音室中如约举行了。</p>
 <p><img src="http://cptsct.qiniudn.com/photoshop_lesson/lesson2.jpg?imageView2/2/w/680" alt="灵动计算机社 Photoshop图像处理基础教学课程第2节 课堂现场"></p>
 <a id="more"></a>
@@ -332,9 +396,9 @@
     
       <category term="多媒体" scheme="http://ld.mmyz.net/tags/%E5%A4%9A%E5%AA%92%E4%BD%93/"/>
     
-      <category term="课程" scheme="http://ld.mmyz.net/tags/%E8%AF%BE%E7%A8%8B/"/>
-    
       <category term="活动" scheme="http://ld.mmyz.net/categories/%E6%B4%BB%E5%8A%A8/"/>
+    
+      <category term="教学" scheme="http://ld.mmyz.net/categories/%E6%B4%BB%E5%8A%A8/%E6%95%99%E5%AD%A6/"/>
     
   </entry>
   
@@ -343,7 +407,7 @@
     <link href="http://ld.mmyz.net/2014/05/photoshop_lesson1/"/>
     <id>http://ld.mmyz.net/2014/05/photoshop_lesson1/</id>
     <published>2014-05-17T00:00:00.000Z</published>
-    <updated>2014-07-12T05:35:46.000Z</updated>
+    <updated>2014-07-16T12:46:06.000Z</updated>
     <content type="html"><![CDATA[<p>星期五下午，在信息楼三楼的语音室里，我们开办了第 1 节 Photoshop 课程。<br>同学们非常热情，一下课便迅速赶往语音室。来参加活动的同学比较多，差不多把84个座位的语音室给坐满了。</p>
 <p>上课之前，副社长王子勤首先和同学们寒暄了几句，然后向同学们宣读了《语音室活动守则》。接下来，就是同学们所期待的课堂了。<br>在这节课里，曾老师带领前来参加活动的同学们一起：</p>
 <a id="more"></a>
@@ -384,9 +448,9 @@
     
       <category term="多媒体" scheme="http://ld.mmyz.net/tags/%E5%A4%9A%E5%AA%92%E4%BD%93/"/>
     
-      <category term="课程" scheme="http://ld.mmyz.net/tags/%E8%AF%BE%E7%A8%8B/"/>
-    
       <category term="活动" scheme="http://ld.mmyz.net/categories/%E6%B4%BB%E5%8A%A8/"/>
+    
+      <category term="教学" scheme="http://ld.mmyz.net/categories/%E6%B4%BB%E5%8A%A8/%E6%95%99%E5%AD%A6/"/>
     
   </entry>
   
@@ -395,7 +459,7 @@
     <link href="http://ld.mmyz.net/2014/05/computer_room_rules/"/>
     <id>http://ld.mmyz.net/2014/05/computer_room_rules/</id>
     <published>2014-05-16T06:17:07.000Z</published>
-    <updated>2014-07-12T05:35:46.000Z</updated>
+    <updated>2014-07-12T15:44:42.000Z</updated>
     <content type="html"><![CDATA[<p>我们本次 Photoshop 图像处理基础教学课程在语音室中进行。为了让同学们合理使用语音室设备，保证活动的顺利进行，我们制订了这个活动守则。希望同学们自觉遵守，营造一个良好的学习环境。</p>
 <ol>
 <li>在上课前进行签到登记，进入语音室。</li>
@@ -419,7 +483,7 @@
     <link href="http://ld.mmyz.net/2014/05/photoshop_lessons/"/>
     <id>http://ld.mmyz.net/2014/05/photoshop_lessons/</id>
     <published>2014-05-11T00:00:00.000Z</published>
-    <updated>2014-07-12T05:35:46.000Z</updated>
+    <updated>2014-07-16T12:47:27.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://cptsct.qiniudn.com/photoshop_lessons/poster.jpg" alt="灵动计算机社 Photoshop图像处理基础教学课程 活动海报"></p>
 <p>你是否还记得，上个学期的那张调查问卷？<br>也许，在你的脑海中，已经消了它的颜色，散了它的芬芳。但是，我们从未忘记。<br>告诉你一个消息：<strong>我们的 Ps 课程就要开课了！！！</strong></p>
 <a id="more"></a>
@@ -441,9 +505,9 @@
     
       <category term="多媒体" scheme="http://ld.mmyz.net/tags/%E5%A4%9A%E5%AA%92%E4%BD%93/"/>
     
-      <category term="课程" scheme="http://ld.mmyz.net/tags/%E8%AF%BE%E7%A8%8B/"/>
-    
       <category term="活动" scheme="http://ld.mmyz.net/categories/%E6%B4%BB%E5%8A%A8/"/>
+    
+      <category term="教学" scheme="http://ld.mmyz.net/categories/%E6%B4%BB%E5%8A%A8/%E6%95%99%E5%AD%A6/"/>
     
   </entry>
   
@@ -452,7 +516,7 @@
     <link href="http://ld.mmyz.net/2014/05/lingdong_opensuse/"/>
     <id>http://ld.mmyz.net/2014/05/lingdong_opensuse/</id>
     <published>2014-05-03T00:00:00.000Z</published>
-    <updated>2014-07-12T05:35:46.000Z</updated>
+    <updated>2014-07-12T15:44:42.000Z</updated>
     <content type="html"><![CDATA[<p>喜欢尝新的同学们，来体验一下 LingDong openSUSE 吧。</p>
 <p>这是子勤为灵动计算机社定制的一款 Linux 桌面系统，基于 <a href="http://software.opensuse.org/131/zh_CN" target="_blank">openSUSE 13.1</a> i686，使用 <a href="https://susestudio.com/" target="_blank">SUSE Studio</a> 构建，简体中文界面。</p>
 <a id="more"></a>
@@ -541,7 +605,7 @@
     <link href="http://ld.mmyz.net/2014/03/wireless_network_security_lecture/"/>
     <id>http://ld.mmyz.net/2014/03/wireless_network_security_lecture/</id>
     <published>2014-03-13T00:00:00.000Z</published>
-    <updated>2014-07-12T05:35:46.000Z</updated>
+    <updated>2014-07-16T12:40:54.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://cptsct.qiniudn.com/wireless_network_security_lecture/poster.jpg" alt="灵动计算机社 无线网络安全防范知识讲座 活动海报"></p>
 <a id="more"></a>
 
@@ -562,11 +626,11 @@
     
       <category term="安全" scheme="http://ld.mmyz.net/tags/%E5%AE%89%E5%85%A8/"/>
     
-      <category term="讲座" scheme="http://ld.mmyz.net/tags/%E8%AE%B2%E5%BA%A7/"/>
-    
       <category term="社团文化节" scheme="http://ld.mmyz.net/tags/%E7%A4%BE%E5%9B%A2%E6%96%87%E5%8C%96%E8%8A%82/"/>
     
       <category term="活动" scheme="http://ld.mmyz.net/categories/%E6%B4%BB%E5%8A%A8/"/>
+    
+      <category term="讲座" scheme="http://ld.mmyz.net/categories/%E6%B4%BB%E5%8A%A8/%E8%AE%B2%E5%BA%A7/"/>
     
   </entry>
   
@@ -575,7 +639,7 @@
     <link href="http://ld.mmyz.net/2014/03/assemble_computers/"/>
     <id>http://ld.mmyz.net/2014/03/assemble_computers/</id>
     <published>2014-03-01T00:00:00.000Z</published>
-    <updated>2014-07-12T05:35:46.000Z</updated>
+    <updated>2014-07-16T12:42:32.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://cptsct.qiniudn.com/assemble_computers/05.jpg" alt="茂名市第一中学第三届社团文化节嘉年华活动 &gt; 灵动计算机社 &gt; 台式计算机组装教学实践活动"></p>
 <a id="more"></a>
 
@@ -627,6 +691,8 @@
     
       <category term="活动" scheme="http://ld.mmyz.net/categories/%E6%B4%BB%E5%8A%A8/"/>
     
+      <category term="教学" scheme="http://ld.mmyz.net/categories/%E6%B4%BB%E5%8A%A8/%E6%95%99%E5%AD%A6/"/>
+    
   </entry>
   
   <entry>
@@ -634,7 +700,7 @@
     <link href="http://ld.mmyz.net/2014/01/weekly_tip_6/"/>
     <id>http://ld.mmyz.net/2014/01/weekly_tip_6/</id>
     <published>2014-01-13T00:00:00.000Z</published>
-    <updated>2014-07-12T05:35:46.000Z</updated>
+    <updated>2014-07-12T15:44:42.000Z</updated>
     <content type="html"><![CDATA[<p>这里是第6期《每周小知识》。</p>
 <p>感谢王子勤、倪伟智同学的投稿。</p>
 <p>这也是本学期最后一期《每周小知识》了。<br>非常感谢积极参与本次活动的同学们。</p>
@@ -664,7 +730,7 @@
     <link href="http://ld.mmyz.net/2014/01/weekly_tip_5/"/>
     <id>http://ld.mmyz.net/2014/01/weekly_tip_5/</id>
     <published>2014-01-06T00:00:00.000Z</published>
-    <updated>2014-07-12T05:35:46.000Z</updated>
+    <updated>2014-07-12T15:44:42.000Z</updated>
     <content type="html"><![CDATA[<p>速速围观第5期《每周小知识》！</p>
 <p>感谢梁行健、吕飞、陈翼先同学的投稿。</p>
 <p><img src="http://cptsct.qiniudn.com/weekly_tips/05.png" alt="灵动计算机社 每周电脑小知识 第5期"></p>
@@ -684,14 +750,14 @@
     <link href="http://ld.mmyz.net/2013/12/network_fundamentals_lecture/"/>
     <id>http://ld.mmyz.net/2013/12/network_fundamentals_lecture/</id>
     <published>2013-12-21T00:00:00.000Z</published>
-    <updated>2014-07-12T05:35:46.000Z</updated>
+    <updated>2014-07-16T12:41:19.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://cptsct.qiniudn.com/network_fundamentals_lecture/poster.jpg" alt="计算机社 网络基础知识讲座 活动海报"></p>
 <p>星期六下午，我们举办了“网络基础知识讲座”，由指导老师曾美霞为我们主讲。她为我们讲解了计算机网络较为底层的知识，主要讲了计算机网络IP的性质、发展历程以及相关运算的含义和方法等。</p>
 <p>曾老师为了给我们准备这次讲座，付出了许多时间和精力；而且她在中途不休息的情况下，坚持为我们连续地讲了两堂，持续了共两个多小时。在此，我们向曾老师诚挚地道一声：“老师，您辛苦了！”</p>
 <a id="more"></a>
 
-<p><img src="http://cptsct.qiniudn.com/network_fundamentals_lecture/01.jpg" alt="讲座现场"></p>
-<p><img src="http://cptsct.qiniudn.com/network_fundamentals_lecture/02.jpg" alt="讲座内容 &gt; 计算机网络体系结构 &gt; 约定与分层"></p>
+<p><img src="http://cptsct.qiniudn.com/network_fundamentals_lecture/01.jpg?imageView2/2/w/680" alt="讲座现场"></p>
+<p><img src="http://cptsct.qiniudn.com/network_fundamentals_lecture/02.jpg?imageView2/2/w/680" alt="讲座内容 &gt; 计算机网络体系结构 &gt; 约定与分层"></p>
 <p>这次活动也是自茂名一中搬迁到新校区以来，计算机社首次在电脑室举办的活动。尽管参加本次活动的同学不算多，但计社的社干们都非常认真、努力地把自己的工作做好。我们忘不了，在活动结束后，社干们拖着疲惫的身躯吃方便面时，脸上流露出的那温暖的笑容。</p>
 ]]></content>
     <summary type="html"><![CDATA[<p><img src="http://cptsct.qiniudn.com/network_fundamentals_lecture/poster.jpg" alt="计算机社 网络基础知识讲座 活动海报"></p>
@@ -701,11 +767,11 @@
     
       <category term="网络" scheme="http://ld.mmyz.net/tags/%E7%BD%91%E7%BB%9C/"/>
     
-      <category term="讲座" scheme="http://ld.mmyz.net/tags/%E8%AE%B2%E5%BA%A7/"/>
-    
       <category term="IP" scheme="http://ld.mmyz.net/tags/IP/"/>
     
       <category term="活动" scheme="http://ld.mmyz.net/categories/%E6%B4%BB%E5%8A%A8/"/>
+    
+      <category term="讲座" scheme="http://ld.mmyz.net/categories/%E6%B4%BB%E5%8A%A8/%E8%AE%B2%E5%BA%A7/"/>
     
   </entry>
   
@@ -714,7 +780,7 @@
     <link href="http://ld.mmyz.net/2013/12/weekly_tip_4/"/>
     <id>http://ld.mmyz.net/2013/12/weekly_tip_4/</id>
     <published>2013-12-09T00:00:00.000Z</published>
-    <updated>2014-07-12T05:35:46.000Z</updated>
+    <updated>2014-07-12T15:44:42.000Z</updated>
     <content type="html"><![CDATA[<p>本期我们<code>换个颜色</code>吧！</p>
 <p>感谢李锡泽、陈子维、黄泓锦同学的投稿。</p>
 <a id="more"></a>
@@ -740,7 +806,7 @@
     <link href="http://ld.mmyz.net/2013/12/weekly_tip_3/"/>
     <id>http://ld.mmyz.net/2013/12/weekly_tip_3/</id>
     <published>2013-12-02T00:00:00.000Z</published>
-    <updated>2014-07-12T05:35:46.000Z</updated>
+    <updated>2014-07-12T15:44:42.000Z</updated>
     <content type="html"><![CDATA[<p>第3期《每周小知识》发布！</p>
 <p>感谢倪伟智、黎晓君、李锡泽同学的投稿。</p>
 <p><img src="http://cptsct.qiniudn.com/weekly_tips/03.png" alt="灵动计算机社 每周电脑小知识 第3期"></p>
@@ -760,7 +826,7 @@
     <link href="http://ld.mmyz.net/2013/11/weekly_tip_2/"/>
     <id>http://ld.mmyz.net/2013/11/weekly_tip_2/</id>
     <published>2013-11-18T00:00:00.000Z</published>
-    <updated>2014-07-12T05:35:46.000Z</updated>
+    <updated>2014-07-12T15:44:42.000Z</updated>
     <content type="html"><![CDATA[<p>第2期《每周小知识》出炉啦！</p>
 <p>感谢廖健、王子勤、刘永洲同学的投稿。</p>
 <a id="more"></a>
@@ -776,27 +842,6 @@
       <category term="Windows Tips" scheme="http://ld.mmyz.net/tags/Windows%20Tips/"/>
     
       <category term="新鲜玩意儿" scheme="http://ld.mmyz.net/tags/%E6%96%B0%E9%B2%9C%E7%8E%A9%E6%84%8F%E5%84%BF/"/>
-    
-      <category term="活动" scheme="http://ld.mmyz.net/categories/%E6%B4%BB%E5%8A%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[每周电脑小知识 第1期]]></title>
-    <link href="http://ld.mmyz.net/2013/11/weekly_tip_1/"/>
-    <id>http://ld.mmyz.net/2013/11/weekly_tip_1/</id>
-    <published>2013-11-04T00:00:00.000Z</published>
-    <updated>2014-07-12T05:35:46.000Z</updated>
-    <content type="html"><![CDATA[<p>想和大家一起分享你所了解的计算机知识吗？为丰富同学们的计算机知识，计算机社会长期开展“每周电脑小知识”活动，欢迎同学们积极投稿。</p>
-<p>下面是第1期《每周小知识》：<br><img src="http://cptsct.qiniudn.com/weekly_tips/01.png" alt="灵动计算机社 每周电脑小知识 第1期"></p>
-]]></content>
-    
-    
-      <category term="电脑小知识" scheme="http://ld.mmyz.net/tags/%E7%94%B5%E8%84%91%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
-    
-      <category term="Excel" scheme="http://ld.mmyz.net/tags/Excel/"/>
-    
-      <category term="Windows Tips" scheme="http://ld.mmyz.net/tags/Windows%20Tips/"/>
     
       <category term="活动" scheme="http://ld.mmyz.net/categories/%E6%B4%BB%E5%8A%A8/"/>
     

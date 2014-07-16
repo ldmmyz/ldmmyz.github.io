@@ -59,6 +59,8 @@ var _hmt = _hmt || [];
         
           <a class="main-nav-link" href="/">首页</a>
         
+          <a class="main-nav-link" href="/work">工作</a>
+        
           <a class="main-nav-link" href="/about">关于</a>
         
           <a class="main-nav-link" href="/archives">存档</a>
@@ -79,125 +81,50 @@ var _hmt = _hmt || [];
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-photoshop_lesson1" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2014/05/photoshop_lesson1/" class="article-date">
-  <time datetime="2014-05-17T00:00:00.000Z" itemprop="datePublished">5月 17 2014</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/活动/">活动</a>
-  </div>
-
+    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+    <%- partial('post/category') %>
   </div>
   <div class="article-inner">
-    
-    
+    <%- partial('post/gallery') %>
+    <% if (post.link || post.title){ %>
       <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      Photoshop课程学习资料（第1节）
-    </h1>
-  
-
+        <%- partial('post/title', {class_name: 'article-title'}) %>
       </header>
-    
+    <% } %>
     <div class="article-entry" itemprop="articleBody">
-      
-        <p>星期五下午，在信息楼三楼的语音室里，我们开办了第 1 节 Photoshop 课程。<br>同学们非常热情，一下课便迅速赶往语音室。来参加活动的同学比较多，差不多把84个座位的语音室给坐满了。</p>
-<p>上课之前，副社长王子勤首先和同学们寒暄了几句，然后向同学们宣读了《语音室活动守则》。接下来，就是同学们所期待的课堂了。<br>在这节课里，曾老师带领前来参加活动的同学们一起：</p>
-<a id="more"></a>
-
-<ol>
-<li>认识 Adobe Photoshop<ul>
-<li>Photoshop 的应用领域</li>
-<li>工作界面</li>
-</ul>
-</li>
-<li>学习图像的原理<ul>
-<li>像素与分辨率</li>
-<li>位图与矢量图</li>
-<li>图像文件格式</li>
-</ul>
-</li>
-<li>学习 Photoshop 的基本操作<br>下面是我们这节课的学习任务：<ul>
-<li>新建文件、打开文件、保存文件</li>
-<li>修改像素尺寸和画布大小(实战练习3.11.1~3.11.2)</li>
-<li>裁剪图像(实战练习3.12.2~3.12.5)</li>
-<li>拷贝与粘贴</li>
-<li>复制文档</li>
-<li>图像的变换与变形操作(实战练习3.15.3~3.15.10)</li>
-<li>用历史记录面板还原操作(实战练习3.18.2)</li>
-</ul>
-</li>
-</ol>
-<hr>
-<p>教程视频下载: <a href="http://pan.baidu.com/s/1kTLrJ75" target="_blank">http://pan.baidu.com/s/1kTLrJ75</a><br>提取密码: 5m4v</p>
-<hr>
-<p>希望同学们利用课余时间多多练习 Photoshop 的操作。</p>
-
-      
+      <% if (post.excerpt && index){ %>
+        <%- post.excerpt %>
+        <% if (theme.excerpt_link){ %>
+          <p class="article-more-link">
+            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
+          </p>
+        <% } %>
+      <% } else { %>
+        <%- post.content %>
+      <% } %>
     </div>
     <footer class="article-footer">
-      <a data-url="http://ld.mmyz.net/2014/05/photoshop_lesson1/" data-id="15l2edln3dm3i3rc" class="article-share-link">分享</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ps/">Ps</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/多媒体/">多媒体</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/课程/">课程</a></li></ul>
-
-      
-      
-      
-<section id="comments">
-<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="Photoshop课程学习资料（第1节）" data-title="Photoshop课程学习资料（第1节）" data-url="http://ld.mmyz.net/2014/05/photoshop_lesson1/"></div>
-<!--	<div class="ds-thread"></div> -->
-<!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"cptsct"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-<!-- 多说公共JS代码 end -->
-</section>
-
-
+      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
+      <% if (post.comments && config.disqus_shortname){ %>
+        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
+      <% } %>
+      <%- partial('post/tag') %>
     </footer>
   </div>
-
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2014/05/photoshop_lesson2/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Photoshop课程学习资料（第2节）
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2014/05/computer_room_rules/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">语音室活动守则</div>
-    </a>
-  
-</nav>
-
-  
-
+  <% if (!index){ %>
+    <%- partial('post/nav') %>
+  <% } %>
 </article>
 
-
+<% if (!index && post.comments && config.disqus_shortname){ %>
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+<% } %>
 </section>
         
           <aside id="sidebar">
@@ -228,7 +155,7 @@ var duoshuoQuery = {short_name:"cptsct"};
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/分享/">分享</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/工作/">工作</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/活动/">活动</a><span class="category-list-count">16</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/规章/">规章</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/分享/">分享</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/活动/">活动</a><span class="category-list-count">18</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/活动/教学/">教学</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/活动/比赛/">比赛</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/活动/讲座/">讲座</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/规章/">规章</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -237,7 +164,7 @@ var duoshuoQuery = {short_name:"cptsct"};
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget tagcloud">
-      <a href="/tags/C/" style="font-size: 12.00px;">C</a><a href="/tags/Excel/" style="font-size: 10.00px;">Excel</a><a href="/tags/Git/" style="font-size: 10.00px;">Git</a><a href="/tags/IP/" style="font-size: 10.00px;">IP</a><a href="/tags/Linux/" style="font-size: 10.00px;">Linux</a><a href="/tags/Ps/" style="font-size: 20.00px;">Ps</a><a href="/tags/WiFi/" style="font-size: 10.00px;">WiFi</a><a href="/tags/Windows Tips/" style="font-size: 16.00px;">Windows Tips</a><a href="/tags/Word/" style="font-size: 10.00px;">Word</a><a href="/tags/多媒体/" style="font-size: 16.00px;">多媒体</a><a href="/tags/安全/" style="font-size: 10.00px;">安全</a><a href="/tags/招新/" style="font-size: 10.00px;">招新</a><a href="/tags/操作系统/" style="font-size: 10.00px;">操作系统</a><a href="/tags/新鲜玩意儿/" style="font-size: 14.00px;">新鲜玩意儿</a><a href="/tags/无线网络/" style="font-size: 10.00px;">无线网络</a><a href="/tags/比赛/" style="font-size: 12.00px;">比赛</a><a href="/tags/电脑小知识/" style="font-size: 18.00px;">电脑小知识</a><a href="/tags/硬件/" style="font-size: 10.00px;">硬件</a><a href="/tags/社团嘉年华/" style="font-size: 10.00px;">社团嘉年华</a><a href="/tags/社团文化节/" style="font-size: 12.00px;">社团文化节</a><a href="/tags/编程/" style="font-size: 10.00px;">编程</a><a href="/tags/网络/" style="font-size: 12.00px;">网络</a><a href="/tags/讲座/" style="font-size: 12.00px;">讲座</a><a href="/tags/语音室/" style="font-size: 10.00px;">语音室</a><a href="/tags/课程/" style="font-size: 16.00px;">课程</a>
+      <a href="/tags/C/" style="font-size: 12.00px;">C</a><a href="/tags/Excel/" style="font-size: 10.00px;">Excel</a><a href="/tags/Git/" style="font-size: 10.00px;">Git</a><a href="/tags/IP/" style="font-size: 10.00px;">IP</a><a href="/tags/Linux/" style="font-size: 10.00px;">Linux</a><a href="/tags/Ps/" style="font-size: 20.00px;">Ps</a><a href="/tags/Python/" style="font-size: 10.00px;">Python</a><a href="/tags/WiFi/" style="font-size: 10.00px;">WiFi</a><a href="/tags/Windows Tips/" style="font-size: 16.00px;">Windows Tips</a><a href="/tags/Word/" style="font-size: 10.00px;">Word</a><a href="/tags/多媒体/" style="font-size: 16.00px;">多媒体</a><a href="/tags/安全/" style="font-size: 10.00px;">安全</a><a href="/tags/招新/" style="font-size: 10.00px;">招新</a><a href="/tags/操作系统/" style="font-size: 10.00px;">操作系统</a><a href="/tags/新鲜玩意儿/" style="font-size: 14.00px;">新鲜玩意儿</a><a href="/tags/无线网络/" style="font-size: 10.00px;">无线网络</a><a href="/tags/电脑小知识/" style="font-size: 18.00px;">电脑小知识</a><a href="/tags/硬件/" style="font-size: 10.00px;">硬件</a><a href="/tags/社团嘉年华/" style="font-size: 10.00px;">社团嘉年华</a><a href="/tags/社团文化节/" style="font-size: 12.00px;">社团文化节</a><a href="/tags/编程/" style="font-size: 10.00px;">编程</a><a href="/tags/网络/" style="font-size: 14.00px;">网络</a><a href="/tags/语音室/" style="font-size: 10.00px;">语音室</a>
     </div>
   </div>
 
@@ -249,7 +176,7 @@ var duoshuoQuery = {short_name:"cptsct"};
       <ul>
         
           <li>
-            <a href="/2014/06/coule_c_do_a_lot/">《学会了 C 语言真的可以开发出很多东西吗？》· 转自知乎</a>
+            <a href="/2014/06/coule_c_do_a_lot/">学会了 C 语言真的可以开发出很多东西吗？- 转自知乎</a>
           </li>
         
           <li>
@@ -257,15 +184,15 @@ var duoshuoQuery = {short_name:"cptsct"};
           </li>
         
           <li>
-            <a href="/2014/06/photoshop_contest/">“我爱一中”·Photoshop 平面设计大赛素材预览版放送</a>
+            <a href="/2014/06/photoshop_contest/">Ps 大赛进行时 + 用 Python 在局域网内共享文件的方法</a>
+          </li>
+        
+          <li>
+            <a href="/2014/06/photoshop_contest_material/">“我爱一中”·Photoshop 平面设计大赛素材预览版放送</a>
           </li>
         
           <li>
             <a href="/2014/06/photoshop_lesson4/">Photoshop课程学习资料（第4节）</a>
-          </li>
-        
-          <li>
-            <a href="/2014/06/progit/">Pro Git 来了！</a>
           </li>
         
       </ul>
@@ -301,6 +228,8 @@ var duoshuoQuery = {short_name:"cptsct"};
     <nav id="mobile-nav">
   
     <a href="/" class="mobile-nav-link">首页</a>
+  
+    <a href="/work" class="mobile-nav-link">工作</a>
   
     <a href="/about" class="mobile-nav-link">关于</a>
   

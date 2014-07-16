@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   
-  <title>《学会了 C 语言真的可以开发出很多东西吗？》· 转自知乎 | 灵动</title>
+  <title>学会了 C 语言真的可以开发出很多东西吗？- 转自知乎 | 灵动</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <meta name="keywords" content="C,编程,编程学习,知乎,灵动计算机社,茂名市第一中学灵动计算机社,灵动,计算机技术,茂名市第一中学社团联合会">
   <meta content="article" property="og:type">
-<meta content="《学会了 C 语言真的可以开发出很多东西吗？》· 转自知乎" property="og:title">
+<meta content="学会了 C 语言真的可以开发出很多东西吗？- 转自知乎" property="og:title">
 <meta content="http://ld.mmyz.net/2014/06/coule_c_do_a_lot/" property="og:url">
 <meta content="http://cptsct.qiniudn.com/could_c_do_a_lot/mario.jpg" property="og:image">
 <meta content="灵动" property="og:site_name">
@@ -59,6 +59,8 @@ var _hmt = _hmt || [];
         
           <a class="main-nav-link" href="/">首页</a>
         
+          <a class="main-nav-link" href="/work">工作</a>
+        
           <a class="main-nav-link" href="/about">关于</a>
         
           <a class="main-nav-link" href="/archives">存档</a>
@@ -79,110 +81,50 @@ var _hmt = _hmt || [];
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-coule_c_do_a_lot" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2014/06/coule_c_do_a_lot/" class="article-date">
-  <time datetime="2014-06-29T09:58:12.000Z" itemprop="datePublished">6月 29 2014</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/分享/">分享</a>
-  </div>
-
+    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+    <%- partial('post/category') %>
   </div>
   <div class="article-inner">
-    
-    
+    <%- partial('post/gallery') %>
+    <% if (post.link || post.title){ %>
       <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      《学会了 C 语言真的可以开发出很多东西吗？》· 转自知乎
-    </h1>
-  
-
+        <%- partial('post/title', {class_name: 'article-title'}) %>
       </header>
-    
+    <% } %>
     <div class="article-entry" itemprop="articleBody">
-      
-        <p>发表于知乎，作者：<a href="http://www.zhihu.com/people/Metaphox" target="_blank">涛吴</a><br>原文地址：<a href="http://www.zhihu.com/question/23844552/answer/25880226" target="_blank">http://www.zhihu.com/question/23844552/answer/25880226</a></p>
-<hr>
-<h3 id="提问：">提问：</h3>
-<p><strong>学会了 C 语言真的可以开发出很多东西吗？</strong><br>我现在c语言入门，基本靠自学，就看网上的那种教程，但是我怎么觉得它就是只能做下数学题，我觉得它并不能编辑出一个啥子游戏或者软件出来噢……初学者，见谅。</p>
-<h3 id="涛吴的回答：">涛吴的回答：</h3>
-<p><img src="http://cptsct.qiniudn.com/could_c_do_a_lot/mario.jpg" alt="马里奥遇到花朵就变身"></p>
-<p>什么是马里奥？一个装着 16 × 32 个小色块的长方形，其中一些色块填着颜色，另一些没有。什么是花？一个 16 × 16 的正方形。什么是「变身」？把马里奥这个方块里面代表衣服的褐色变成红色，代表背带裤的红色变成白色。什么是褐色？暂且说它是 0x887000 这个数字。什么是「碰到」？马里奥的长方形与花朵的正方形有所重叠。什么是「重叠」？假设马里奥的这个方块占据屏幕（什么是屏幕？一个能装下 256 × 240 个小色块的矩形）中 X 方向 101 到 116、Y 方向 21 到 52 之间的区域，那么只要这个区域内有一点或更多点也被花朵所占据（比如花朵处在 X 116 到 131、Y 21 到 36 之间的区域内），我们就认为两者有所重叠。</p>
-<a id="more"></a>
-
-<p>若给定以八个数值代表的两个矩形区域，请写出判断两个区域是否有重叠的 C 语言程序。如果你能写出来，那么祝贺你，如果有朝一日你想自己做一遍 NES 版本的《超级马里奥》，你至少知道让他变身需要做什么了。</p>
-<p>是的，C 语言也许「只能」做数学题。可是，绝大多数游戏的运行过程就是不停地做数学题，而所谓编写游戏，也就是把游戏的规则和游戏的效果转化为数学题而已。其中不少题目电脑都已经知道怎么解——是别的程序员事先告诉它的——比如「求一堆散落在三维直角座标系之中的多面体体在 8(x−3)−10(y+1)−11(z−1)=0 这个平面上一个给定范围内的投影」或者「给定一些彼此相连的顶点，求任意两点之间的最短路径」之类的数学题，它只需要千万分之一秒就能给你解好。这种能力有什么用？电脑上 FPS 游戏的本质活动就是不停地求三维座标系下的多面体经过变换之后在二维平面上的投影，不停地判断两个多面体是否彼此重叠，以及不停地寻找两个顶点之间的最短路径，最终达到让怪物冲到你面前咬你一口的目的。不止游戏如此，其他软件也都差不多，每一个细节都是某种数学题——比如知乎页面顶端的蓝色导航条背景，就是 CSS 描述的一个浅蓝到深蓝的渐变——渐变是怎么回事呢？给出两个数字分别代表两种颜色，以及第三个数字代表一段距离，求一系列颜色的数值以及次序，使得这段距离中两种相邻颜色之间的变化最小。数学题。别说 C 语言，一切编程语言最终都只能做数学题，根据给定的数据，算出另一些数据，算出更多的数据，然后存贮、发送或者呈现算出的数据。</p>
-<p>不过我能理解你的困惑。投入大量时间看完教程，结果只能在黑框里输出一串数字。这是在学编程还是在向七十年代致敬？编程是这样无法给人成就感的活动吗？是，也不是。看你的表述，应该不是小孩子了，因为小孩子不会因为初学编程能做的事情很少而没有成就感，或者说，觉得这样做没有成就感的小孩子根本不会继续学下去。最初学编程的成就感单纯来自于「我居然可以指挥机器做一些事」，至少我小时候用中华学习机编一个程序帮我算暑假作业上的四则运算题时是这样感觉的。写出这些程序并用它解题虽然远比自己动笔去把题目算出来费时，却让人乐此不疲。那时候我还不知道马里奥碰到花会变身这种事情其实也是靠编程编出来，所以我也不会去想学编程「并不能做什么」。</p>
-<p>无奈大多数人过了一定年纪就很难再靠「我能指挥机器」这种简单原始的快乐来驱动自己学编程。见过世面，听过传言，欲望和野心变得复杂而庞大，你想要图形界面，音乐音效，人工智能，云端同步，可是你闷头学了几堂课，还是只学会在黑框里显示一串数字。你怀疑这是学 C 语言的错，于是你到知乎上来问了这个问题。</p>
-<p>你的疑惑是有道理的。</p>
-<p>如果能把编程学下去，日后你就会明白，任何程序都是一座冰山，最终用户能看到的界面和使用的功能，只是程序浮在水面上的十分之一。知乎这个网站其实也是个运行在某台电脑上的程序，你能看到的十分之一是用什么编写的呢？HTML，CSS，JavaScript，或者 Objective-C。而你看不到的那十分之九是用什么编写的呢？Python。这些你无法直接观测到的 Python 程序运行在世界某个角落的某些计算机上，隔着光缆、双绞线和无线基站，为你面前或掌上的用户界面注入生命。</p>
-<p><img src="http://cptsct.qiniudn.com/could_c_do_a_lot/python.png" alt=""></p>
-<p>（<a href="http://xkcd.com/353/" target="_blank">xkcd.com/353/</a>）</p>
-<p>……可是 Python 是用什么编写的呢？C 语言（当然，这么说并不严谨，Python 理论上可以用任何其他语言实现，实际上也已经被用很多其他语言实现了，不过这并不是重点）。任何编程语言都是实现某个功能的工具，Python 实现了知乎这个网站的大部分功能，而 C 实现了「用 Python 写程序」这个功能。为什么是 C？</p>
-<blockquote>
-<p>C 很别扭又缺陷重重，却异常成功。固然有历史的巧合推波助澜，可也的确是因为它能满足对于这样一种系统实现语言的需要：既有相当的效率来取代汇编语言，且又足够地抽象而流畅，能够用于描述各种各样的环境之下的算法与交互。<br>C is quirky, flawed, and an enormous success. Although accidents of history surely helped, it evidently satisfied a need for a system implementation language efficient enough to displace assembly language, yet sufficiently abstract and fluent to describe algorithms and interactions in a wide variety of environments.<br>——C 语言之父，Dennis M. Ritchie</p>
-</blockquote>
-<p>C 是初代程序员所使用的语言，那时候硬件很贵，软件必须高效；而计算机的用户都是职业程序员，对于硬件有足够的理解。C 贴近硬件，就意味着它容易译成机器能懂的语言，而它的设计者也并不需要操心普通人学起来可能会比较困难——而且，说真的，其实也不很难。但是，这么多年过去之后，软件规模变得越来越大，C 就像锤子和手锯，修小木屋得心应手，造摩天楼就比较力不从心；但 C 语言可以用来造出其他更适合建造摩天楼的工具，乃至组成摩天楼的预制件，就好比用锤子和手锯造出挖掘机和吊车、混凝土板和一体门窗一样（当然，这个类比并不十分贴切。可是没有什么类比能贴切地描述软件工程，因为软件工程像许多东西，却又什么东西都不像）。</p>
-<p>所以，回到你的问题上来，是的，学会 C 计算机语言真的可以开发出很多东西，但除非内力深厚，场合适当，并且闲得蛋疼，大多数人不会拿 C 或者只拿 C 来开发太大的东西。如果你只是想要一门能够让你「编辑出一个啥子游戏或者软件出来」的语言，而且你用 Windows，那建议你转去学学 C#。它长得和 C 挺像，但却能迅速地写出至少是带有图形界面的程序，用起来也很方便，鼠标点一点就能让你对自己的程序看起来什么样有个比较直观的印象。还有，在国内，C# 的教材也相当容易找到。当然 Python 也是一个很好的选择。</p>
-<p><img src="http://cptsct.qiniudn.com/could_c_do_a_lot/csharp.jpg" alt=""></p>
-<p>另外，还有一件事你必须弄明白：现代的所谓编程这一活动，其实大部分时候是在「合理地堆砌别人已经实现的功能来实现新的功能」，C 语言莫不如是，比如 printf 这个东西，是别人做出来的「把一些数据按照指定格式输出到屏幕上」这一功能。而别人还做出来许多其他功能，比如「在发现用户短时间内连续两次按下鼠标又松开的时候调用你写好的一个函数」。学会怎样在 C 或者其他任何程序语言中使用这些既有功能，也是学习编程的一门重头戏。等你弄明白这一点，你也就找到了你问题的答案。</p>
-
-      
+      <% if (post.excerpt && index){ %>
+        <%- post.excerpt %>
+        <% if (theme.excerpt_link){ %>
+          <p class="article-more-link">
+            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
+          </p>
+        <% } %>
+      <% } else { %>
+        <%- post.content %>
+      <% } %>
     </div>
     <footer class="article-footer">
-      <a data-url="http://ld.mmyz.net/2014/06/coule_c_do_a_lot/" data-id="e1hn8nxcctyzp034" class="article-share-link">分享</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/编程/">编程</a></li></ul>
-
-      
-      
-      
-<section id="comments">
-<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="《学会了 C 语言真的可以开发出很多东西吗？》· 转自知乎" data-title="《学会了 C 语言真的可以开发出很多东西吗？》· 转自知乎" data-url="http://ld.mmyz.net/2014/06/coule_c_do_a_lot/"></div>
-<!--	<div class="ds-thread"></div> -->
-<!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"cptsct"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-<!-- 多说公共JS代码 end -->
-</section>
-
-
+      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
+      <% if (post.comments && config.disqus_shortname){ %>
+        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
+      <% } %>
+      <%- partial('post/tag') %>
     </footer>
   </div>
-
-  
-    
-<nav id="article-nav">
-  
-  
-    <a href="/2014/06/photoshop_contest_result/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Photoshop 平面设计大赛结果出来啦！</div>
-    </a>
-  
-</nav>
-
-  
-
+  <% if (!index){ %>
+    <%- partial('post/nav') %>
+  <% } %>
 </article>
 
-
+<% if (!index && post.comments && config.disqus_shortname){ %>
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+<% } %>
 </section>
         
           <aside id="sidebar">
@@ -213,7 +155,7 @@ var duoshuoQuery = {short_name:"cptsct"};
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/分享/">分享</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/工作/">工作</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/活动/">活动</a><span class="category-list-count">16</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/规章/">规章</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/分享/">分享</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/活动/">活动</a><span class="category-list-count">18</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/活动/教学/">教学</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/活动/比赛/">比赛</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/活动/讲座/">讲座</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/规章/">规章</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -222,7 +164,7 @@ var duoshuoQuery = {short_name:"cptsct"};
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget tagcloud">
-      <a href="/tags/C/" style="font-size: 12.00px;">C</a><a href="/tags/Excel/" style="font-size: 10.00px;">Excel</a><a href="/tags/Git/" style="font-size: 10.00px;">Git</a><a href="/tags/IP/" style="font-size: 10.00px;">IP</a><a href="/tags/Linux/" style="font-size: 10.00px;">Linux</a><a href="/tags/Ps/" style="font-size: 20.00px;">Ps</a><a href="/tags/WiFi/" style="font-size: 10.00px;">WiFi</a><a href="/tags/Windows Tips/" style="font-size: 16.00px;">Windows Tips</a><a href="/tags/Word/" style="font-size: 10.00px;">Word</a><a href="/tags/多媒体/" style="font-size: 16.00px;">多媒体</a><a href="/tags/安全/" style="font-size: 10.00px;">安全</a><a href="/tags/招新/" style="font-size: 10.00px;">招新</a><a href="/tags/操作系统/" style="font-size: 10.00px;">操作系统</a><a href="/tags/新鲜玩意儿/" style="font-size: 14.00px;">新鲜玩意儿</a><a href="/tags/无线网络/" style="font-size: 10.00px;">无线网络</a><a href="/tags/比赛/" style="font-size: 12.00px;">比赛</a><a href="/tags/电脑小知识/" style="font-size: 18.00px;">电脑小知识</a><a href="/tags/硬件/" style="font-size: 10.00px;">硬件</a><a href="/tags/社团嘉年华/" style="font-size: 10.00px;">社团嘉年华</a><a href="/tags/社团文化节/" style="font-size: 12.00px;">社团文化节</a><a href="/tags/编程/" style="font-size: 10.00px;">编程</a><a href="/tags/网络/" style="font-size: 12.00px;">网络</a><a href="/tags/讲座/" style="font-size: 12.00px;">讲座</a><a href="/tags/语音室/" style="font-size: 10.00px;">语音室</a><a href="/tags/课程/" style="font-size: 16.00px;">课程</a>
+      <a href="/tags/C/" style="font-size: 12.00px;">C</a><a href="/tags/Excel/" style="font-size: 10.00px;">Excel</a><a href="/tags/Git/" style="font-size: 10.00px;">Git</a><a href="/tags/IP/" style="font-size: 10.00px;">IP</a><a href="/tags/Linux/" style="font-size: 10.00px;">Linux</a><a href="/tags/Ps/" style="font-size: 20.00px;">Ps</a><a href="/tags/Python/" style="font-size: 10.00px;">Python</a><a href="/tags/WiFi/" style="font-size: 10.00px;">WiFi</a><a href="/tags/Windows Tips/" style="font-size: 16.00px;">Windows Tips</a><a href="/tags/Word/" style="font-size: 10.00px;">Word</a><a href="/tags/多媒体/" style="font-size: 16.00px;">多媒体</a><a href="/tags/安全/" style="font-size: 10.00px;">安全</a><a href="/tags/招新/" style="font-size: 10.00px;">招新</a><a href="/tags/操作系统/" style="font-size: 10.00px;">操作系统</a><a href="/tags/新鲜玩意儿/" style="font-size: 14.00px;">新鲜玩意儿</a><a href="/tags/无线网络/" style="font-size: 10.00px;">无线网络</a><a href="/tags/电脑小知识/" style="font-size: 18.00px;">电脑小知识</a><a href="/tags/硬件/" style="font-size: 10.00px;">硬件</a><a href="/tags/社团嘉年华/" style="font-size: 10.00px;">社团嘉年华</a><a href="/tags/社团文化节/" style="font-size: 12.00px;">社团文化节</a><a href="/tags/编程/" style="font-size: 10.00px;">编程</a><a href="/tags/网络/" style="font-size: 14.00px;">网络</a><a href="/tags/语音室/" style="font-size: 10.00px;">语音室</a>
     </div>
   </div>
 
@@ -234,7 +176,7 @@ var duoshuoQuery = {short_name:"cptsct"};
       <ul>
         
           <li>
-            <a href="/2014/06/coule_c_do_a_lot/">《学会了 C 语言真的可以开发出很多东西吗？》· 转自知乎</a>
+            <a href="/2014/06/coule_c_do_a_lot/">学会了 C 语言真的可以开发出很多东西吗？- 转自知乎</a>
           </li>
         
           <li>
@@ -242,15 +184,15 @@ var duoshuoQuery = {short_name:"cptsct"};
           </li>
         
           <li>
-            <a href="/2014/06/photoshop_contest/">“我爱一中”·Photoshop 平面设计大赛素材预览版放送</a>
+            <a href="/2014/06/photoshop_contest/">Ps 大赛进行时 + 用 Python 在局域网内共享文件的方法</a>
+          </li>
+        
+          <li>
+            <a href="/2014/06/photoshop_contest_material/">“我爱一中”·Photoshop 平面设计大赛素材预览版放送</a>
           </li>
         
           <li>
             <a href="/2014/06/photoshop_lesson4/">Photoshop课程学习资料（第4节）</a>
-          </li>
-        
-          <li>
-            <a href="/2014/06/progit/">Pro Git 来了！</a>
           </li>
         
       </ul>
@@ -286,6 +228,8 @@ var duoshuoQuery = {short_name:"cptsct"};
     <nav id="mobile-nav">
   
     <a href="/" class="mobile-nav-link">首页</a>
+  
+    <a href="/work" class="mobile-nav-link">工作</a>
   
     <a href="/about" class="mobile-nav-link">关于</a>
   
