@@ -81,50 +81,130 @@ var _hmt = _hmt || [];
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-photoshop_contest" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-    <%- partial('post/category') %>
+    <a href="/2014/06/photoshop_contest/" class="article-date">
+  <time datetime="2014-06-15T00:00:00.000Z" itemprop="datePublished">6月 15 2014</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/活动/">活动</a>►<a class="article-category-link" href="/categories/活动/比赛/">比赛</a>
+  </div>
+
   </div>
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'article-title'}) %>
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Ps 大赛进行时 + 用 Python 在局域网内共享文件的方法
+    </h1>
+  
+
       </header>
-    <% } %>
+    
     <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index){ %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link){ %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <%- post.content %>
-      <% } %>
+      
+        <h3 id="Photoshop_平面设计大赛进行时">Photoshop 平面设计大赛进行时</h3>
+<p>今天下午，“我爱一中”·Photoshop 平面设计大赛在信息楼语音室中开赛了，得到了不少同学的支持，共有 23 名选手参加了比赛。下面上图：</p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest/3.jpg?imageView/2/w/680" alt="灵动计算机社 Photoshop平面设计大赛 比赛现场"></p>
+<a id="more"></a>
+
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest/2.jpg?imageView/2/w/680" alt="灵动计算机社 Photoshop平面设计大赛 比赛现场"></p>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest/1.jpg?imageView/2/w/680" alt="灵动计算机社 Photoshop平面设计大赛 比赛现场"></p>
+<p>小编当时没能参加到这场比赛，没机会玩 Ps（快来安慰我 T_T）。所以，小编只好事后 P 了一下上面几张图片补偿一下，要是不小心 P 丑了，请不要打我。</p>
+<hr>
+<h3 id="用_Python_在局域网内共享文件">用 Python 在局域网内共享文件</h3>
+<p>那小编当时到底干嘛去了呢？其实只有一件重要的事：“传文件!”</p>
+<p>要知道，我们提供的素材包将近半G啊，又没有提前拷贝好。怎样在短时间内将这个大文件传到二十多台电脑上对我们来说是个不小的考验。用 U 盘复制？U 盘不够多呀，而且速度不快。看在语音室电脑的网卡还不错的份上，我们决定架设一个 HTTP 服务器，用内网来传输，让同学们用浏览器下载。</p>
+<p>不过，架设 HTTP 服务器不是一件轻松的事情，需要一定的时间来配置。可我们得尽快呀，因为参赛的同学们已经陆陆续续地来到了！幸好我们早有准备，那就是—— Python 的 <code>SimpleHTTPServer</code>。</p>
+<p>小编在此分享一下这个用 Python 在局域网内共享文件的方法吧（事实上，这个方法对于外网也是可以的，不过貌似没有什么优势）：</p>
+<ul>
+<li><strong>先装个 Python 2.x 的最新版</strong><br>Tips: Linux 系统中都通常预装 Python，一般可以跳过这步<ol>
+<li>下载选择与系统相应的版本：<a href="https://www.python.org/downloads/" target="_blank">python.org/downloads</a></li>
+<li>安装的时候记得把可执行文件的目录添加到环境变量 <code>path</code> 里（Windows 系统下的设置方法如图），这样可以方便后面的操作。</li>
+</ol>
+</li>
+</ul>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest/python_installation_set_path.png?imageView2/2/format/jpg" alt="Add python.exe to Path"></p>
+<ul>
+<li><p><strong>在命令行中定位到要共享的目录</strong><br>例如，在 Windows 中，要定位到 D:\Path\To\Your\Dir\，需要：</p>
+<ol>
+<li>打开命令提示符，输入 <code>D:</code> 并回车，就定位到 D 盘的根目录了；</li>
+<li>输入 <code>cd Path\To\Your\Dir</code> 并回车，就定位好了。</li>
+</ol>
+</li>
+<li><p><strong>用 Python 共享这个文件夹</strong><br>在刚才那个完成定位的命令提示符窗口中，运行</p>
+<pre><code>  <span class="keyword">python</span> -m SimpleHTTPServer <span class="number">80</span>
+</code></pre><p>然后，在本机访问 <a href="http://127.0.0.1/" target="_blank">http://127.0.0.1/</a> 就可以看到效果了，而局域网中的其他设备要访问时，只需要把上面的 <code>127.0.0.1</code> 改成这台机子的内网 IP 即可。如果该目录中有 <code>index.html</code> 文件，则默认会展示这一文件；如果没有，则会显示一份文件列表，如图所示：</p>
+</li>
+</ul>
+<p><img src="http://cptsct.qiniudn.com/photoshop_contest/filelist.png?imageView2/2/format/jpg" alt="Python SimpleHTTPServer 生成的文件列表"><br>上面的命令中，<code>80</code> 表示的是端口。当然，也可以用其他的端口，不过，访问的时候就要记得加上端口号，例如 <a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a>。</p>
+<p>小编觉得，这个在内网共享文件的方法不算复杂吧。希望对你有所帮助。</p>
+
+      
     </div>
     <footer class="article-footer">
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
-      <% if (post.comments && config.disqus_shortname){ %>
-        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
-      <% } %>
-      <%- partial('post/tag') %>
+      <a data-url="http://ld.mmyz.net/2014/06/photoshop_contest/" data-id="g615kxdt1w9dd9j8" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ps/">Ps</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网络/">网络</a></li></ul>
+
+      
+      
+      
+<section id="comments">
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="Ps 大赛进行时 + 用 Python 在局域网内共享文件的方法" data-title="Ps 大赛进行时 + 用 Python 在局域网内共享文件的方法" data-url="http://ld.mmyz.net/2014/06/photoshop_contest/"></div>
+<!--	<div class="ds-thread"></div> -->
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"cptsct"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+</section>
+
+
     </footer>
   </div>
-  <% if (!index){ %>
-    <%- partial('post/nav') %>
-  <% } %>
+
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2014/06/photoshop_contest_result/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Photoshop 平面设计大赛结果出来啦！
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/06/photoshop_contest_material/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">“我爱一中”·Photoshop 平面设计大赛素材预览版放送</div>
+    </a>
+  
+</nav>
+
+  
+
 </article>
 
-<% if (!index && post.comments && config.disqus_shortname){ %>
-<section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-</section>
-<% } %>
+
 </section>
         
           <aside id="sidebar">

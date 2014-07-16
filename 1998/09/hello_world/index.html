@@ -87,50 +87,92 @@ var _hmt = _hmt || [];
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-hello_world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-    <%- partial('post/category') %>
+    <a href="/1998/09/hello_world/" class="article-date">
+  <time datetime="1998-08-31T16:00:00.000Z" itemprop="datePublished">9月 1 1998</time>
+</a>
+    
   </div>
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'article-title'}) %>
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Hello World
+    </h1>
+  
+
       </header>
-    <% } %>
+    
     <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index){ %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link){ %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <%- post.content %>
-      <% } %>
+      
+        <p>你好，世界！</p>
+<pre><code><span class="preprocessor">#include &lt;stdio.h&gt;</span>
+<span class="keyword">int</span> main(<span class="keyword">void</span>)
+{
+    <span class="built_in">printf</span>(<span class="string">"Hello World!\n"</span>);
+    <span class="keyword">return</span> <span class="number">0</span>;
+}
+</code></pre>
+      
     </div>
     <footer class="article-footer">
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
-      <% if (post.comments && config.disqus_shortname){ %>
-        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
-      <% } %>
-      <%- partial('post/tag') %>
+      <a data-url="http://ld.mmyz.net/1998/09/hello_world/" data-id="dwbgpvhbsqcnudn3" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li></ul>
+
+      
+      
+      
+<section id="comments">
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="Hello World" data-title="Hello World" data-url="http://ld.mmyz.net/1998/09/hello_world/"></div>
+<!--	<div class="ds-thread"></div> -->
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"cptsct"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+</section>
+
+
     </footer>
   </div>
-  <% if (!index){ %>
-    <%- partial('post/nav') %>
-  <% } %>
+
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2013/09/recruit_new/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          计算机社2013年招新
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+
 </article>
 
-<% if (!index && post.comments && config.disqus_shortname){ %>
-<section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-</section>
-<% } %>
+
 </section>
         
           <aside id="sidebar">

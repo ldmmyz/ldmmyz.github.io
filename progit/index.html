@@ -107,50 +107,106 @@ var _hmt = _hmt || [];
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+        <section id="main"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-    <%- partial('post/category') %>
+    <a href="/progit/index.html" class="article-date">
+  <time datetime="2014-06-07T00:00:00.000Z" itemprop="datePublished">6月 7 2014</time>
+</a>
+    
   </div>
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'article-title'}) %>
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Pro Git
+    </h1>
+  
+
       </header>
-    <% } %>
+    
     <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index){ %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link){ %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <%- post.content %>
-      <% } %>
+      
+        <p>Scott Chacon 所著的 Git 入门书籍《Pro Git》的第 1 至 3 章现在可以在灵动博客查看了。</p>
+<p><img src="http://git-scm.com/images/books/pro-git@2x.jpg" alt="Pro Git Cover"></p>
+<ol>
+<li><a href="/progit/01-introduction">起步</a><ul>
+<li>关于版本控制</li>
+<li>Git 简史</li>
+<li>Git 基础</li>
+<li>安装 Git</li>
+<li>初次运行 Git 前的配置</li>
+<li>获取帮助</li>
+<li>小结</li>
+</ul>
+</li>
+<li><a href="/progit/02-git-basics">Git 基础</a><ul>
+<li>取得项目的 Git 仓库</li>
+<li>记录每次更新到仓库</li>
+<li>查看提交历史</li>
+<li>撤销操作</li>
+<li>远程仓库的使用</li>
+<li>打标签</li>
+<li>技巧和窍门</li>
+<li>小结</li>
+</ul>
+</li>
+<li><a href="/progit/03-git-branching">Git 分支</a><ul>
+<li>何谓分支</li>
+<li>分支的新建与合并</li>
+<li>分支的管理</li>
+<li>利用分支进行开发的工作流程</li>
+<li>远程分支</li>
+<li>分支的衍合</li>
+<li>小结</li>
+</ul>
+</li>
+</ol>
+<p>本书采用 <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh" target="_blank">Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本协议</a> 发布。<br>原始地址: <a href="http://git-scm.com/book/zh" target="_blank">http://git-scm.com/book/zh</a></p>
+<p>下载: <a href="http://cptsct.qiniudn.com/progit_1-3.pdf" target="_blank">PDF文档</a></p>
+
+      
     </div>
     <footer class="article-footer">
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
-      <% if (post.comments && config.disqus_shortname){ %>
-        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
-      <% } %>
-      <%- partial('post/tag') %>
+      <a data-url="http://ld.mmyz.net/progit/index.html" data-id="rv34loyufhn8shyw" class="article-share-link">分享</a>
+      
+      
+      
+      
+      
+<section id="comments">
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="Pro Git" data-title="Pro Git" data-url="http://ld.mmyz.net/progit/index.html"></div>
+<!--	<div class="ds-thread"></div> -->
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"cptsct"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+</section>
+
+
     </footer>
   </div>
-  <% if (!index){ %>
-    <%- partial('post/nav') %>
-  <% } %>
+
+  
+    
+  
+
 </article>
 
-<% if (!index && post.comments && config.disqus_shortname){ %>
-<section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-</section>
-<% } %>
+
 </section>
         
           <aside id="sidebar">
