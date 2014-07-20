@@ -21,7 +21,6 @@ widgets:
 - recent_posts
 - blogroll
 
-
 # Miscellaneous
 google_analytics:
 favicon: /favicon.png
