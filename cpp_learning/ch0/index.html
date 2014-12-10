@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ch0</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>第0节 知识准备</h1>
+<h2>一、走进计算机程序设计</h2>
+<h3>1、计算机系统</h3>
+<ul>
+<li>
+<p>计算机硬件系统</p>
+</li>
+<li>
+<p>计算机软件系统</p>
+</li>
+</ul>
+<h3>2、冯·诺伊曼体系结构</h3>
+<ul>
+<li>
+<p>采用二进制形式表示数据和指令</p>
+</li>
+<li>
+<p>顺序执行程序</p>
+</li>
+<li>
+<p>由运算器、存储器、控制器、输入设备和输出设备五大部件组成计算机硬件系统</p>
+</li>
+</ul>
+<p><img src="Von_Neumann_Architecture.png" alt="Von Neumann Architecture" /></p>
+<h3>3、什么是程序设计</h3>
+<ul>
+<li>
+<p>编程就是让计算机为解决某个问题而使用某种程序设计语言编写程序代码，并最终得到相应结果的过程。为了使计算机能够理解人的意图，人类就必须要将需解决的问题的思路、方法、和手段通过计算机能够理解的形式告诉计算机，使得计算机能够根据人的指令一步一步去工作，完成某种特定的任务。这种人和计算机之间交流的过程就是编程。</p>
+</li>
+<li>
+<p>程序设计的一般步骤</p>
+</li>
+</ul>
+<p><img src="programming_process.png" alt="Process of Programming " /></p>
+<h3>4、与计算机交流的语言——编程语言</h3>
+<h4>① 编程语言的发展</h4>
+<p><img src="development_of_programming_language.png" alt="Development of Programming Language" /></p>
+<h4>② 高级语言分类（按执行方式）</h4>
+<ul>
+<li>
+<p>编译型：Fortran, Pascal, C, C++, Delphi, Go 等</p>
+</li>
+<li>
+<p>解释型：Python, Perl, Ruby, Javascript, Erlang 等</p>
+</li>
+<li>
+<p>混合型：Java, C# 等</p>
+</li>
+</ul>
+<h4>③ 用合适的编程语言干合适的事情</h4>
+<ul>
+<li>
+<p>编程语言都有各自的优缺点，没有最好的语言</p>
+</li>
+<li>
+<p>常见选择（不绝对）：</p>
+<ul>
+<li>
+<p>硬件相关：汇编、C</p>
+</li>
+<li>
+<p>桌面开发：面向对象编程语言</p>
+</li>
+<li>
+<p>系统管理：脚本语言</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4>④ 课程使用 C/C++</h4>
+<ul>
+<li>
+<p>C的诞生：1972年 美国贝尔实验室 Dennis M.Ritchie, Kenneth Lane Thompson</p>
+</li>
+<li>
+<p>C 与 Unix 的渊源：C为Unix而生，Unix核心用C改写</p>
+</li>
+<li>
+<p>C 与 C++：</p>
+<ul>
+<li>
+<p>C++与C有许多相似的语法</p>
+</li>
+<li>
+<p>C: 面向过程</p>
+</li>
+<li>
+<p>C++: 面向过程、面向对象、泛型编程等</p>
+</li>
+</ul>
+</li>
+<li>
+<p>课程使用C/C++的原因</p>
+<ul>
+<li>
+<p>使用人群广、资料丰富</p>
+</li>
+<li>
+<p>开发工具丰富</p>
+</li>
+<li>
+<p>许多编程语言的语法习惯与C相似，学会C/C++可以方便其他编程语言的学习</p>
+</li>
+</ul>
+</li>
+<li>
+<p>课程使用C++的方式：用C++的语法，用C的思路</p>
+</li>
+</ul>
+<h3>5、如何学习计算机程序设计</h3>
+<ul>
+<li>
+<p>高校的一些相关课程：高等数学、线性代数、概率论、离散数学、计算机原理、程序设计基础、面向对象程序设计、数据结构与算法、编译原理……</p>
+</li>
+<li>
+<p>需要掌握什么：</p>
+<ul>
+<li>
+<p>编程语言</p>
+</li>
+<li>
+<p>工具与平台的应用</p>
+</li>
+<li>
+<p>用计算机解决问题的思路</p>
+</li>
+<li>
+<p>……</p>
+</li>
+</ul>
+</li>
+<li>
+<p>需要养成的编程习惯</p>
+<ul>
+<li>
+<p>清晰的模块化</p>
+</li>
+<li>
+<p>良好的代码风格</p>
+</li>
+</ul>
+</li>
+<li>
+<p>学习要靠自己</p>
+<ul>
+<li>
+<p>仅靠听别人讲是难以掌握的</p>
+</li>
+<li>
+<p>阅读纸质书籍，自学语法细节</p>
+</li>
+<li>
+<p>多上机练习，在错误中成长</p>
+</li>
+<li>
+<p>学会阅读理解他人的代码，学会在纸上“运行”程序</p>
+</li>
+<li>
+<p>学会搜索和提问</p>
+</li>
+<li>
+<p>不要害怕英文，不要厌倦数学</p>
+</li>
+<li>
+<p>耐得住寂寞，坚持不懈</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2>二、第一个程序与开发环境</h2>
+<h3>1、Hello World</h3>
+<h4>① 源代码的实质</h4>
+<p>C/C++（以及绝大多数编程语言）源代码的实质为文本文件。</p>
+<h4>② 代码</h4>
+<pre><code>// My First Programme
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    cout &lt;&lt; &quot;Hello World!&quot; &lt;&lt; endl;
+    return 0;
+}
+</code></pre>
+
+<h4>③ 这个程序的功能</h4>
+<p>在屏幕上显示（又常常成为打印）一行文字：Hello World!</p>
+<h3>2、编译流程</h3>
+<p>编写出来的 C++ 代码无法直接运行，要先进行编译。</p>
+<p><img src="compile_process.png" alt="编译流程" /></p>
+<p>实际运用的过程中，我们往往利用前端一步到位地从源代码生成可执行文件。</p>
+<h3>3、开发工具</h3>
+<h4>① 工具分类</h4>
+<ul>
+<li>
+<p>编辑器（Editor），用于编写代码：notepad, notepad++, Sublime Text, VIM, Emacs...</p>
+</li>
+<li>
+<p>编译器（Compiler），把源代码编译成可执行程序：GCC, VC++, Clang, TCC...</p>
+</li>
+<li>
+<p>调试器（Debugger），帮助开发人员找到代码中的错误：GDB, DDD...</p>
+</li>
+<li>
+<p>集成开发环境（IDE），集编辑、编译、调试功能为一体，有的还会提供工程管理、版本控制等功能：Visual Studio, Eclipse, KDevelop, Code::Blocks, Qt Creator, Dev C++...</p>
+</li>
+</ul>
+<p>这些工具都有各自的优缺点，可以根据自己的条件和需要来安装。</p>
+<p>对于一般学习用途，大家可以安装 <a href="http://sourceforge.net/projects/orwelldevcpp/">Orwell Dev-C++</a> （Windows 平台），它具有体积小、安装快的优点。安装好后，建议在编译选项中加上 <code>-Wall</code>，这样可以在一定程度帮助你发现代码中潜在的的问题。（设置方法为：工具 -&gt; 编译器选项 -&gt; 代码生成/优化 -&gt; 代码警告 -&gt; 显示最多警告信息(-Wall): Yes。）</p>
+<h4>② 使用演示</h4>
+<h3>4、程序基本框架</h3>
+<pre><code>// My First Programme
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    cout &lt;&lt; &quot;Hello World!&quot; &lt;&lt; endl;
+    return 0;
+}
+</code></pre>
+
+<h4>① 注释</h4>
+<p>C++ 注释：以 <code>//</code> 开头，直到行尾</p>
+<p>C风格注释：以 <code>/*</code> 开头，以 <code>*/</code> 结尾</p>
+<p>在 C++ 以及支持 C99 标准的 C 语言中，我们可以同时使用上面两种风格的注释。但应注意 <code>/* */</code> 风格的注释不能嵌套。</p>
+<p>注释的作用：注释通常是一些提醒性的文字，用来帮助阅读代码的人理解程序。注释不会被编译，不会对程序的功能造成影响。</p>
+<p>注释举例：</p>
+<pre><code>/*
+ * Copyright (c) 2014 Wang Ziqin &lt;wangziqin1998@qq.com&gt;
+ */
+</code></pre>
+
+<p>说明：第二行的 <code>*</code> 不是必须的，是为了对齐，使之易于阅读。</p>
+<h4>② <code>#include &lt;iostream&gt;</code></h4>
+<p>包含流式(stream)输入输出(IO)头文件。请先记住，需要这样写后面才能用 <code>cout</code> 来输出文字。</p>
+<h4>③ <code>using namespace std;</code></h4>
+<p>这是一条 using 编译指令，它使得 <code>std</code> 名称空间中的所有名称都可用。也请先记住需要这样写。</p>
+<h4>④ <code>main()</code> 函数</h4>
+<p>这是程序执行时的入口，我们编写的代码是从这里开始运行的。<code>main()</code> 是一个函数（Tips: C/C++ 中的“函数”与数学上常说的“函数”有一定的联系，但又不尽相同），它的前面有个 <code>int</code>，代表它的返回值类型为整型(Integer)（以后会进一步学习）。有一对花括号 <code>{ }</code> 跟在 <code>main()</code> 的后面，花括号括起来的部分为 <code>main()</code> 函数的具体内容。</p>
+<h4>⑤ 语句</h4>
+<p>第 8、9 行各位一个语句，每个语句后都有一个半角分号 <code>;</code>。我们可以把程序运行的过程理解为执行一个又一个语句的过程。</p>
+<h4>⑥ <code>cout &lt;&lt; &quot;Hello World!&quot; &lt;&lt; endl;</code></h4>
+<p><code>cout</code>: 表示标准输出流。</p>
+<p><code>&quot;Hello World!&quot;</code>：这是个字符串，需要用半角双引号括起来。</p>
+<p><code>endl</code>：换行符。让接下来的输出从下一行开始。</p>
+<p><code>&lt;&lt;</code>：可以先把它形象地理解为“流的方向”——字符串 &quot;Hello World!&quot; 像水流一样流向输出设备（屏幕）。其实它是个被重载了的操作符。</p>
+<h4>⑦ <code>return 0;</code></h4>
+<p>返回语句。<code>main()</code> 函数执行完毕，向操作系统返回 0，表示成功运行并结束。</p>
+<h3>5、仿写程序</h3>
+<p>编写程序，输出两行内容如下：</p>
+<pre><code>I will be a good programmer.
+I will never give up!
+</code></pre>
+
+<h4>版本 1：</h4>
+<pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    cout &lt;&lt; &quot;I will be a good programmer.&quot; &lt;&lt; endl;
+    cout &lt;&lt; &quot;I will never give up!&quot; &lt;&lt; endl;
+    return 0;
+}
+</code></pre>
+
+<h4>版本 2：</h4>
+<pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    cout &lt;&lt; &quot;I will be a good programmer.\nI will never give up!\n&quot;;
+    return 0;
+}
+</code></pre>
+
+<p><code>\n</code> 是个转义字符，表示换行符。</p>
+<h4>版本 3：</h4>
+<pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    cout &lt;&lt; &quot;I will be a good programmer&quot; &lt;&lt; endl &lt;&lt; &quot;I will never give up!&quot; &lt;&lt; endl;
+    return 0;
+}
+</code></pre>
+
+<p><code>cout</code> 可以连写，这样看起来是不是很像水流呢？</p>
+<h4>版本 4：使用 C 库函数 <code>puts()</code></h4>
+<pre><code>#include &lt;cstdio&gt;
+
+int main()
+{
+    puts(&quot;I will be a good programmer.&quot;);
+    puts(&quot;I will never give up!&quot;);
+    return 0;
+}
+</code></pre>
+
+<p><code>puts()</code> 是 C 库中的函数，用于向标准输出设备（可理解为屏幕）输出字符串并换行。要使用 <code>puts()</code>，需要 <code>#include &lt;cstdio</code>。</p>
+<p>在 C++ 程序中包含 C 库头文件的方法：去掉 <code>.h</code>，在头文件名前加上 <code>c</code>。例如：</p>
+<p>C 程序：<code>#include &lt;stdio.h&gt;</code></p>
+<p>C++ 程序：<code>#include &lt;cstdio&gt;</code></p>
+<p>实际上，直接使用 C 程序的方式通常也是可行的，但更加推荐不带 <code>.h</code> 的方法。</p>
+<hr />
+<h2>练习</h2>
+<h3>一、排错</h3>
+<p>1、</p>
+<pre><code>// ex0_1.cpp
+
+int main()
+{
+    cout &lt;&lt; &quot;Hi! World!\n&quot;;
+    return 0;
+}
+</code></pre>
+
+<p>2、</p>
+<pre><code>// ex0_2.cpp
+
+include (iostream)
+using namespace std;
+
+int main()
+{
+    cout &lt;&lt; &quot;I will be the best programmer.\n&quot;;
+    return 0;
+}
+</code></pre>
+
+<p>3、</p>
+<pre><code>/* ex0_3.cpp
+ * Output &quot;ABCDEFG&quot;
+ */
+
+#include &lt;cstdio&gt;
+int mian()
+{
+    puts(&quot;ABCDEFG)&quot;;
+    return 0;
+}
+</code></pre>
+
+<p>4、</p>
+<pre><code>/*
+ * ex0_4.cpp
+/* Output &quot;HIJKLMN&quot; */
+ */
+
+#include &lt;iostream&gt;
+
+int main()
+{
+    cout《 &quot;HIJKLMN&quot;《 endl；
+    return 0；
+}
+</code></pre>
+
+<p>5、</p>
+<pre><code>naim()
+(
+    printf（“I love Computer Society!\n”）；
+    return (0)；
+)
+</code></pre>
+
+<h3>二、编写程序完成任务</h3>
+<p>6、输出以下内容</p>
+<pre><code>*******
+ *****
+  ***
+   *
+</code></pre>
+
+<p>7、输出以下内容</p>
+<pre><code>I'll be a good programmer.\t
+</code></pre>
+
+<p>8、输出以下内容</p>
+<pre><code>Hello World!\n I love this world!
+</code></pre>
+
+<p>9、输出 2048 行 Hello World。</p>
+<hr />
+<h2>引用、参考资料：</h2>
+<p>西安邮电大学 计算机组成原理 第一章 计算机系统概论 第二节 计算机的硬件 <a href="http://cs.xiyou.edu.cn:84/jsjzcyl/a/zjs031020.htm">http://cs.xiyou.edu.cn:84/jsjzcyl/a/zjs031020.htm</a></p>
+<p>百度百科 冯·诺依曼体系结构 <a href="http://baike.baidu.com/view/9427882.htm">http://baike.baidu.com/view/9427882.htm</a></p>
+<p>百度百科 编程 <a href="http://baike.baidu.com/view/3281.htm">http://baike.baidu.com/view/3281.htm</a></p>
+<p>编程语言发展历史 <a href="http://jstwind.com/t/30/">http://jstwind.com/t/30/</a></p>
+<p>维基百科 C语言 <a href="http://zh.wikipedia.org/wiki/C%E8%AF%AD%E8%A8%80">http://zh.wikipedia.org/wiki/C%E8%AF%AD%E8%A8%80</a></p>
+<p>维基百科 C++ <a href="http://zh.wikipedia.org/wiki/C%2B%2B">http://zh.wikipedia.org/wiki/C%2B%2B</a></p>
+<p>C++ Primer Plus 第2章 开始学习C++ 2.1.5 名称空间</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
