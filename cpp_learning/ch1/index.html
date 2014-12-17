@@ -1,939 +1,1 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-   <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-   <style type="text/css">
-   /* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
-/* Author: Nicolas Hery - http://nicolashery.com */
-/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
-/* Source: https://github.com/nicolahery/markdownpad-github */
-
-/* RESET
-=============================================================================*/
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-/* BODY
-=============================================================================*/
-
-body {
-  font-family: Helvetica, arial, freesans, clean, sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
-  color: #333;
-  background-color: #fff;
-  padding: 20px;
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-body>*:first-child {
-  margin-top: 0 !important;
-}
-
-body>*:last-child {
-  margin-bottom: 0 !important;
-}
-
-/* BLOCKS
-=============================================================================*/
-
-p, blockquote, ul, ol, dl, table, pre {
-  margin: 15px 0;
-}
-
-/* HEADERS
-=============================================================================*/
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 20px 0 10px;
-  padding: 0;
-  font-weight: bold;
-  -webkit-font-smoothing: antialiased;
-}
-
-h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
-  font-size: inherit;
-}
-
-h1 {
-  font-size: 28px;
-  color: #000;
-}
-
-h2 {
-  font-size: 24px;
-  border-bottom: 1px solid #ccc;
-  color: #000;
-}
-
-h3 {
-  font-size: 18px;
-}
-
-h4 {
-  font-size: 16px;
-}
-
-h5 {
-  font-size: 14px;
-}
-
-h6 {
-  color: #777;
-  font-size: 14px;
-}
-
-body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
-  margin-top: 10px;
-}
-
-/* LINKS
-=============================================================================*/
-
-a {
-  color: #4183C4;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* LISTS
-=============================================================================*/
-
-ul, ol {
-  padding-left: 30px;
-}
-
-ul li > :first-child, 
-ol li > :first-child, 
-ul li ul:first-of-type, 
-ol li ol:first-of-type, 
-ul li ol:first-of-type, 
-ol li ul:first-of-type {
-  margin-top: 0px;
-}
-
-ul ul, ul ol, ol ol, ol ul {
-  margin-bottom: 0;
-}
-
-dl {
-  padding: 0;
-}
-
-dl dt {
-  font-size: 14px;
-  font-weight: bold;
-  font-style: italic;
-  padding: 0;
-  margin: 15px 0 5px;
-}
-
-dl dt:first-child {
-  padding: 0;
-}
-
-dl dt>:first-child {
-  margin-top: 0px;
-}
-
-dl dt>:last-child {
-  margin-bottom: 0px;
-}
-
-dl dd {
-  margin: 0 0 15px;
-  padding: 0 15px;
-}
-
-dl dd>:first-child {
-  margin-top: 0px;
-}
-
-dl dd>:last-child {
-  margin-bottom: 0px;
-}
-
-/* CODE
-=============================================================================*/
-
-pre, code, tt {
-  font-size: 12px;
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
-}
-
-code, tt {
-  margin: 0 0px;
-  padding: 0px 0px;
-  white-space: nowrap;
-  border: 1px solid #eaeaea;
-  background-color: #f8f8f8;
-  border-radius: 3px;
-}
-
-pre>code {
-  margin: 0;
-  padding: 0;
-  white-space: pre;
-  border: none;
-  background: transparent;
-}
-
-pre {
-  background-color: #f8f8f8;
-  border: 1px solid #ccc;
-  font-size: 13px;
-  line-height: 19px;
-  overflow: auto;
-  padding: 6px 10px;
-  border-radius: 3px;
-}
-
-pre code, pre tt {
-  background-color: transparent;
-  border: none;
-}
-
-kbd {
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    background-color: #DDDDDD;
-    background-image: linear-gradient(#F1F1F1, #DDDDDD);
-    background-repeat: repeat-x;
-    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
-    border-image: none;
-    border-radius: 2px 2px 2px 2px;
-    border-style: solid;
-    border-width: 1px;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    line-height: 10px;
-    padding: 1px 4px;
-}
-
-/* QUOTES
-=============================================================================*/
-
-blockquote {
-  border-left: 4px solid #DDD;
-  padding: 0 15px;
-  color: #777;
-}
-
-blockquote>:first-child {
-  margin-top: 0px;
-}
-
-blockquote>:last-child {
-  margin-bottom: 0px;
-}
-
-/* HORIZONTAL RULES
-=============================================================================*/
-
-hr {
-  clear: both;
-  margin: 15px 0;
-  height: 0px;
-  overflow: hidden;
-  border: none;
-  background: transparent;
-  border-bottom: 4px solid #ddd;
-  padding: 0;
-}
-
-/* TABLES
-=============================================================================*/
-
-table th {
-  font-weight: bold;
-}
-
-table th, table td {
-  border: 1px solid #ccc;
-  padding: 6px 13px;
-}
-
-table tr {
-  border-top: 1px solid #ccc;
-  background-color: #fff;
-}
-
-table tr:nth-child(2n) {
-  background-color: #f8f8f8;
-}
-
-/* IMAGES
-=============================================================================*/
-
-img {
-  max-width: 100%
-}
-   </style>
-   
-   
-</head>
-<body>
-    <h1>第1节 用计算机处理简单计算问题</h1>
-
-<h2>一、1+1 Problem</h2>
-
-<p>① 下面的程序会输出什么？</p>
-
-<pre><code>// 1+1_1.cpp
-#include &lt;iostream&gt;
-using namespace std;
-
-int main()
-{
-    cout &lt;&lt; 1+1 &lt;&lt; endl;
-    return 0;
-}
-</code></pre>
-
-<p>答：2</p>
-
-<p>② 编写程序，计算 10 - 12、25×4、15<sup>4</sup>、999÷3、3÷2。</p>
-
-<pre><code>cout &lt;&lt; 10 - 12 &lt;&lt; endl;
-cout &lt;&lt; 25 * 4 &lt;&lt; endl;
-cout &lt;&lt; 15 * 15 * 15 * 15 &lt;&lt; endl;
-cout &lt;&lt; 999 / 3 &lt;&lt; endl;
-cout &lt;&lt; 3 / 2 &lt;&lt; endl;
-</code></pre>
-
-<p>在 C/C++ 中，<code>*</code> 表示乘号，<code>/</code> 表示除号。</p>
-
-<p>③ 如果想要输出 <code>1 + 1 = 2</code>，而不是直接输出 <code>2</code>，应该怎么办？</p>
-
-<pre><code>// 1+1_2.cpp
-#include &lt;iostream&gt;
-using namespace std;
-int main()
-{
-    cout &lt;&lt; &quot;1 + 1 = 2\n&quot;;
-    return 0;
-}
-</code></pre>
-
-<p>程序会对字符串中的非转义字符进行原样输出。</p>
-
-<p>当然，还可以把第六行改成：</p>
-
-<pre><code>cout &lt;&lt; &quot;1 + 1 = &quot; &lt;&lt; 1+1 &lt;&lt; endl;
-</code></pre>
-
-<p>④ 你学会用计算机做加减法了吗？</p>
-
-<p>我们来分析一下上述方法的缺点：对于每一个计算任务，都要专门设计一个程序，这样子花的时间还不如人类直接算得快呢。</p>
-
-<p>有没有方法设计出一个程序，让计算机可以对你输入的任意两个合适的数进行求和呢？答案当然是肯定的。我们需要借助变量的帮助。</p>
-
-<h2>二、变量与数据类型</h2>
-
-<h3>1、概览</h3>
-
-<p>我们先来看看解决上述问题的代码：</p>
-
-<pre><code>// 1-2-1.cpp
-
-#include &lt;iostream&gt;
-using namespace std;
-int main()
-{
-    int a, b, sum;
-    cin &gt;&gt; a &gt;&gt; b;
-    sum = a + b;
-    cout &lt;&lt; a &lt;&lt; &#39;+&#39; &lt;&lt; b &lt;&lt; &#39;=&#39; &lt;&lt; sum &lt;&lt; endl;
-    return 0;
-}
-</code></pre>
-
-<blockquote>
-<h4><code>int a, b, sum;</code></h4>
-</blockquote>
-
-<p>这是一句变量定义，它告诉计算机，<code>a</code>、<code>b</code>、<code>sum</code> 分别表示三个整数（Integer）。<code>a</code>、<code>b</code>、<code>sum</code> 这三个名字是由编程者自己定的。</p>
-
-<blockquote>
-<h4><code>cin &gt;&gt; a &gt;&gt; b;</code></h4>
-</blockquote>
-
-<p>类似于输出语句，这是个输入语句。<code>cin</code> 表示标准输入流，<code>&gt;&gt;</code> 的方向表示数据从标准输入设备（通常是键盘）流向变量 <code>a</code> 和 <code>b</code> 中。程序运行过程中我们用键盘输入两个数的时候，需要用空白字符（如空格）来分割，程序才能正常地识别它们。执行完这一句后，<code>a</code> 和 <code>b</code> 所表示的值便成了我们输入的两个数。</p>
-
-<blockquote>
-<h4><code>sum = a + b;</code></h4>
-</blockquote>
-
-<p>这个语句的意思是，把 a 和 b 的值相加后，将结果存入 <code>sum</code> 变量中。这一行看起来很像是个等式，但实际上，这里的 <code>=</code> 表示的并不是等于号。在 C/C++ 中，<code>=</code> 是赋值符，它表示把它右边的值存到它左边的变量里；表示等号的是 <code>==</code>，不是 <code>=</code>，请注意区分它们。执行完这一句后，<code>sum</code> 的值便会成为 <code>a</code> 与 <code>b</code> 的和。</p>
-
-<blockquote>
-<h4><code>cout &lt;&lt; a &lt;&lt; &#39;+&#39; &lt;&lt; b &lt;&lt; &#39;=&#39; &lt;&lt; sum &lt;&lt; endl;</code></h4>
-</blockquote>
-
-<p>这是我们曾经接触过的输出语句。略有不同的是，程序并不会输出 <code>a</code>、<code>b</code>、<code>sum</code> 这几个字母，而是输出它们对应的值。像 <code>&#39;+&#39;</code> 和 <code>&#39;-&#39;</code> 这样用单引号 <code>&#39;</code> 括起来的表示单个字符。（用 <code>&quot;</code> 括起来的叫做字符串，可以包含若干个字符。）如果我们确实想要输出字符 <code>a</code> 和 <code>b</code>，可以将这行改为：</p>
-
-<pre><code>cout &lt;&lt; &#39;a&#39; &lt;&lt; &#39;+&#39; &lt;&lt; &#39;b&#39; &lt;&lt; &#39;=&#39; &lt;&lt; sum &lt;&lt; endl;
-</code></pre>
-
-<p>当然，还可以写成：</p>
-
-<pre><code>cout &lt;&lt; &quot;a +ｂ = &quot; &lt;&lt; sum &lt;&lt; endl;
-</code></pre>
-
-<h3>2、基本数据类型与内存空间</h3>
-
-<h4>① 常量</h4>
-
-<p>除了通过输入让变量获得具体的值，我们还可以在代码中直接给变量赋值，如：</p>
-
-<pre><code>// 1-2-2-1.cpp
-
-#include &lt;iostream&gt;
-using namespace std;
-int main()
-{
-    int num1, num2;
-    num1 = 3;
-    num2 = -4;
-    num1 = num1 + num2;
-    cout &lt;&lt; num1 + num2 &lt;&lt; endl;
-    return 0;
-}
-</code></pre>
-
-<p>像 <code>num1</code>、<code>num2</code> 这样的我们称为“变量”，它们的值可以在程序运行的过程中多次被改变；区别于“变量”，我们把上面程序中的 <code>3</code>、<code>-4</code> 称为“常量”，常量的值在编译的时候便固定下来了。</p>
-
-<h4>② 数据类型</h4>
-
-<p>请尝试编译和运行以下程序，你发现了什么？</p>
-
-<pre><code>// 1-2-2-2.cpp
-
-#include &lt;iostream&gt;
-using namespace std;
-int main()
-{
-    int N = 3.14159;
-    cout &lt;&lt; N &lt;&lt; &#39;\n&#39;;
-    return 0;
-}
-</code></pre>
-
-<p>C/C++程序对于数据类型是敏感的。在程序中，我们定义了 <code>N</code> 为一个整形变量（<code>int</code> 说明了这一点），那么 N 就只能够表示整数。若我们想要表示小数，我们可以把 <code>int</code> 改为 <code>double</code>，它表示双精度浮点型（这个名字与 <code>double</code> 型在计算机内部的实现方式有关）。</p>
-
-<h4>③ 存储方式与数据范围</h4>
-
-<p>运行一下这个程序：</p>
-
-<pre><code>// 1-2-2-3.cpp
-
-#include &lt;iostream&gt;
-int main()
-{
-    using namespace std;
-
-    int A = 2000000000, B = 1000000000, Sum;
-    Sum = A + B;
-
-    cout &lt;&lt; &quot;A = &quot; &lt;&lt; A &lt;&lt; &quot;, B = &quot; &lt;&lt; B &lt;&lt; endl;
-    cout &lt;&lt; &quot;Sum = &quot; &lt;&lt; Sum &lt;&lt; endl;
-    return 0;
-}
-</code></pre>
-
-<p>这个程序在大多数计算机上的输出结果居然是负数，是不是有点出乎意料？为什么它无法输出正确结果呢？</p>
-
-<p>我们知道，数据在现代计算机中是以二进制形式存储的。我们每定义一个变量，计算机便会为它在内存中分配一定的空间。在多数 32 位计算机中，<code>int</code> 型往往会占据 4 个字节，即有 32 个二进制位（1 个字节 (Byte) 由 8 个二进制位 (bit) 构成）。由数学知识可以知道，32个二进制位仅能构成 2<sup>32</sup> 种组合，即 <code>int</code> 型仅能表示从 -2147483648 至 +2147483647 这 4294967296 个整数。A + B = 3000000000，超出了这个范围，无法用 <code>int</code> 型表示，因此导致了错误的运算结果。我们把这种情况称为“整型溢出”。至于这个错误结果为负数的原因，则与计算机内部采用补码表示法表示有符号整数有关。</p>
-
-<p>类似于整型，C/C++ 中其他的基本数据类型也有固定的位宽，也只能表示某一范围内的数据。附录 1 列出了 C++ 中的基本数据类型及数据范围。</p>
-
-<p>根据附录 1，我们可以知道，要实现上述程序的目的，我们只需要把 <code>int</code> 改成 <code>long long</code> 就可以了，因为 <code>long long</code> 型通常可以表示从 –9223372036854775808 到 +9223372036854775807 范围内的整数。那么，这是不是意味着，计算机面对比这更大的数就无能为力了呢？其实不然，运用一些算法知识，我们可以让计算机运算比这大得多的数。</p>
-
-<h3>3、字符型</h3>
-
-<pre><code>// 1-2-3.cpp
-
-#include &lt;iostream&gt;
-using namespace std;
-
-int main()
-{
-    char zero = &#39;0&#39;, one = &#39;1&#39;, two = &#39;2&#39;, A = &#39;A&#39;, a = &#39;a&#39;;
-    int code;
-
-    code = zero;
-    cout &lt;&lt; zero &lt;&lt; &quot;: &quot; &lt;&lt; code &lt;&lt; endl;
-
-    code = one;
-    cout &lt;&lt; one &lt;&lt; &quot;: &quot; &lt;&lt; code &lt;&lt; endl;
-
-    code = two;
-    cout &lt;&lt; two &lt;&lt; &quot;: &quot; &lt;&lt; code &lt;&lt; endl;
-
-    code = A;
-    cout &lt;&lt; A &lt;&lt; &quot;: &quot; &lt;&lt; code &lt;&lt; endl;
-
-    code = a;
-    cout &lt;&lt; a &lt;&lt; &quot;: &quot; &lt;&lt; code &lt;&lt; endl;
-
-    code = a = a + 1;
-    cout &lt;&lt; a &lt;&lt; &quot;: &quot; &lt;&lt; code &lt;&lt; endl;
-
-    return 0;
-}
-</code></pre>
-
-<p>上面的 <code>char</code> 表示字符型，字符型常量通常用单引号 <code>&#39;</code> 括起来。像 <code>&#39;\n&#39;</code>、<code>&#39;\t&#39;</code>、<code>&#39;\\&#39;</code>、<code>&#39;\0&#39;</code> 这样用转义序列表示的也是单个字符。有的字符是可见的，也有的字符是不可见的。在计算机中，存储的都是它们对应的 ASCII (/&#39;æski/) 编码（详见附录 2）。因此，在上面的例子中，我们可以把 <code>char</code> 型值赋值给 <code>int</code> 型变量，并能从中看到字符与编码之间的对应关系。可以看到，字符 <code>&#39;0&#39;</code> 并不与编码 0 直接对应。实际上，平时我们以键盘输入、屏幕输出、文本文件存储的数字都是由多个字符组成的，而我们能够直接用 <code>cout</code> 来输出整型数据，是因为 <code>cout</code> 自动地帮我们完成了从 1 个整型数据到多个字符的转换。（<code>cin</code> 依此类推。）</p>
-
-<p>我们还可以像这样改写上面的例子：</p>
-
-<pre><code>cout &lt;&lt; &#39;a&#39; &lt;&lt; &quot;: &quot; &lt;&lt; (int)&#39;a&#39; &lt;&lt; endl;
-</code></pre>
-
-<p>在这里，我们显式地指出了把 <code>&#39;a&#39;</code> 转换为整型（也可以写成 <code>int(&#39;a&#39;)</code> ）。</p>
-
-<h3>4、标识(zhì)符的命名规则</h3>
-
-<p>让我们尝试编译一下这个程序。</p>
-
-<pre><code>// 1-2-4.cpp
-#include &lt;iostream&gt;
-using namespace std;
-
-int main()
-{
-    int go = 3;
-    cout &lt;&lt; &quot;go: &quot; &lt;&lt; go &lt;&lt; endl;
-
-    int go = 4;
-    cout &lt;&lt; &quot;go: &quot; &lt;&lt; go &lt;&lt; endl;
-
-    return 0;
-}
-</code></pre>
-
-<p>出现了编译错误。把第 9、第 10 行的 <code>go</code> 改成 <code>Go</code>，重新编译，编译成功了。想一想，这说明了什么？</p>
-
-<blockquote>
-<p>1、在同一代码块内，不能重复定义同名变量。</p>
-
-<p>2、在 C/C++ 中，大写与小写的含义是不同的。</p>
-</blockquote>
-
-<p>再试试这段：</p>
-
-<pre><code>int goto = go + 1;
-cout &lt;&lt; &quot;goto: &quot; &lt;&lt; goto &lt;&lt; endl;
-</code></pre>
-
-<p>又出现了编译错误。这是由于变量命名不合法（不符合语法）导致的。虽说变量的名字是由编程者自己起的（像这样由编程者自定义的名称叫“标识符”），但在起名时需要遵循一定的规则：</p>
-
-<blockquote>
-<p>1、标识符可以由大小写字母、下划线和数字组成，且第一个字母不能为数字。</p>
-
-<p>2、C/C++ 语言为了实现其功能，规定了一些单词表示特定的含义，这样的单词包括关键字、C++标准库中定义的标识符等。我们定义的标识符不应与这些产生冲突。（C++的关键字详见附录 3）</p>
-
-<p>3、为了避免与编译器的实现发生冲突，给标识符命名时应尽量避开以下划线开头的名称。</p>
-
-<p>4、为了使代码易于维护，标识符应能望文知义。</p>
-</blockquote>
-
-<p>上面的例子之所以会出现编译错误，便是因为使用了关键字 <code>goto</code> 来当变量名。</p>
-
-<h2>三、运算符</h2>
-
-<h3>1、赋值符</h3>
-
-<h4>① 任务：编写一个程序，读入两个整数并交换输出它们。</h4>
-
-<p>1种思路是，利用一个中间变量实现两个变量直接的交换。</p>
-
-<pre><code>// 1-3-1.cpp
-
-#include &lt;iostream&gt;
-using namespace std;
-
-int main()
-{
-    int a, b, tmp;
-    cin &gt;&gt; a &gt;&gt; b;
-
-    tmp = a;
-    a = b;
-    b = tmp;
-
-    cout &lt;&lt; a &lt;&lt; &#39; &#39; &lt;&lt; b &lt;&lt; endl;
-    return 0;
-}
-</code></pre>
-
-<p>想一想，我们为什么需要一个中间变量来辅助？</p>
-
-<p>其实，这与赋值运算的特点有关。当我们执行 <code>a = b;</code> 时，意味着：</p>
-
-<ol>
-<li><code>a</code> 原来的值被抛弃，变成赋值符右边的 <code>b</code> 的值。</li>
-<li><code>b</code> 的值保持不变。</li>
-</ol>
-
-<p>这个操作就像复制文件时采用了覆盖粘贴一样。如果在执行 <code>a = b;</code> 前不把 <code>a</code> 原来的值保存起来，就会失去这个值。</p>
-
-<p>另一种方法是利用加减法，这种方法不需要用到辅助变量：</p>
-
-<pre><code>int a, b;
-cin &gt;&gt; a &gt;&gt; b;
-a = a + b;
-b = a - b;
-a = a - b;
-cout &lt;&lt; a &lt;&lt; &#39; &#39; &lt;&lt; b &lt;&lt; endl;
-</code></pre>
-
-<p>下表解释了它的原理。表中 a、b 两项表示执行完左边的语句后，变量 <code>a</code>、<code>b</code> 的值。</p>
-
-<table><thead>
-<tr>
-<th>语句</th>
-<th>a</th>
-<th>b</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>cin &gt;&gt; a &gt;&gt; b;</td>
-<td>设为 x</td>
-<td>设为 y</td>
-</tr>
-<tr>
-<td>a = a + b;</td>
-<td>x + y</td>
-<td>y</td>
-</tr>
-<tr>
-<td>b = a - b;</td>
-<td>x + y</td>
-<td>x</td>
-</tr>
-<tr>
-<td>a = a - b;</td>
-<td>y</td>
-<td>x</td>
-</tr>
-</tbody></table>
-
-<p>还有更简单的方法：</p>
-
-<pre><code>cin &gt;&gt; a &gt;&gt; b;
-cout &lt;&lt; b &lt;&lt; &#39; &#39; &lt;&lt; a &lt;&lt; endl;
-</code></pre>
-
-<h4>② 复合赋值符</h4>
-
-<p><code>a += b;</code> 相当于 <code>a = a + b;</code></p>
-
-<p><code>a -= b;</code> 相当于 <code>a = a - b;</code></p>
-
-<p>此外，还有 <code>*=</code>、<code>/=</code>、<code>&lt;&lt;=</code>、<code>&gt;&gt;=</code> 等等，依次类推。</p>
-
-<h3>2、比较运算</h3>
-
-<p>在了解比较运算符前，让我们先来认识一种很常用的基本数据类型——布尔型（<code>bool</code>）。</p>
-
-<p><code>bool</code> 型数据只有两个值：真（<code>true</code>）与假（<code>false</code>）。</p>
-
-<p>和其他类型类似，我们可以这样定义 <code>bool</code> 型变量：</p>
-
-<pre><code>bool a = true;
-bool b;
-b = false;
-</code></pre>
-
-<p>在 C++ 中，<code>bool</code> 型与整型有着密切的联系。非 <code>0</code>  的整型值可以看作是 <code>true</code>，整型 <code>0</code> 可以看作是 <code>false</code>。我们也可以用 <code>true</code> 和 <code>false</code> 向整型变量赋值。（在早期的 C 语言中，没有独立的 bool 类型，人们通常用 <code>int</code> 型来完成 <code>bool</code> 型的功能。）</p>
-
-<p>乍一看，这 <code>bool</code> 型变量好像没啥用。不过，相信同学们在学习条件控制语句和循环控制语句后，会进一步地了解 <code>bool</code> 型的作用。</p>
-
-<table><thead>
-<tr>
-<th>比较运算符</th>
-<th>含义</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>==</td>
-<td>等于</td>
-</tr>
-<tr>
-<td>!=</td>
-<td>不等于</td>
-</tr>
-<tr>
-<td>&lt;</td>
-<td>小于</td>
-</tr>
-<tr>
-<td>&lt;=</td>
-<td>小于等于</td>
-</tr>
-<tr>
-<td>&gt;</td>
-<td>大于</td>
-</tr>
-<tr>
-<td>&gt;=</td>
-<td>大于等于</td>
-</tr>
-</tbody></table>
-
-<p>比较运算的结果为 <code>bool</code> 型值，这不难理解。如：</p>
-
-<pre><code>int a = 5;
-bool b1, b2, b3, b4, b5, b6;
-
-b1 = (a == 5);    // true
-b2 = (a != 5);    // false
-b3 = (a &lt; 4);     // false
-b4 = (a &lt;= 5);    // true
-b5 = (a &gt; 5);     // false
-b6 = (a &gt;= 3);    // true
-</code></pre>
-
-<p>值得注意的是，C/C++ 中的比较运算符和数学上的用法有一些不同的地方。在数学上，比较运算符可以连着写，如 2 ≤ a ≤ 4，但在 C/C++中，需要这样写：<code>(2 &lt;= a) &amp;&amp; (a &lt;= 4)</code>。这里的 <code>&amp;&amp;</code> 便是我们后面将要认识的逻辑运算符的一种。</p>
-
-<h3>3、数值运算</h3>
-
-<h4>① 数值运算符</h4>
-
-<p>在 C/C++ 中，加、减、乘、除对应的运算符分别为 <code>+</code>、<code>-</code>、<code>*</code>、<code>/</code>，此外还有个 <code>%</code> 运算符，它叫“取模运算符”，可理解为取余数。这些运算符的用法与数学上的用法类似，但要注意的是，整型与整型进行除法运算，结果依然为整型，小数部分会被舍去，且不进行四舍五入，如：<code>3 / 2</code> 的结果为 <code>1</code>。如果想要得到有小数的结果，可以写成 <code>3.0 / 2.0</code>，他的结果是一个浮点型的值，包含小数部分。</p>
-
-<p>当加减与乘除同时出现时，程序会先算乘除，再算加减。这是因为，在 C/C++ 中，乘除运算符的“优先级”比加减的高。如果我们确实先算加减再算乘除，可以使用小括号（圆括号）。但与数学上有所不同的是，当括号需要嵌套时，C/C++ 依然使用小括号，而不用中括号。对于表达式 <code>18 / 3 * 2</code>，则是从左往右计算，运算结果为 <code>12</code>。因为在 C/C++ 中，乘除运算符的“结合性”为“左结合”。当优先级与结合性显得复杂时，我们通常会显式地加上括号，这样更容易理解。（关于运算符的“优先级”和“结合性”，详见附录 4。）</p>
-
-<h4>② 应用</h4>
-
-<p><strong>任务一</strong>：编写程序，实现以下功能：输入一个四位数，将它的每一位逆序输出。如：输入 <code>1234</code>，输出 <code>4321</code>。</p>
-
-<pre><code>// 1-3-4-1.cpp
-#include &lt;iostream&gt;
-using namespace std;
-
-int main()
-{
-    int num;
-    cin &gt;&gt; num;
-
-    // We can print the number one by one
-    cout &lt;&lt; num % 10;
-    cout &lt;&lt; (num / 10) % 10;    // (num % 100) / 100
-    cout &lt;&lt; (num / 100) % 10;   // (num % 1000) / 100
-    cout &lt;&lt; num / 1000 &lt;&lt; endl;
-    return 0;
-}
-</code></pre>
-
-<p>当我们要提取数字中的某一位时，常常会借助取模运算符的帮助。</p>
-
-<p><strong>任务二</strong>：编写程序，解一元二次方程（假设 Δ = b<sup>2</sup> - 4ac ≥ 0）。依次输入一元二次方程一般式 ax<sup>2</sup> + bx + c = 0 中的系数 a、b、c，输出方程的两个解。</p>
-
-<pre><code>// 1-3-4-2_wrong.cpp
-#include &lt;iostream&gt;
-using namespace std;
-
-int main()
-{
-    double x, a, b, c;
-    cin &gt;&gt; a &gt;&gt; b &gt;&gt; c;
-    a * x * x + b * x + c == 0;
-    cout &lt;&lt; x &lt;&lt; endl;
-    return 0;
-}
-</code></pre>
-
-<p>运行一下就会发现，这种写法是错误的。我们有时会说计算机是笨的（至少目前是这样），是因为虽然它算得快，但不懂得如何去算，需要人类告诉它算的方法。上面的程序中，我们只是列出了方程，计算机并不知道该怎样去解它。透过这个程序的结果  ，我们也可以看到，在自动变量（如上面的 <code>x</code>）获得具体的值前，它的值是不确定的。</p>
-
-<p>下面我们利用一个通用的方法——求根公式法来解决这个问题。</p>
-
-<p><img src="../img/ch1/root_formula.png" alt="一元二次方程求根公式"></p>
-
-<p>要使用求根公式，我们得搞定开平方。别担心，Math 库中的 <code>sqrt()</code> 函数可以帮我们。它的用法如下：</p>
-
-<pre><code>// 1-3-4-2.cpp
-
-#include &lt;iostream&gt;
-#include &lt;cmath&gt;    // needed by sqrt()
-using namespace std;
-
-int main()
-{
-    double a, b, c;
-    double sqrt_delta;
-
-    cin &gt;&gt; a &gt;&gt; b &gt;&gt; c;
-    sqrt_delta = sqrt(b * b - 4 * a * c);
-    cout &lt;&lt; &quot;x1 = &quot; &lt;&lt; (-b + sqrt_delta) / 2 * a &lt;&lt; endl;
-    cout &lt;&lt; &quot;x2 = &quot; &lt;&lt; (-b - sqrt_delta) / 2 * a &lt;&lt; endl;
-    return 0;
-}
-</code></pre>
-
-<hr>
-
-<h2>自学内容</h2>
-
-<p>请同学们自行查阅资料，完成以下学习任务。</p>
-
-<ol>
-<li><p>十进制数与二进制数、二进制数与八进制数、二进制数与十六进制数之间的相互转换（包括整数和小数的转换）。</p></li>
-<li><p>C/C++ 代码中，八进制常数与十六进制常数的表示方法，以及浮点数的科学计数表示法。</p></li>
-<li><p>原码与补码。</p></li>
-<li><p>C/C++ 中，“表达式”的含义。</p></li>
-<li><p>C/C++ 中的数据类型限定符：<code>short</code>、<code>long</code>、<code>unsigned</code>。</p></li>
-<li><p><strong>C/C++ 中的自增、自减运算符：<code>i++</code>、<code>++i</code>、<code>i--</code>、<code>--i</code>。</strong></p></li>
-<li><p>C/C++ 中的位运算符：左移（<code>&lt;&lt;</code>）、右移（<code>&gt;&gt;</code>）、按位与（<code>&amp;</code>）、换位或（<code>|</code>）、按位非（<code>~</code>）、按位异或（<code>^</code>）。</p></li>
-<li><p>用 <code>cstdio</code> 中的 <code>scanf()</code> 和 <code>printf()</code> 输入输出整数、浮点数、单个字符的的方法。</p></li>
-</ol>
-
-<hr>
-
-<h2>练习</h2>
-
-<h3>一、探究</h3>
-
-<p>1、编译运行这个程序，看看发生了什么。</p>
-
-<pre><code>#include &lt;iostream&gt;
-using namespace std;
-int main()
-{
-    int num;
-    num = 3 / 0;
-    cout &lt;&lt; num &lt;&lt; endl;
-    return 0;
-}
-</code></pre>
-
-<p>把第 5、第 6 行改为：</p>
-
-<pre><code>double num;
-num = 3.0 / 0.0;
-</code></pre>
-
-<p>再重新编译运行，看看又发生了什么。你认为为什么会这样？</p>
-
-<p>2、我们知道，<code>3 / 2</code> 的结果为整型，<code>3.0 / 2.0</code> 的结果为浮点型。那么，<code>3 / 2.0</code> 的类型是什么？<code>3.0 / 2</code> 的类型是什么？请编写程序验证你的想法，并查阅资料，看看你的想法是否正确。</p>
-
-<p>3、有：</p>
-
-<pre><code>double n;
-n = 1 / 3;
-</code></pre>
-
-<p>执行上面两行代码后，输出 <code>n</code> 的值，看看与你猜测的结果是否相同。</p>
-
-<p>4、</p>
-
-<pre><code>#include &lt;iostream&gt;
-using namespace std;
-int main()
-{
-    double a = 0.01, b = 0.1;
-    a += 0.01;
-    a += 0.01;
-    a += 0.01;
-    a += 0.01;
-    a += 0.01;
-    a += 0.01;
-    a += 0.01;
-    a += 0.01;
-    a += 0.01;
-    bool ok = (a == b);
-
-    cout &lt;&lt; a &lt;&lt; &#39; &#39; &lt;&lt; b &lt;&lt; endl;
-    return 0;
-}
-</code></pre>
-
-<p>变量 <code>ok</code> 的值是 <code>true</code> 还是 <code>false</code>？这又说明了什么？</p>
-
-<p>（提示：可以通过将 <code>ok</code> 转为整型输出来判断 <code>ok</code> 的值。）</p>
-
-<p>5、运行以下程序：</p>
-
-<pre><code>#include &lt;iostream&gt;
-using namespace std;
-int main()
-{
-    int a, b;
-    cin &gt;&gt; a &gt;&gt; b;
-    cout &lt;&lt; a &lt;&lt; &#39; &#39; &lt;&lt; b &lt;&lt; endl;
-    return 0;
-}
-</code></pre>
-
-<p>① 输入一个数、一个空格、又一个数、回车，观察结果。再把一个空格换成两个空格、三个空格、四个空格等重新尝试。</p>
-
-<p>② 输入一个数、回车、又一个数、再回车，观察结果。再把中间的两个回车换成多个回车试试。</p>
-
-<p>③ 输入两个数，中间用任意个空格、Tab、回车来间隔，观察结果。再在第一个数的前面和第二个数的后面输入任意个空格、Tab、回车试试。</p>
-
-<p>④ 这次我们把一个数改成一个字母来尝试，观察结果。再把一个字母改成几个字母试试。</p>
-
-<p>通过上面的探究，你总结出了什么？</p>
-
-<p>6、Math 库中提供了任意角的三角函数，在程序头部 <code>#include &lt;cmath&gt;</code> 后，可以使用 <code>sin()</code>、<code>cos()</code>、<code>tan()</code> 等函数，它们的返回值（可以理解为计算结果）为 <code>double</code> 型值。尝试输出 <code>sin(30)</code>、<code>tan(45)</code>、<code>cos(3.1415926535 * 2)</code> 的值，它们与你预期的结果是否相同（或相近）？请查阅资料弄明白其中的原因。</p>
-
-<h3>二、编写程序解决问题</h3>
-
-<p>1、输入两个三位数，将第二个数倒转（如 <code>123</code> 变为 <code>321</code>）后与第一个数相加，并输出结果。</p>
-
-<p>2、已知函数 f(x) = (cos<sup>2</sup>x - sin<sup>2</sup>x)<sup>2</sup> + (2 · sin x · cos x)<sup>2</sup>，输入 x 的值，输出 f(x) 的值。</p>
-
-<p>3、今有鸡兔同笼，上有 M 头，下有 N 足。编写程序，输入 M、N 的值，输出鸡与兔各有几只。（输入的 M、N 确保可以得到正确的解。）</p>
-
-<p>4、解关于 x、y 的二元一次方程组：</p>
-
-<blockquote>
-<p>Ax + By + C = 0</p>
-
-<p>Dx + Ey + F = 0</p>
-</blockquote>
-
-<p>输入 A、B、C、D、E、F 的值，输出 x、y 的值。</p>
-
-<hr>
-
-<h2>附录</h2>
-
-<h3>附录 1：C++ 的基本数据类型</h3>
-
-<p><a href="http://www.tutorialspoint.com/cplusplus/cpp_data_types.htm">http://www.tutorialspoint.com/cplusplus/cpp_data_types.htm</a></p>
-
-<h3>附录 2：ASCII 编码</h3>
-
-<p><a href="http://zh.wikipedia.org/zh-cn/ASCII">http://zh.wikipedia.org/zh-cn/ASCII</a></p>
-
-<h3>附录 3：C++ 关键字</h3>
-
-<p><a href="http://zh.cppreference.com/w/cpp/keyword">http://zh.cppreference.com/w/cpp/keyword</a></p>
-
-<h3>附录 4：C++ 运算符</h3>
-
-<p><a href="http://zh.wikipedia.org/zh-cn/C%E5%92%8CC%2B%2B%E9%81%8B%E7%AE%97%E5%AD%90">http://zh.wikipedia.org/zh-cn/C%E5%92%8CC%2B%2B%E9%81%8B%E7%AE%97%E5%AD%90</a></p>
-
-</body>
-</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>   <meta http-equiv="content-type" content="text/html;charset=UTF-8">   <style type="text/css">   /* GitHub stylesheet for MarkdownPad (http://markdownpad.com) *//* Author: Nicolas Hery - http://nicolashery.com *//* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff *//* Source: https://github.com/nicolahery/markdownpad-github *//* RESET=============================================================================*/html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {  margin: 0;  padding: 0;  border: 0;}/* BODY=============================================================================*/body {  font-family: Helvetica, arial, freesans, clean, sans-serif;  font-size: 14px;  line-height: 1.6;  color: #333;  background-color: #fff;  padding: 20px;  max-width: 960px;  margin: 0 auto;}body>*:first-child {  margin-top: 0 !important;}body>*:last-child {  margin-bottom: 0 !important;}/* BLOCKS=============================================================================*/p, blockquote, ul, ol, dl, table, pre {  margin: 15px 0;}/* HEADERS=============================================================================*/h1, h2, h3, h4, h5, h6 {  margin: 20px 0 10px;  padding: 0;  font-weight: bold;  -webkit-font-smoothing: antialiased;}h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {  font-size: inherit;}h1 {  font-size: 28px;  color: #000;}h2 {  font-size: 24px;  border-bottom: 1px solid #ccc;  color: #000;}h3 {  font-size: 18px;}h4 {  font-size: 16px;}h5 {  font-size: 14px;}h6 {  color: #777;  font-size: 14px;}body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {  margin-top: 0;  padding-top: 0;}a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {  margin-top: 0;  padding-top: 0;}h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {  margin-top: 10px;}/* LINKS=============================================================================*/a {  color: #4183C4;  text-decoration: none;}a:hover {  text-decoration: underline;}/* LISTS=============================================================================*/ul, ol {  padding-left: 30px;}ul li > :first-child, ol li > :first-child, ul li ul:first-of-type, ol li ol:first-of-type, ul li ol:first-of-type, ol li ul:first-of-type {  margin-top: 0px;}ul ul, ul ol, ol ol, ol ul {  margin-bottom: 0;}dl {  padding: 0;}dl dt {  font-size: 14px;  font-weight: bold;  font-style: italic;  padding: 0;  margin: 15px 0 5px;}dl dt:first-child {  padding: 0;}dl dt>:first-child {  margin-top: 0px;}dl dt>:last-child {  margin-bottom: 0px;}dl dd {  margin: 0 0 15px;  padding: 0 15px;}dl dd>:first-child {  margin-top: 0px;}dl dd>:last-child {  margin-bottom: 0px;}/* CODE=============================================================================*/pre, code, tt {  font-size: 12px;  font-family: Consolas, "Liberation Mono", Courier, monospace;}code, tt {  margin: 0 0px;  padding: 0px 0px;  white-space: nowrap;  border: 1px solid #eaeaea;  background-color: #f8f8f8;  border-radius: 3px;}pre>code {  margin: 0;  padding: 0;  white-space: pre;  border: none;  background: transparent;}pre {  background-color: #f8f8f8;  border: 1px solid #ccc;  font-size: 13px;  line-height: 19px;  overflow: auto;  padding: 6px 10px;  border-radius: 3px;}pre code, pre tt {  background-color: transparent;  border: none;}kbd {    -moz-border-bottom-colors: none;    -moz-border-left-colors: none;    -moz-border-right-colors: none;    -moz-border-top-colors: none;    background-color: #DDDDDD;    background-image: linear-gradient(#F1F1F1, #DDDDDD);    background-repeat: repeat-x;    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;    border-image: none;    border-radius: 2px 2px 2px 2px;    border-style: solid;    border-width: 1px;    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;    line-height: 10px;    padding: 1px 4px;}/* QUOTES=============================================================================*/blockquote {  border-left: 4px solid #DDD;  padding: 0 15px;  color: #777;}blockquote>:first-child {  margin-top: 0px;}blockquote>:last-child {  margin-bottom: 0px;}/* HORIZONTAL RULES=============================================================================*/hr {  clear: both;  margin: 15px 0;  height: 0px;  overflow: hidden;  border: none;  background: transparent;  border-bottom: 4px solid #ddd;  padding: 0;}/* TABLES=============================================================================*/table th {  font-weight: bold;}table th, table td {  border: 1px solid #ccc;  padding: 6px 13px;}table tr {  border-top: 1px solid #ccc;  background-color: #fff;}table tr:nth-child(2n) {  background-color: #f8f8f8;}/* IMAGES=============================================================================*/img {  max-width: 100%}   </style>      </head><body>    <h1>第1节 用计算机处理简单计算问题</h1><h2>一、1+1 Problem</h2><p>① 下面的程序会输出什么？</p><pre><code>// 1+1_1.cpp#include &lt;iostream&gt;using namespace std;int main(){    cout &lt;&lt; 1+1 &lt;&lt; endl;    return 0;}</code></pre><p>答：2</p><p>② 编写程序，计算 10 - 12、25×4、15<sup>4</sup>、999÷3、3÷2。</p><pre><code>cout &lt;&lt; 10 - 12 &lt;&lt; endl;cout &lt;&lt; 25 * 4 &lt;&lt; endl;cout &lt;&lt; 15 * 15 * 15 * 15 &lt;&lt; endl;cout &lt;&lt; 999 / 3 &lt;&lt; endl;cout &lt;&lt; 3 / 2 &lt;&lt; endl;</code></pre><p>在 C/C++ 中，<code>*</code> 表示乘号，<code>/</code> 表示除号。</p><p>③ 如果想要输出 <code>1 + 1 = 2</code>，而不是直接输出 <code>2</code>，应该怎么办？</p><pre><code>// 1+1_2.cpp#include &lt;iostream&gt;using namespace std;int main(){    cout &lt;&lt; &quot;1 + 1 = 2\n&quot;;    return 0;}</code></pre><p>程序会对字符串中的非转义字符进行原样输出。</p><p>当然，还可以把第六行改成：</p><pre><code>cout &lt;&lt; &quot;1 + 1 = &quot; &lt;&lt; 1+1 &lt;&lt; endl;</code></pre><p>④ 你学会用计算机做加减法了吗？</p><p>我们来分析一下上述方法的缺点：对于每一个计算任务，都要专门设计一个程序，这样子花的时间还不如人类直接算得快呢。</p><p>有没有方法设计出一个程序，让计算机可以对你输入的任意两个合适的数进行求和呢？答案当然是肯定的。我们需要借助变量的帮助。</p><h2>二、变量与数据类型</h2><h3>1、概览</h3><p>我们先来看看解决上述问题的代码：</p><pre><code>// 1-2-1.cpp#include &lt;iostream&gt;using namespace std;int main(){    int a, b, sum;    cin &gt;&gt; a &gt;&gt; b;    sum = a + b;    cout &lt;&lt; a &lt;&lt; &#39;+&#39; &lt;&lt; b &lt;&lt; &#39;=&#39; &lt;&lt; sum &lt;&lt; endl;    return 0;}</code></pre><blockquote><h4><code>int a, b, sum;</code></h4></blockquote><p>这是一句变量定义，它告诉计算机，<code>a</code>、<code>b</code>、<code>sum</code> 分别表示三个整数（Integer）。<code>a</code>、<code>b</code>、<code>sum</code> 这三个名字是由编程者自己定的。</p><blockquote><h4><code>cin &gt;&gt; a &gt;&gt; b;</code></h4></blockquote><p>类似于输出语句，这是个输入语句。<code>cin</code> 表示标准输入流，<code>&gt;&gt;</code> 的方向表示数据从标准输入设备（通常是键盘）流向变量 <code>a</code> 和 <code>b</code> 中。程序运行过程中我们用键盘输入两个数的时候，需要用空白字符（如空格）来分割，程序才能正常地识别它们。执行完这一句后，<code>a</code> 和 <code>b</code> 所表示的值便成了我们输入的两个数。</p><blockquote><h4><code>sum = a + b;</code></h4></blockquote><p>这个语句的意思是，把 a 和 b 的值相加后，将结果存入 <code>sum</code> 变量中。这一行看起来很像是个等式，但实际上，这里的 <code>=</code> 表示的并不是等于号。在 C/C++ 中，<code>=</code> 是赋值符，它表示把它右边的值存到它左边的变量里；表示等号的是 <code>==</code>，不是 <code>=</code>，请注意区分它们。执行完这一句后，<code>sum</code> 的值便会成为 <code>a</code> 与 <code>b</code> 的和。</p><blockquote><h4><code>cout &lt;&lt; a &lt;&lt; &#39;+&#39; &lt;&lt; b &lt;&lt; &#39;=&#39; &lt;&lt; sum &lt;&lt; endl;</code></h4></blockquote><p>这是我们曾经接触过的输出语句。略有不同的是，程序并不会输出 <code>a</code>、<code>b</code>、<code>sum</code> 这几个字母，而是输出它们对应的值。像 <code>&#39;+&#39;</code> 和 <code>&#39;-&#39;</code> 这样用单引号 <code>&#39;</code> 括起来的表示单个字符。（用 <code>&quot;</code> 括起来的叫做字符串，可以包含若干个字符。）如果我们确实想要输出字符 <code>a</code> 和 <code>b</code>，可以将这行改为：</p><pre><code>cout &lt;&lt; &#39;a&#39; &lt;&lt; &#39;+&#39; &lt;&lt; &#39;b&#39; &lt;&lt; &#39;=&#39; &lt;&lt; sum &lt;&lt; endl;</code></pre><p>当然，还可以写成：</p><pre><code>cout &lt;&lt; &quot;a + b = &quot; &lt;&lt; sum &lt;&lt; endl;</code></pre><h3>2、基本数据类型与内存空间</h3><h4>① 常量</h4><p>除了通过输入让变量获得具体的值，我们还可以在代码中直接给变量赋值，如：</p><pre><code>// 1-2-2-1.cpp#include &lt;iostream&gt;using namespace std;int main(){    int num1, num2;    num1 = 3;    num2 = -4;    num1 = num1 + num2;    cout &lt;&lt; num1 + num2 &lt;&lt; endl;    return 0;}</code></pre><p>像 <code>num1</code>、<code>num2</code> 这样的我们称为“变量”，它们的值可以在程序运行的过程中多次被改变；区别于“变量”，我们把上面程序中的 <code>3</code>、<code>-4</code> 称为“常量”，常量的值在编译的时候便固定下来了。</p><h4>② 数据类型</h4><p>请尝试编译和运行以下程序，你发现了什么？</p><pre><code>// 1-2-2-2.cpp#include &lt;iostream&gt;using namespace std;int main(){    int N = 3.14159;    cout &lt;&lt; N &lt;&lt; &#39;\n&#39;;    return 0;}</code></pre><p>C/C++程序对于数据类型是敏感的。在程序中，我们定义了 <code>N</code> 为一个整形变量（<code>int</code> 说明了这一点），那么 N 就只能够表示整数。若我们想要表示小数，我们可以把 <code>int</code> 改为 <code>double</code>，它表示双精度浮点型（这个名字与 <code>double</code> 型在计算机内部的实现方式有关）。</p><h4>③ 存储方式与数据范围</h4><p>运行一下这个程序：</p><pre><code>// 1-2-2-3.cpp#include &lt;iostream&gt;int main(){    using namespace std;    int A = 2000000000, B = 1000000000, Sum;    Sum = A + B;    cout &lt;&lt; &quot;A = &quot; &lt;&lt; A &lt;&lt; &quot;, B = &quot; &lt;&lt; B &lt;&lt; endl;    cout &lt;&lt; &quot;Sum = &quot; &lt;&lt; Sum &lt;&lt; endl;    return 0;}</code></pre><p>这个程序在大多数计算机上的输出结果居然是负数，是不是有点出乎意料？为什么它无法输出正确结果呢？</p><p>我们知道，数据在现代计算机中是以二进制形式存储的。我们每定义一个变量，计算机便会为它在内存中分配一定的空间。在多数 32 位计算机中，<code>int</code> 型往往会占据 4 个字节，即有 32 个二进制位（1 个字节 (Byte) 由 8 个二进制位 (bit) 构成）。由数学知识可以知道，32个二进制位仅能构成 2<sup>32</sup> 种组合，即 <code>int</code> 型仅能表示从 -2147483648 至 +2147483647 这 4294967296 个整数。A + B = 3000000000，超出了这个范围，无法用 <code>int</code> 型表示，因此导致了错误的运算结果。我们把这种情况称为“整型溢出”。至于这个错误结果为负数的原因，则与计算机内部采用补码表示法表示有符号整数有关。</p><p>类似于整型，C/C++ 中其他的基本数据类型也有固定的位宽，也只能表示某一范围内的数据。附录 1 列出了 C++ 中的基本数据类型及数据范围。</p><p>根据附录 1，我们可以知道，要实现上述程序的目的，我们只需要把 <code>int</code> 改成 <code>long long</code> 就可以了，因为 <code>long long</code> 型通常可以表示从 –9223372036854775808 到 +9223372036854775807 范围内的整数。那么，这是不是意味着，计算机面对比这更大的数就无能为力了呢？其实不然，运用一些算法知识，我们可以让计算机运算比这大得多的数。</p><h3>3、字符型</h3><pre><code>// 1-2-3.cpp#include &lt;iostream&gt;using namespace std;int main(){    char zero = &#39;0&#39;, one = &#39;1&#39;, two = &#39;2&#39;, A = &#39;A&#39;, a = &#39;a&#39;;    int code;    code = zero;    cout &lt;&lt; zero &lt;&lt; &quot;: &quot; &lt;&lt; code &lt;&lt; endl;    code = one;    cout &lt;&lt; one &lt;&lt; &quot;: &quot; &lt;&lt; code &lt;&lt; endl;    code = two;    cout &lt;&lt; two &lt;&lt; &quot;: &quot; &lt;&lt; code &lt;&lt; endl;    code = A;    cout &lt;&lt; A &lt;&lt; &quot;: &quot; &lt;&lt; code &lt;&lt; endl;    code = a;    cout &lt;&lt; a &lt;&lt; &quot;: &quot; &lt;&lt; code &lt;&lt; endl;    code = a = a + 1;    cout &lt;&lt; a &lt;&lt; &quot;: &quot; &lt;&lt; code &lt;&lt; endl;    return 0;}</code></pre><p>上面的 <code>char</code> 表示字符型，字符型常量通常用单引号 <code>&#39;</code> 括起来。像 <code>&#39;\n&#39;</code>、<code>&#39;\t&#39;</code>、<code>&#39;\\&#39;</code>、<code>&#39;\0&#39;</code> 这样用转义序列表示的也是单个字符。有的字符是可见的，也有的字符是不可见的。在计算机中，存储的都是它们对应的 ASCII (/&#39;æski/) 编码（详见附录 2）。因此，在上面的例子中，我们可以把 <code>char</code> 型值赋值给 <code>int</code> 型变量，并能从中看到字符与编码之间的对应关系。可以看到，字符 <code>&#39;0&#39;</code> 并不与编码 0 直接对应。实际上，平时我们以键盘输入、屏幕输出、文本文件存储的数字都是由多个字符组成的，而我们能够直接用 <code>cout</code> 来输出整型数据，是因为 <code>cout</code> 自动地帮我们完成了从 1 个整型数据到多个字符的转换。（<code>cin</code> 依此类推。）</p><p>我们还可以像这样改写上面的例子：</p><pre><code>cout &lt;&lt; &#39;a&#39; &lt;&lt; &quot;: &quot; &lt;&lt; (int)&#39;a&#39; &lt;&lt; endl;</code></pre><p>在这里，我们显式地指出了把 <code>&#39;a&#39;</code> 转换为整型（也可以写成 <code>int(&#39;a&#39;)</code> ）。</p><h3>4、标识(zhì)符的命名规则</h3><p>让我们尝试编译一下这个程序。</p><pre><code>// 1-2-4.cpp#include &lt;iostream&gt;using namespace std;int main(){    int go = 3;    cout &lt;&lt; &quot;go: &quot; &lt;&lt; go &lt;&lt; endl;    int go = 4;    cout &lt;&lt; &quot;go: &quot; &lt;&lt; go &lt;&lt; endl;    return 0;}</code></pre><p>出现了编译错误。把第 9、第 10 行的 <code>go</code> 改成 <code>Go</code>，重新编译，编译成功了。想一想，这说明了什么？</p><blockquote><p>1、在同一代码块内，不能重复定义同名变量。</p><p>2、在 C/C++ 中，大写与小写的含义是不同的。</p></blockquote><p>再试试这段：</p><pre><code>int goto = go + 1;cout &lt;&lt; &quot;goto: &quot; &lt;&lt; goto &lt;&lt; endl;</code></pre><p>又出现了编译错误。这是由于变量命名不合法（不符合语法）导致的。虽说变量的名字是由编程者自己起的（像这样由编程者自定义的名称叫“标识符”），但在起名时需要遵循一定的规则：</p><blockquote><p>1、标识符可以由大小写字母、下划线和数字组成，且第一个字母不能为数字。</p><p>2、C/C++ 语言为了实现其功能，规定了一些单词表示特定的含义，这样的单词包括关键字、C++标准库中定义的标识符等。我们定义的标识符不应与这些产生冲突。（C++的关键字详见附录 3）</p><p>3、为了避免与编译器的实现发生冲突，给标识符命名时应尽量避开以下划线开头的名称。</p><p>4、为了使代码易于维护，标识符应能望文知义。</p></blockquote><p>上面的例子之所以会出现编译错误，便是因为使用了关键字 <code>goto</code> 来当变量名。</p><h2>三、运算符</h2><h3>1、赋值符</h3><h4>① 任务：编写一个程序，读入两个整数并交换输出它们。</h4><p>1种思路是，利用一个中间变量实现两个变量之间的交换。</p><pre><code>// 1-3-1.cpp#include &lt;iostream&gt;using namespace std;int main(){    int a, b, tmp;    cin &gt;&gt; a &gt;&gt; b;    tmp = a;    a = b;    b = tmp;    cout &lt;&lt; a &lt;&lt; &#39; &#39; &lt;&lt; b &lt;&lt; endl;    return 0;}</code></pre><p>想一想，我们为什么需要一个中间变量来辅助？</p><p>其实，这与赋值运算的特点有关。当我们执行 <code>a = b;</code> 时，意味着：</p><ol><li><code>a</code> 原来的值被抛弃，变成赋值符右边的 <code>b</code> 的值。</li><li><code>b</code> 的值保持不变。</li></ol><p>这个操作就像复制文件时采用了覆盖粘贴一样。如果在执行 <code>a = b;</code> 前不把 <code>a</code> 原来的值保存起来，就会失去这个值。</p><p>另一种方法是利用加减法，这种方法不需要用到辅助变量：</p><pre><code>int a, b;cin &gt;&gt; a &gt;&gt; b;a = a + b;b = a - b;a = a - b;cout &lt;&lt; a &lt;&lt; &#39; &#39; &lt;&lt; b &lt;&lt; endl;</code></pre><p>下表解释了它的原理。表中 a、b 两项表示执行完左边的语句后，变量 <code>a</code>、<code>b</code> 的值。</p><table><thead><tr><th>语句</th><th>a</th><th>b</th></tr></thead><tbody><tr><td>cin &gt;&gt; a &gt;&gt; b;</td><td>设为 x</td><td>设为 y</td></tr><tr><td>a = a + b;</td><td>x + y</td><td>y</td></tr><tr><td>b = a - b;</td><td>x + y</td><td>x</td></tr><tr><td>a = a - b;</td><td>y</td><td>x</td></tr></tbody></table><p>还有更简单的方法：</p><pre><code>cin &gt;&gt; a &gt;&gt; b;cout &lt;&lt; b &lt;&lt; &#39; &#39; &lt;&lt; a &lt;&lt; endl;</code></pre><h4>② 复合赋值符</h4><p><code>a += b;</code> 相当于 <code>a = a + b;</code></p><p><code>a -= b;</code> 相当于 <code>a = a - b;</code></p><p>此外，还有 <code>*=</code>、<code>/=</code>、<code>&lt;&lt;=</code>、<code>&gt;&gt;=</code> 等等，依次类推。</p><h3>2、比较运算</h3><p>在了解比较运算符前，让我们先来认识一种很常用的基本数据类型——布尔型（<code>bool</code>）。</p><p><code>bool</code> 型数据只有两个值：真（<code>true</code>）与假（<code>false</code>）。</p><p>和其他类型类似，我们可以这样定义 <code>bool</code> 型变量：</p><pre><code>bool a = true;bool b;b = false;</code></pre><p>在 C++ 中，<code>bool</code> 型与整型有着密切的联系。非 <code>0</code>  的整型值可以看作是 <code>true</code>，整型 <code>0</code> 可以看作是 <code>false</code>。我们也可以用 <code>true</code> 和 <code>false</code> 向整型变量赋值。（在早期的 C 语言中，没有独立的 bool 类型，人们通常用 <code>int</code> 型来完成 <code>bool</code> 型的功能。）</p><p>乍一看，这 <code>bool</code> 型变量好像没啥用。不过，相信同学们在学习条件控制语句和循环控制语句后，会进一步地了解 <code>bool</code> 型的作用。</p><table><thead><tr><th>比较运算符</th><th>含义</th></tr></thead><tbody><tr><td>==</td><td>等于</td></tr><tr><td>!=</td><td>不等于</td></tr><tr><td>&lt;</td><td>小于</td></tr><tr><td>&lt;=</td><td>小于等于</td></tr><tr><td>&gt;</td><td>大于</td></tr><tr><td>&gt;=</td><td>大于等于</td></tr></tbody></table><p>比较运算的结果为 <code>bool</code> 型值，这不难理解。如：</p><pre><code>int a = 5;bool b1, b2, b3, b4, b5, b6;b1 = (a == 5);    // trueb2 = (a != 5);    // falseb3 = (a &lt; 4);     // falseb4 = (a &lt;= 5);    // trueb5 = (a &gt; 5);     // falseb6 = (a &gt;= 3);    // true</code></pre><p>值得注意的是，C/C++ 中的比较运算符和数学上的用法有一些不同的地方。在数学上，比较运算符可以连着写，如 2 ≤ a ≤ 4，但在 C/C++中，需要这样写：<code>(2 &lt;= a) &amp;&amp; (a &lt;= 4)</code>。这里的 <code>&amp;&amp;</code> 便是我们后面将要认识的逻辑运算符的一种。</p><h3>3、数值运算</h3><h4>① 数值运算符</h4><p>在 C/C++ 中，加、减、乘、除对应的运算符分别为 <code>+</code>、<code>-</code>、<code>*</code>、<code>/</code>，此外还有个 <code>%</code> 运算符，它叫“取模运算符”，可理解为取余数。这些运算符的用法与数学上的用法类似，但要注意的是，整型与整型进行除法运算，结果依然为整型，小数部分会被舍去，且不进行四舍五入，如：<code>3 / 2</code> 的结果为 <code>1</code>。如果想要得到有小数的结果，可以写成 <code>3.0 / 2.0</code>，它的结果是一个浮点型的值，包含小数部分。</p><p>当加减与乘除同时出现时，程序会先算乘除，再算加减。这是因为，在 C/C++ 中，乘除运算符的“优先级”比加减的高。如果我们确实先算加减再算乘除，可以使用小括号（圆括号）。但与数学上有所不同的是，当括号需要嵌套时，C/C++ 依然使用小括号，而不用中括号。对于表达式 <code>18 / 3 * 2</code>，则是从左往右计算，运算结果为 <code>12</code>。因为在 C/C++ 中，乘除运算符的“结合性”为“左结合”。当优先级与结合性显得复杂时，我们通常会显式地加上括号，这样更容易理解。（关于运算符的“优先级”和“结合性”，详见附录 4。）</p><h4>② 应用</h4><p><strong>任务一</strong>：编写程序，实现以下功能：输入一个四位数，将它的每一位逆序输出。如：输入 <code>1234</code>，输出 <code>4321</code>。</p><pre><code>// 1-3-4-1.cpp#include &lt;iostream&gt;using namespace std;int main(){    int num;    cin &gt;&gt; num;    // We can print the number one by one    cout &lt;&lt; num % 10;    cout &lt;&lt; (num / 10) % 10;    // (num % 100) / 100    cout &lt;&lt; (num / 100) % 10;   // (num % 1000) / 100    cout &lt;&lt; num / 1000 &lt;&lt; endl;    return 0;}</code></pre><p>当我们要提取数字中的某一位时，常常会借助取模运算符的帮助。</p><p><strong>任务二</strong>：编写程序，解一元二次方程（假设 Δ = b<sup>2</sup> - 4ac ≥ 0）。依次输入一元二次方程一般式 ax<sup>2</sup> + bx + c = 0 中的系数 a、b、c，输出方程的两个解。</p><pre><code>// 1-3-4-2_wrong.cpp#include &lt;iostream&gt;using namespace std;int main(){    double x, a, b, c;    cin &gt;&gt; a &gt;&gt; b &gt;&gt; c;    a * x * x + b * x + c == 0;    cout &lt;&lt; x &lt;&lt; endl;    return 0;}</code></pre><p>运行一下就会发现，这种写法是错误的。我们有时会说计算机是笨的（至少目前是这样），是因为虽然它算得快，但不懂得如何去算，需要人类告诉它算的方法。上面的程序中，我们只是列出了方程，计算机并不知道该怎样去解它。透过这个程序的结果  ，我们也可以看到，在自动变量（如上面的 <code>x</code>）获得具体的值前，它的值是不确定的。</p><p>下面我们利用一个通用的方法——求根公式法来解决这个问题。</p><p><img src="../img/ch1/root_formula.png" alt="一元二次方程求根公式"></p><p>要使用求根公式，我们得搞定开平方。别担心，Math 库中的 <code>sqrt()</code> 函数可以帮我们。它的用法如下：</p><pre><code>// 1-3-4-2.cpp#include &lt;iostream&gt;#include &lt;cmath&gt;    // needed by sqrt()using namespace std;int main(){    double a, b, c;    double sqrt_delta;    cin &gt;&gt; a &gt;&gt; b &gt;&gt; c;    sqrt_delta = sqrt(b * b - 4 * a * c);    cout &lt;&lt; &quot;x1 = &quot; &lt;&lt; (-b + sqrt_delta) / 2 * a &lt;&lt; endl;    cout &lt;&lt; &quot;x2 = &quot; &lt;&lt; (-b - sqrt_delta) / 2 * a &lt;&lt; endl;    return 0;}</code></pre><hr><h2>自学内容</h2><p>请同学们自行查阅资料，完成以下学习任务。</p><ol><li><p>十进制数与二进制数、二进制数与八进制数、二进制数与十六进制数之间的相互转换（包括整数和小数的转换）。</p></li><li><p>C/C++ 代码中，八进制常数与十六进制常数的表示方法，以及浮点数的科学计数表示法。</p></li><li><p>原码与补码。</p></li><li><p>C/C++ 中，“表达式”的含义。</p></li><li><p>C/C++ 中的数据类型限定符：<code>short</code>、<code>long</code>、<code>unsigned</code>。</p></li><li><p><strong>C/C++ 中的自增、自减运算符：<code>i++</code>、<code>++i</code>、<code>i--</code>、<code>--i</code>。</strong></p></li><li><p>C/C++ 中的位运算符：左移（<code>&lt;&lt;</code>）、右移（<code>&gt;&gt;</code>）、按位与（<code>&amp;</code>）、换位或（<code>|</code>）、按位非（<code>~</code>）、按位异或（<code>^</code>）。</p></li><li><p>用 <code>cstdio</code> 中的 <code>scanf()</code> 和 <code>printf()</code> 输入输出整数、浮点数、单个字符的的方法。</p></li></ol><hr><h2>练习</h2><h3>一、探究</h3><p>1、编译运行这个程序，看看发生了什么。</p><pre><code>#include &lt;iostream&gt;using namespace std;int main(){    int num;    num = 3 / 0;    cout &lt;&lt; num &lt;&lt; endl;    return 0;}</code></pre><p>把第 5、第 6 行改为：</p><pre><code>double num;num = 3.0 / 0.0;</code></pre><p>再重新编译运行，看看又发生了什么。你认为为什么会这样？</p><p>2、我们知道，<code>3 / 2</code> 的结果为整型，<code>3.0 / 2.0</code> 的结果为浮点型。那么，<code>3 / 2.0</code> 的类型是什么？<code>3.0 / 2</code> 的类型是什么？请编写程序验证你的想法，并查阅资料，看看你的想法是否正确。</p><p>3、有：</p><pre><code>double n;n = 1 / 3;</code></pre><p>执行上面两行代码后，输出 <code>n</code> 的值，看看与你猜测的结果是否相同。</p><p>4、</p><pre><code>#include &lt;iostream&gt;using namespace std;int main(){    double a = 0.01, b = 0.1;    a += 0.01;    a += 0.01;    a += 0.01;    a += 0.01;    a += 0.01;    a += 0.01;    a += 0.01;    a += 0.01;    a += 0.01;    bool ok = (a == b);    cout &lt;&lt; a &lt;&lt; &#39; &#39; &lt;&lt; b &lt;&lt; endl;    return 0;}</code></pre><p>变量 <code>ok</code> 的值是 <code>true</code> 还是 <code>false</code>？这又说明了什么？</p><p>（提示：可以通过将 <code>ok</code> 转为整型输出来判断 <code>ok</code> 的值。）</p><p>5、运行以下程序：</p><pre><code>#include &lt;iostream&gt;using namespace std;int main(){    int a, b;    cin &gt;&gt; a &gt;&gt; b;    cout &lt;&lt; a &lt;&lt; &#39; &#39; &lt;&lt; b &lt;&lt; endl;    return 0;}</code></pre><p>① 输入一个数、一个空格、又一个数、回车，观察结果。再把一个空格换成两个空格、三个空格、四个空格等重新尝试。</p><p>② 输入一个数、回车、又一个数、再回车，观察结果。再把中间的两个回车换成多个回车试试。</p><p>③ 输入两个数，中间用任意个空格、Tab、回车来间隔，观察结果。再在第一个数的前面和第二个数的后面输入任意个空格、Tab、回车试试。</p><p>④ 这次我们把一个数改成一个字母来尝试，观察结果。再把一个字母改成几个字母试试。</p><p>通过上面的探究，你总结出了什么？</p><p>6、Math 库中提供了任意角的三角函数，在程序头部 <code>#include &lt;cmath&gt;</code> 后，可以使用 <code>sin()</code>、<code>cos()</code>、<code>tan()</code> 等函数，它们的返回值（可以理解为计算结果）为 <code>double</code> 型值。尝试输出 <code>sin(30)</code>、<code>tan(45)</code>、<code>cos(3.1415926535 * 2)</code> 的值，它们与你预期的结果是否相同（或相近）？请查阅资料弄明白其中的原因。</p><h3>二、编写程序解决问题</h3><p>1、输入两个三位数，将第二个数倒转（如 <code>123</code> 变为 <code>321</code>）后与第一个数相加，并输出结果。</p><p>2、已知函数 f(x) = (cos<sup>2</sup>x - sin<sup>2</sup>x)<sup>2</sup> + (2 · sin x · cos x)<sup>2</sup>，输入 x 的值，输出 f(x) 的值。</p><p>3、今有鸡兔同笼，上有 M 头，下有 N 足。编写程序，输入 M、N 的值，输出鸡与兔各有几只。（输入的 M、N 确保可以得到正确的解。）</p><p>4、解关于 x、y 的二元一次方程组：</p><blockquote><p>Ax + By + C = 0</p><p>Dx + Ey + F = 0</p></blockquote><p>输入 A、B、C、D、E、F 的值，输出 x、y 的值。</p><hr><h2>附录</h2><h3>附录 1：C++ 的基本数据类型</h3><p><a href="http://www.tutorialspoint.com/cplusplus/cpp_data_types.htm">http://www.tutorialspoint.com/cplusplus/cpp_data_types.htm</a></p><h3>附录 2：ASCII 编码</h3><p><a href="http://zh.wikipedia.org/zh-cn/ASCII">http://zh.wikipedia.org/zh-cn/ASCII</a></p><h3>附录 3：C++ 关键字</h3><p><a href="http://zh.cppreference.com/w/cpp/keyword">http://zh.cppreference.com/w/cpp/keyword</a></p><h3>附录 4：C++ 运算符</h3><p><a href="http://zh.wikipedia.org/zh-cn/C%E5%92%8CC%2B%2B%E9%81%8B%E7%AE%97%E5%AD%90">http://zh.wikipedia.org/zh-cn/C%E5%92%8CC%2B%2B%E9%81%8B%E7%AE%97%E5%AD%90</a></p></body></html>
