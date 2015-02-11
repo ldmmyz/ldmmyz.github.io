@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://ld.mmyz.net/sitemap.xml
