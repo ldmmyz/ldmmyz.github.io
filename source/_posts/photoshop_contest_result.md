@@ -44,7 +44,7 @@ Congratulations!
 
 小编也挑选了部分未获奖的作品，与大家共同分享：（排名不分先后）
 
-![灵动计算机社 Photoshop平面设计大赛 作者:莫梓俊(一2)](http://cptsct.qiniudn.com/photoshop_contest_result/7.jpg?imageView2/2/w/680)
+![灵动计算机社 Photoshop平面设计大赛 作者:莫梓俊(一1)](http://cptsct.qiniudn.com/photoshop_contest_result/7.jpg?imageView2/2/w/680)
 
 ![灵动计算机社 Photoshop平面设计大赛 作者:李治鑫(一7)](http://cptsct.qiniudn.com/photoshop_contest_result/8.jpg?imageView2/2/w/680)
 
